@@ -1,1 +1,71 @@
-Ly8gU25hcHNob3QgKyBjb25zdHJhaW50IHRlc3RzIGZvciBMTE0gcHJvbXB0IHRlbXBsYXRlcyAoc3JjL2xpYi9wcm9tcHRzLnRzKS4KLy8gU25hcHNob3RzIG1ha2UgdGVtcGxhdGUgY2hhbmdlcyBkZWxpYmVyYXRlIOKAlCB1cGRhdGUgd2l0aCBgdml0ZXN0IC11YC4KCmltcG9ydCB7IGRlc2NyaWJlLCBpdCwgZXhwZWN0IH0gZnJvbSAidml0ZXN0IjsKaW1wb3J0IHsgaG9va1Byb21wdCwgc2NyaXB0UHJvbXB0LCBjYXB0aW9uUHJvbXB0IH0gZnJvbSAiLi9wcm9tcHRzIjsKCmRlc2NyaWJlKCJob29rUHJvbXB0IiwgKCkgPT4gewogIGl0KCJtYXRjaGVzIHNuYXBzaG90IiwgKCkgPT4gewogICAgZXhwZWN0KGhvb2tQcm9tcHQoImRlZXAgc2VhIGNyZWF0dXJlcyIsICJ0aWt0b2siKSkudG9NYXRjaFNuYXBzaG90KCk7CiAgfSk7CgogIGl0KCJpbmNsdWRlcyB0aGUgdG9waWMgYW5kIGFsbCA1IGZyYW1ld29ya3MiLCAoKSA9PiB7CiAgICBjb25zdCBwID0gaG9va1Byb21wdCgiZGVlcCBzZWEgY3JlYXR1cmVzIiwgInRpa3RvayIpOwogICAgZXhwZWN0KHApLnRvQ29udGFpbigiZGVlcCBzZWEgY3JlYXR1cmVzIik7CiAgICBmb3IgKGNvbnN0IGZ3IG9mIFsiY3VyaW9zaXR5IiwgImNvbnRyYXJpYW4iLCAiY2FsbG91dCIsICJjb2xkLW9wZW4iLCAic3Rha2VzIl0pIHsKICAgICAgZXhwZWN0KHApLnRvQ29udGFpbihmdyk7CiAgICB9CiAgfSk7CgogIGl0KCJtZW50aW9ucyB0aGUgcGxhdGZvcm0iLCAoKSA9PiB7CiAgICBleHBlY3QoaG9va1Byb21wdCgiY2F0cyIsICJ4IikpLnRvQ29udGFpbigieCIpOwogIH0pOwp9KTsKCmRlc2NyaWJlKCJzY3JpcHRQcm9tcHQiLCAoKSA9PiB7CiAgaXQoIm1hdGNoZXMgc25hcHNob3QiLCAoKSA9PiB7CiAgICBleHBlY3Qoc2NyaXB0UHJvbXB0KCJUZXN0IGhvb2suLi4iLCAzMCwgImVuIikpLnRvTWF0Y2hTbmFwc2hvdCgpOwogIH0pOwoKICBpdCgidXNlcyB0aGUgaG9vayB2ZXJiYXRpbSBhbmQgdGFyZ2V0cyB0aGUgcmlnaHQgd29yZCBjb3VudCIsICgpID0+IHsKICAgIGNvbnN0IHAgPSBzY3JpcHRQcm9tcHQoIk15IGN1c3RvbSBob29rIiwgNjAsICJlbiIpOwogICAgZXhwZWN0KHApLnRvQ29udGFpbigiTXkgY3VzdG9tIGhvb2siKTsKICAgIC8vIDYwcyBAIDE1MHdwbSA9IDE1MCB3b3JkcywgwrExMCUKICAgIGV4cGVjdChwKS50b0NvbnRhaW4oIjEzNeKAkzE2NSB3b3JkcyIpOwogIH0pOwoKICBpdCgic3VwcG9ydHMgQmFoYXNhIEluZG9uZXNpYSIsICgpID0+IHsKICAgIGV4cGVjdChzY3JpcHRQcm9tcHQoImhvb2siLCAxNSwgImlkIikpLnRvQ29udGFpbigiQmFoYXNhIEluZG9uZXNpYSIpOwogIH0pOwoKICBpdCgiaW5jbHVkZXMgYWxsIHRocmVlIGJlYXQgbWFya2VycyIsICgpID0+IHsKICAgIGNvbnN0IHAgPSBzY3JpcHRQcm9tcHQoImhvb2siLCAzMCwgImVuIik7CiAgICBleHBlY3QocCkudG9Db250YWluKCJbSE9PS10iKTsKICAgIGV4cGVjdChwKS50b0NvbnRhaW4oIltCT0RZXSIpOwogICAgZXhwZWN0KHApLnRvQ29udGFpbigiW0NMSUZGSEFOR0VSXSIpOwogIH0pOwp9KTsKCmRlc2NyaWJlKCJjYXB0aW9uUHJvbXB0IiwgKCkgPT4gewogIGl0KCJtYXRjaGVzIHNuYXBzaG90IiwgKCkgPT4gewogICAgZXhwZWN0KAogICAgICBjYXB0aW9uUHJvbXB0KCJkZWVwIHNlYSBjcmVhdHVyZXMiLCAieCIsICJUZXN0IGhvb2siKSwKICAgICkudG9NYXRjaFNuYXBzaG90KCk7CiAgfSk7CgogIGl0KCJlbmZvcmNlcyB0aGUgWCAyODAtY2hhciBsaW1pdCIsICgpID0+IHsKICAgIGV4cGVjdChjYXB0aW9uUHJvbXB0KCJjYXRzIiwgIngiKSkudG9Db250YWluKCIyODAiKTsKICB9KTsKCiAgaXQoImVuZm9yY2VzIHRoZSBUaWtUb2sgMTUwLWNoYXIgbGltaXQiLCAoKSA9PiB7CiAgICBleHBlY3QoY2FwdGlvblByb21wdCgiY2F0cyIsICJ0aWt0b2siKSkudG9Db250YWluKCIxNTAiKTsKICB9KTsKCiAgaXQoImluY2x1ZGVzIGhvb2sgY29udGV4dCB3aGVuIHByb3ZpZGVkIiwgKCkgPT4gewogICAgZXhwZWN0KGNhcHRpb25Qcm9tcHQoImNhdHMiLCAiaW5zdGFncmFtIiwgIk15IGhvb2siKSkudG9Db250YWluKCJNeSBob29rIik7CiAgfSk7CgogIGl0KCJvbWl0cyBob29rIGNvbnRleHQgY2xlYW5seSB3aGVuIG5vdCBwcm92aWRlZCIsICgpID0+IHsKICAgIGV4cGVjdChjYXB0aW9uUHJvbXB0KCJjYXRzIiwgImluc3RhZ3JhbSIpKS5ub3QudG9Db250YWluKCJ1bmRlZmluZWQiKTsKICB9KTsKfSk7Cg==
+// Snapshot + constraint tests for LLM prompt templates (src/lib/prompts.ts).
+// Snapshots make template changes deliberate — update with `vitest -u`.
+
+import { describe, it, expect } from "vitest";
+import { hookPrompt, scriptPrompt, captionPrompt } from "./prompts";
+
+describe("hookPrompt", () => {
+  it("matches snapshot", () => {
+    expect(hookPrompt("deep sea creatures", "tiktok")).toMatchSnapshot();
+  });
+
+  it("includes the topic and all 5 frameworks", () => {
+    const p = hookPrompt("deep sea creatures", "tiktok");
+    expect(p).toContain("deep sea creatures");
+    for (const fw of ["curiosity", "contrarian", "callout", "cold-open", "stakes"]) {
+      expect(p).toContain(fw);
+    }
+  });
+
+  it("mentions the platform", () => {
+    expect(hookPrompt("cats", "x")).toContain("x");
+  });
+});
+
+describe("scriptPrompt", () => {
+  it("matches snapshot", () => {
+    expect(scriptPrompt("Test hook...", 30, "en")).toMatchSnapshot();
+  });
+
+  it("uses the hook verbatim and targets the right word count", () => {
+    const p = scriptPrompt("My custom hook", 60, "en");
+    expect(p).toContain("My custom hook");
+    // 60s @ 150wpm = 150 words, ±10%
+    expect(p).toContain("135–165 words");
+  });
+
+  it("supports Bahasa Indonesia", () => {
+    expect(scriptPrompt("hook", 15, "id")).toContain("Bahasa Indonesia");
+  });
+
+  it("includes all three beat markers", () => {
+    const p = scriptPrompt("hook", 30, "en");
+    expect(p).toContain("[HOOK]");
+    expect(p).toContain("[BODY]");
+    expect(p).toContain("[CLIFFHANGER]");
+  });
+});
+
+describe("captionPrompt", () => {
+  it("matches snapshot", () => {
+    expect(
+      captionPrompt("deep sea creatures", "x", "Test hook"),
+    ).toMatchSnapshot();
+  });
+
+  it("enforces the X 280-char limit", () => {
+    expect(captionPrompt("cats", "x")).toContain("280");
+  });
+
+  it("enforces the TikTok 150-char limit", () => {
+    expect(captionPrompt("cats", "tiktok")).toContain("150");
+  });
+
+  it("includes hook context when provided", () => {
+    expect(captionPrompt("cats", "instagram", "My hook")).toContain("My hook");
+  });
+
+  it("omits hook context cleanly when not provided", () => {
+    expect(captionPrompt("cats", "instagram")).not.toContain("undefined");
+  });
+});

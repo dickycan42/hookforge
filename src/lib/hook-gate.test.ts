@@ -1,1 +1,172 @@
-Ly8gVW5pdCB0ZXN0cyBmb3IgdGhlIDQtY2hlY2sgaG9vayBnYXRlIChzcmMvbGliL2hvb2stZ2F0ZS50cykuCi8vIFB1cmUgZnVuY3Rpb25zIOKAlCBubyBJL08sIGZ1bGx5IGRldGVybWluaXN0aWMuCgppbXBvcnQgeyBkZXNjcmliZSwgaXQsIGV4cGVjdCB9IGZyb20gInZpdGVzdCI7CmltcG9ydCB7CiAgbm9FYXJseVJldmVhbCwKICB3aXRoaG9sZHNBbnN3ZXIsCiAgaGFzT3Blbkxvb3AsCiAgaXNDb252ZXJzYXRpb25hbCwKICB2YWxpZGF0ZUhvb2ssCn0gZnJvbSAiLi9ob29rLWdhdGUiOwoKZGVzY3JpYmUoIm5vRWFybHlSZXZlYWwiLCAoKSA9PiB7CiAgaXQoInBhc3NlcyB3aGVuIHRvcGljIGtleXdvcmRzIGFyZSBhYnNlbnQgZnJvbSB0aGUgZmlyc3QgOCB3b3JkcyIsICgpID0+IHsKICAgIGV4cGVjdCgKICAgICAgbm9FYXJseVJldmVhbCgKICAgICAgICAiU3RvcCBzY3JvbGxpbmcg4oCUIHRoaXMgd2lsbCBjaGFuZ2UgeW91ciBtb3JuaW5ncyBmb3JldmVyLi4uIiwKICAgICAgICAibW9ybmluZyBjb2ZmZWUgcm91dGluZSIsCiAgICAgICksCiAgICApLnRvQmUodHJ1ZSk7CiAgfSk7CgogIGl0KCJmYWlscyB3aGVuIGEgdG9waWMga2V5d29yZCBhcHBlYXJzIGluIHRoZSBmaXJzdCA4IHdvcmRzIiwgKCkgPT4gewogICAgZXhwZWN0KAogICAgICBub0Vhcmx5UmV2ZWFsKAogICAgICAgICJPY3RvcHVzIGZhY3RzIHdpbGwgYmxvdyB5b3VyIG1pbmQsIGJ1dCB3YWl0Li4uIiwKICAgICAgICAib2N0b3B1cyBmYWN0cyIsCiAgICAgICksCiAgICApLnRvQmUoZmFsc2UpOwogIH0pOwoKICBpdCgiaWdub3JlcyBzdG9wd29yZHMgd2hlbiBidWlsZGluZyBrZXl3b3JkcyIsICgpID0+IHsKICAgIC8vICJ0aGUiIGlzIGEgc3RvcHdvcmQg4oCUIGl0cyBwcmVzZW5jZSBtdXN0IG5vdCBmYWlsIHRoZSBjaGVjay4KICAgIGV4cGVjdChub0Vhcmx5UmV2ZWFsKCJUaGUgdHJ1dGggYWJvdXQgaGFiaXRzIG5vYm9keSBtZW50aW9ucy4uLiIsICJ0aGUiKSkudG9CZSgKICAgICAgdHJ1ZSwKICAgICk7CiAgfSk7CgogIGl0KCJwYXNzZXMgd2hlbiB0aGUgdG9waWMgaGFzIG5vIHVzYWJsZSBrZXl3b3JkcyIsICgpID0+IHsKICAgIGV4cGVjdChub0Vhcmx5UmV2ZWFsKCJBbnkgaG9vayBhdCBhbGwuLi4iLCAiIikpLnRvQmUodHJ1ZSk7CiAgICBleHBlY3Qobm9FYXJseVJldmVhbCgiQW55IGhvb2sgYXQgYWxsLi4uIiwgImEgYW4gdGhlIikpLnRvQmUodHJ1ZSk7CiAgfSk7CgogIGl0KCJwYXNzZXMgd2hlbiBrZXl3b3JkcyBhcHBlYXIgb25seSBhZnRlciB0aGUgZmlyc3QgOCB3b3JkcyIsICgpID0+IHsKICAgIGV4cGVjdCgKICAgICAgbm9FYXJseVJldmVhbCgKICAgICAgICAiU3RvcCBzY3JvbGxpbmcgcmlnaHQgbm93IOKAlCB3aGF0IG5vYm9keSBldmVyIHRlbGxzIHlvdSBhYm91dCBvY3RvcHVzIHdpbGwgc3VycHJpc2UgeW91Li4uIiwKICAgICAgICAib2N0b3B1cyIsCiAgICAgICksCiAgICApLnRvQmUodHJ1ZSk7CiAgfSk7Cn0pOwoKZGVzY3JpYmUoIndpdGhob2xkc0Fuc3dlciIsICgpID0+IHsKICBpdCgicGFzc2VzIGZvciBhIHB1cmUgdGVhc2Ugd2l0aCBubyBwYXlvZmYiLCAoKSA9PiB7CiAgICBleHBlY3Qod2l0aGhvbGRzQW5zd2VyKCJXaGF0IGlmIGV2ZXJ5dGhpbmcgeW91IGtuZXcgd2FzIHdyb25nLi4uPyIpKS50b0JlKAogICAgICB0cnVlLAogICAgKTsKICB9KTsKCiAgaXQoImZhaWxzIG9uICdoZXJlJ3MgdGhlIGFuc3dlciciLCAoKSA9PiB7CiAgICBleHBlY3QoCiAgICAgIHdpdGhob2xkc0Fuc3dlcigiSGVyZSdzIHRoZSBhbnN3ZXI6IGl0J3MgYmVjYXVzZSBvZiBncmF2aXR5Li4uIiksCiAgICApLnRvQmUoZmFsc2UpOwogIH0pOwoKICBpdCgiZmFpbHMgb24gJ3RoZSByZWFzb24gaXMnIiwgKCkgPT4gewogICAgZXhwZWN0KAogICAgICB3aXRoaG9sZHNBbnN3ZXIoIlRoZSByZWFzb24gaXMgc2ltcGxlIOKAlCB3YXRjaCB0aWxsIHRoZSBlbmQiKSwKICAgICkudG9CZShmYWxzZSk7CiAgfSk7CgogIGl0KCJmYWlscyBvbiAnYmVjYXVzZScgcGF5b2ZmIiwgKCkgPT4gewogICAgZXhwZWN0KAogICAgICB3aXRoaG9sZHNBbnN3ZXIoIk5vYm9keSB0YWxrcyBhYm91dCB0aGlzIGJlY2F1c2UgYnJhbmRzIGhpZGUgaXQiKSwKICAgICkudG9CZShmYWxzZSk7CiAgfSk7CgogIGl0KCJmYWlscyBvbiAnc2ltcGx5IHB1dCcgLyAnaW4gc2hvcnQnIiwgKCkgPT4gewogICAgZXhwZWN0KHdpdGhob2xkc0Fuc3dlcigiU2ltcGx5IHB1dCwgaG9va3MgYmVhdCBoYXNodGFncyIpKS50b0JlKGZhbHNlKTsKICAgIGV4cGVjdCh3aXRoaG9sZHNBbnN3ZXIoIkluIHNob3J0LCBzdG9wIHBvc3RpbmcgZGFpbHkiKSkudG9CZShmYWxzZSk7CiAgfSk7Cn0pOwoKZGVzY3JpYmUoImhhc09wZW5Mb29wIiwgKCkgPT4gewogIGl0KCJwYXNzZXMgb24gYW4gdW5hbnN3ZXJlZCBxdWVzdGlvbiIsICgpID0+IHsKICAgIGV4cGVjdChoYXNPcGVuTG9vcCgiV2hhdCBoYXBwZW5zIHdoZW4geW91IHN0b3AgcG9zdGluZyBmb3IgMzAgZGF5cz8iKSkudG9CZSgKICAgICAgdHJ1ZSwKICAgICk7CiAgfSk7CgogIGl0KCJwYXNzZXMgb24gZWxsaXBzaXMiLCAoKSA9PiB7CiAgICBleHBlY3QoaGFzT3Blbkxvb3AoIldhaXQgZm9yIHRoZSB0d2lzdCBhdCB0aGUgZW5kLi4uIikpLnRvQmUodHJ1ZSk7CiAgfSk7CgogIGl0KCJwYXNzZXMgb24gJ25vYm9keSB0ZWxscycgLyAnc2VjcmV0JyBwYXR0ZXJucyIsICgpID0+IHsKICAgIGV4cGVjdChoYXNPcGVuTG9vcCgiTm9ib2R5IHRlbGxzIGJlZ2lubmVycyB0aGlzIHNlY3JldC4uLiIpKS50b0JlKHRydWUpOwogIH0pOwoKICBpdCgicGFzc2VzIG9uIGEgJ2J1dCcgdHVybiIsICgpID0+IHsKICAgIGV4cGVjdChoYXNPcGVuTG9vcCgiSXQgd29ya2VkIGZvciBtb250aHMsIGJ1dCB0aGVuIGV2ZXJ5dGhpbmcgY2hhbmdlZCIpKS50b0JlKAogICAgICB0cnVlLAogICAgKTsKICB9KTsKCiAgaXQoImZhaWxzIG9uIGEgY2xvc2VkIHN0YXRlbWVudCB3aXRoIG5vIGxvb3AiLCAoKSA9PiB7CiAgICBleHBlY3QoaGFzT3Blbkxvb3AoIlRoaXMgaXMgYSBncmVhdCB2aWRlbyBhYm91dCBjYXRzLiIpKS50b0JlKGZhbHNlKTsKICB9KTsKfSk7CgpkZXNjcmliZSgiaXNDb252ZXJzYXRpb25hbCIsICgpID0+IHsKICBpdCgicGFzc2VzIGZvciBzcG9rZW4sIGRpcmVjdCBob29rcyIsICgpID0+IHsKICAgIGV4cGVjdChpc0NvbnZlcnNhdGlvbmFsKCJZb3Ugd29uJ3QgYmVsaWV2ZSB3aGF0IGhhcHBlbmVkIG5leHQuLi4iKSkudG9CZSgKICAgICAgdHJ1ZSwKICAgICk7CiAgfSk7CgogIGl0KCJmYWlscyBvbiAnQW4gWCBpcyBhLi4uJyBkZWZpbml0aW9ucyIsICgpID0+IHsKICAgIGV4cGVjdCgKICAgICAgaXNDb252ZXJzYXRpb25hbCgiQW4gb2N0b3B1cyBpcyBhIHNlYSBjcmVhdHVyZSB0aGF0IGhhcyB0aHJlZSBoZWFydHMuLi4iKSwKICAgICkudG9CZShmYWxzZSk7CiAgfSk7CgogIGl0KCJmYWlscyBvbiAnaXMgZGVmaW5lZCBhcyciLCAoKSA9PiB7CiAgICBleHBlY3QoCiAgICAgIGlzQ29udmVyc2F0aW9uYWwoIlBob3Rvc3ludGhlc2lzIGlzIGRlZmluZWQgYXMgdGhlIHByb2Nlc3MgYnkgd2hpY2guLi4iKSwKICAgICkudG9CZShmYWxzZSk7CiAgfSk7CgogIGl0KCJmYWlscyBvbiAncmVmZXJzIHRvJyIsICgpID0+IHsKICAgIGV4cGVjdCgKICAgICAgaXNDb252ZXJzYXRpb25hbCgiVGhpcyB0ZXJtIHJlZmVycyB0byBhIGNvbnRlbnQgc3RyYXRlZ3kuLi4iKSwKICAgICkudG9CZShmYWxzZSk7CiAgfSk7Cn0pOwoKZGVzY3JpYmUoInZhbGlkYXRlSG9vayIsICgpID0+IHsKICBpdCgicGFzc2VzIGEgd2VsbC1mb3JtZWQgaG9vayBvbiBhbGwgNCBjaGVja3MiLCAoKSA9PiB7CiAgICBjb25zdCByZXN1bHQgPSB2YWxpZGF0ZUhvb2soCiAgICAgICJTdG9wIHNjcm9sbGluZyByaWdodCBub3cg4oCUIHdoYXQgbm9ib2R5IGV2ZXIgdGVsbHMgeW91IHdpbGwgY2hhbmdlIHlvdXIgdmlld3Mgb24gdmlkZW8gaG9va3MuLi4iLAogICAgICAidmlkZW8gaG9va3MiLAogICAgKTsKICAgIGV4cGVjdChyZXN1bHQucGFzc2VkKS50b0JlKHRydWUpOwogICAgZXhwZWN0KHJlc3VsdC5jaGVja3MpLnRvRXF1YWwoewogICAgICBub0Vhcmx5UmV2ZWFsOiB0cnVlLAogICAgICB3aXRoaG9sZHNBbnN3ZXI6IHRydWUsCiAgICAgIGhhc09wZW5Mb29wOiB0cnVlLAogICAgICBpc0NvbnZlcnNhdGlvbmFsOiB0cnVlLAogICAgfSk7CiAgfSk7CgogIGl0KCJyZXBvcnRzIGV4YWN0bHkgd2hpY2ggY2hlY2tzIGZhaWxlZCIsICgpID0+IHsKICAgIGNvbnN0IHJlc3VsdCA9IHZhbGlkYXRlSG9vaygKICAgICAgIkFuIG9jdG9wdXMgaXMgYSBzZWEgY3JlYXR1cmUgYmVjYXVzZSBpdCBoYXMgdGhyZWUgaGVhcnRzLiIsCiAgICAgICJvY3RvcHVzIiwKICAgICk7CiAgICBleHBlY3QocmVzdWx0LnBhc3NlZCkudG9CZShmYWxzZSk7CiAgICBleHBlY3QocmVzdWx0LmNoZWNrcy5ub0Vhcmx5UmV2ZWFsKS50b0JlKGZhbHNlKTsgLy8gIm9jdG9wdXMiIGluIGZpcnN0IDgKICAgIGV4cGVjdChyZXN1bHQuY2hlY2tzLndpdGhob2xkc0Fuc3dlcikudG9CZShmYWxzZSk7IC8vICJiZWNhdXNlIgogICAgZXhwZWN0KHJlc3VsdC5jaGVja3MuaGFzT3Blbkxvb3ApLnRvQmUoZmFsc2UpOyAvLyBubyBsb29wCiAgICBleHBlY3QocmVzdWx0LmNoZWNrcy5pc0NvbnZlcnNhdGlvbmFsKS50b0JlKGZhbHNlKTsgLy8gZGVmaW5pdGlvbgogIH0pOwoKICBpdCgiZmFpbHMgYSBob29rIHRoYXQgcmV2ZWFscyB0aGUgYW5zd2VyIGV2ZW4gaWYgb3RoZXIgY2hlY2tzIHBhc3MiLCAoKSA9PiB7CiAgICBjb25zdCByZXN1bHQgPSB2YWxpZGF0ZUhvb2soCiAgICAgICJTdG9wIHNjcm9sbGluZyDigJQgaGVyZSdzIHRoZSBhbnN3ZXIgYWJvdXQgbW9ybmluZyByb3V0aW5lcy4uLiIsCiAgICAgICJldmVuaW5nIGhhYml0cyIsCiAgICApOwogICAgZXhwZWN0KHJlc3VsdC5jaGVja3Mud2l0aGhvbGRzQW5zd2VyKS50b0JlKGZhbHNlKTsKICAgIGV4cGVjdChyZXN1bHQucGFzc2VkKS50b0JlKGZhbHNlKTsKICB9KTsKfSk7Cg==
+// Unit tests for the 4-check hook gate (src/lib/hook-gate.ts).
+// Pure functions — no I/O, fully deterministic.
+
+import { describe, it, expect } from "vitest";
+import {
+  noEarlyReveal,
+  withholdsAnswer,
+  hasOpenLoop,
+  isConversational,
+  validateHook,
+} from "./hook-gate";
+
+describe("noEarlyReveal", () => {
+  it("passes when topic keywords are absent from the first 8 words", () => {
+    expect(
+      noEarlyReveal(
+        "Stop scrolling — this will change your mornings forever...",
+        "morning coffee routine",
+      ),
+    ).toBe(true);
+  });
+
+  it("fails when a topic keyword appears in the first 8 words", () => {
+    expect(
+      noEarlyReveal(
+        "Octopus facts will blow your mind, but wait...",
+        "octopus facts",
+      ),
+    ).toBe(false);
+  });
+
+  it("ignores stopwords when building keywords", () => {
+    // "the" is a stopword — its presence must not fail the check.
+    expect(noEarlyReveal("The truth about habits nobody mentions...", "the")).toBe(
+      true,
+    );
+  });
+
+  it("passes when the topic has no usable keywords", () => {
+    expect(noEarlyReveal("Any hook at all...", "")).toBe(true);
+    expect(noEarlyReveal("Any hook at all...", "a an the")).toBe(true);
+  });
+
+  it("passes when keywords appear only after the first 8 words", () => {
+    expect(
+      noEarlyReveal(
+        "Stop scrolling right now — what nobody ever tells you about octopus will surprise you...",
+        "octopus",
+      ),
+    ).toBe(true);
+  });
+});
+
+describe("withholdsAnswer", () => {
+  it("passes for a pure tease with no payoff", () => {
+    expect(withholdsAnswer("What if everything you knew was wrong...?")).toBe(
+      true,
+    );
+  });
+
+  it("fails on 'here's the answer'", () => {
+    expect(
+      withholdsAnswer("Here's the answer: it's because of gravity..."),
+    ).toBe(false);
+  });
+
+  it("fails on 'the reason is'", () => {
+    expect(
+      withholdsAnswer("The reason is simple — watch till the end"),
+    ).toBe(false);
+  });
+
+  it("fails on 'because' payoff", () => {
+    expect(
+      withholdsAnswer("Nobody talks about this because brands hide it"),
+    ).toBe(false);
+  });
+
+  it("fails on 'simply put' / 'in short'", () => {
+    expect(withholdsAnswer("Simply put, hooks beat hashtags")).toBe(false);
+    expect(withholdsAnswer("In short, stop posting daily")).toBe(false);
+  });
+});
+
+describe("hasOpenLoop", () => {
+  it("passes on an unanswered question", () => {
+    expect(hasOpenLoop("What happens when you stop posting for 30 days?")).toBe(
+      true,
+    );
+  });
+
+  it("passes on ellipsis", () => {
+    expect(hasOpenLoop("Wait for the twist at the end...")).toBe(true);
+  });
+
+  it("passes on 'nobody tells' / 'secret' patterns", () => {
+    expect(hasOpenLoop("Nobody tells beginners this secret...")).toBe(true);
+  });
+
+  it("passes on a 'but' turn", () => {
+    expect(hasOpenLoop("It worked for months, but then everything changed")).toBe(
+      true,
+    );
+  });
+
+  it("fails on a closed statement with no loop", () => {
+    expect(hasOpenLoop("This is a great video about cats.")).toBe(false);
+  });
+});
+
+describe("isConversational", () => {
+  it("passes for spoken, direct hooks", () => {
+    expect(isConversational("You won't believe what happened next...")).toBe(
+      true,
+    );
+  });
+
+  it("fails on 'An X is a...' definitions", () => {
+    expect(
+      isConversational("An octopus is a sea creature that has three hearts..."),
+    ).toBe(false);
+  });
+
+  it("fails on 'is defined as'", () => {
+    expect(
+      isConversational("Photosynthesis is defined as the process by which..."),
+    ).toBe(false);
+  });
+
+  it("fails on 'refers to'", () => {
+    expect(
+      isConversational("This term refers to a content strategy..."),
+    ).toBe(false);
+  });
+});
+
+describe("validateHook", () => {
+  it("passes a well-formed hook on all 4 checks", () => {
+    const result = validateHook(
+      "Stop scrolling right now — what nobody ever tells you will change your views on video hooks...",
+      "video hooks",
+    );
+    expect(result.passed).toBe(true);
+    expect(result.checks).toEqual({
+      noEarlyReveal: true,
+      withholdsAnswer: true,
+      hasOpenLoop: true,
+      isConversational: true,
+    });
+  });
+
+  it("reports exactly which checks failed", () => {
+    const result = validateHook(
+      "An octopus is a sea creature because it has three hearts.",
+      "octopus",
+    );
+    expect(result.passed).toBe(false);
+    expect(result.checks.noEarlyReveal).toBe(false); // "octopus" in first 8
+    expect(result.checks.withholdsAnswer).toBe(false); // "because"
+    expect(result.checks.hasOpenLoop).toBe(false); // no loop
+    expect(result.checks.isConversational).toBe(false); // definition
+  });
+
+  it("fails a hook that reveals the answer even if other checks pass", () => {
+    const result = validateHook(
+      "Stop scrolling — here's the answer about morning routines...",
+      "evening habits",
+    );
+    expect(result.checks.withholdsAnswer).toBe(false);
+    expect(result.passed).toBe(false);
+  });
+});

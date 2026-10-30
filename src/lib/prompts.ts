@@ -1,1 +1,106 @@
-Ly8gQWxsIExMTSBwcm9tcHQgdGVtcGxhdGVzIGxpdmUgaGVyZSDigJQgbmV2ZXIgaW5saW5lIGluIEFQSSByb3V0ZXMuCi8vIFVJIGNvcHkgaXMgRW5nbGlzaCAoZ2xvYmFsIGNyZWF0b3IgYXVkaWVuY2UpLgoKZXhwb3J0IHR5cGUgUGxhdGZvcm0gPSAidGlrdG9rIiB8ICJpbnN0YWdyYW0iIHwgInlvdXR1YmUiIHwgIngiOwpleHBvcnQgdHlwZSBHZW5lcmF0ZVR5cGUgPSAiaG9va3MiIHwgInNjcmlwdCIgfCAiY2FwdGlvbiI7CgovKiogNSBob29rIHZhcmlhbnRzLCBvbmUgcGVyIGZyYW1ld29yaywgdmFsaWRhdGVkIGRvd25zdHJlYW0gYnkgaG9vay1nYXRlLiAqLwpleHBvcnQgZnVuY3Rpb24gaG9va1Byb21wdCh0b3BpYzogc3RyaW5nLCBwbGF0Zm9ybTogUGxhdGZvcm0pOiBzdHJpbmcgewogIHJldHVybiBgWW91IGFyZSBIb29rRm9yZ2UsIGFuIGV4cGVydCBzaG9ydC1mb3JtIGNvbnRlbnQgc3RyYXRlZ2lzdCBmb3IgZmFjZWxlc3MgY3JlYXRvcnMuCgpUT1BJQzogIiR7dG9waWN9IgpQTEFURk9STTogJHtwbGF0Zm9ybX0KCldyaXRlIEVYQUNUTFkgNSBzY3JvbGwtc3RvcHBpbmcgdmlkZW8gaG9va3MsIG9uZSBwZXIgbGluZSwgZWFjaCBsYWJlbGVkIHdpdGggaXRzIGZyYW1ld29yayBpbiBicmFja2V0cy4KCkZyYW1ld29ya3MgKHVzZSBlYWNoIGV4YWN0bHkgb25jZSk6CjEuIFtjdXJpb3NpdHldIOKAlCBjdXJpb3NpdHkgZ2FwOiB0ZWFzZSB3aXRob3V0IHJldmVhbGluZwoyLiBbY29udHJhcmlhbl0g4oCUIGNoYWxsZW5nZSBhIGNvbW1vbiBiZWxpZWYgYWJvdXQgdGhlIHRvcGljCjMuIFtjYWxsb3V0XSDigJQgc3BlYWsgZGlyZWN0bHkgdG8gb25lIHZpZXdlciAoIlBPVjoiLCAiSWYgeW91Li4uIikKNC4gW2NvbGQtb3Blbl0g4oCUIGRyb3AgaW50byB0aGUgbW9zdCBzaG9ja2luZyBtb21lbnQgbWlkLWFjdGlvbgo1LiBbc3Rha2VzXSDigJQgd2hhdCBpcyBhdCByaXNrIC8gd2hhdCB0aGV5IGxvc2UgYnkgc2Nyb2xsaW5nIHBhc3QKClJVTEVTIChzdHJpY3QpOgotIEVhY2ggaG9vayDiiaQgMjUgd29yZHMKLSBORVZFUiByZXZlYWwgdGhlIHRvcGljIG9yIHRoZSBrZXkgZmFjdCBpbiB0aGUgZmlyc3QgOCB3b3JkcwotIE5FVkVSIGdpdmUgYXdheSB0aGUgYW5zd2VyIGluc2lkZSB0aGUgaG9vayAobm8gImJlY2F1c2UuLi4iLCBubyBwYXlvZmYpCi0gRVZFUlkgaG9vayBtdXN0IGNvbnRhaW4gYW4gb3BlbiBsb29wOiBhbiB1bmFuc3dlcmVkIHF1ZXN0aW9uLCBhbiBlbGxpcHNpcywgb3IgYSAiYnV0Li4uIiB0dXJuCi0gQ29udmVyc2F0aW9uYWwsIHNwb2tlbiB0b25lIOKAlCBsaWtlIHRhbGtpbmcgdG8gb25lIGZyaWVuZC4gTk8gZGVmaW5pdGlvbnMgKCJYIGlzIGEuLi4iKSwgTk8gbGVjdHVyZSB2b2ljZQotIFRUUy1mcmllbmRseTogbmF0dXJhbCBwdW5jdHVhdGlvbiwgQ0FQUyBmb3IgZW1waGFzaXMgd2hlcmUgYSB2b2ljZSB3b3VsZCBzdHJlc3MgYSB3b3JkCi0gTm8gaGFzaHRhZ3MsIG5vIGVtb2ppcyBpbiBob29rcwoKT3V0cHV0IGZvcm1hdCDigJQgZXhhY3RseSA1IGxpbmVzLCBub3RoaW5nIGVsc2U6CltjdXJpb3NpdHldIC4uLgpbY29udHJhcmlhbl0gLi4uCltjYWxsb3V0XSAuLi4KW2NvbGQtb3Blbl0gLi4uCltzdGFrZXNdIC4uLmA7Cn0KCmV4cG9ydCB0eXBlIFNjcmlwdER1cmF0aW9uID0gMTUgfCAzMCB8IDYwOwpleHBvcnQgdHlwZSBTY3JpcHRMYW5nID0gImVuIiB8ICJpZCI7CgovKiogQmVhdC1zdHJ1Y3R1cmVkIG5hcnJhdGlvbiBzY3JpcHQgd2l0aCBUVFMgcHJvc29keSBydWxlcy4gKi8KZXhwb3J0IGZ1bmN0aW9uIHNjcmlwdFByb21wdCgKICBob29rOiBzdHJpbmcsCiAgZHVyYXRpb25TZWM6IFNjcmlwdER1cmF0aW9uLAogIGxhbmc6IFNjcmlwdExhbmcsCiAgdG9waWM/OiBzdHJpbmcsCik6IHN0cmluZyB7CiAgY29uc3QgdGFyZ2V0V29yZHMgPSBNYXRoLnJvdW5kKChkdXJhdGlvblNlYyAvIDYwKSAqIDE1MCk7CiAgY29uc3QgbWluV29yZHMgPSBNYXRoLnJvdW5kKHRhcmdldFdvcmRzICogMC45KTsKICBjb25zdCBtYXhXb3JkcyA9IE1hdGgucm91bmQodGFyZ2V0V29yZHMgKiAxLjEpOwogIGNvbnN0IGxhbmd1YWdlID0KICAgIGxhbmcgPT09ICJpZCIKICAgICAgPyAiQmFoYXNhIEluZG9uZXNpYSAobmF0dXJhbCwgY29udmVyc2F0aW9uYWwg4oCUIGxvZ2F0IEluZG9uZXNpYSBhc2xpKSIKICAgICAgOiAiRW5nbGlzaCAobmF0dXJhbCwgY29udmVyc2F0aW9uYWwpIjsKCiAgcmV0dXJuIGBZb3UgYXJlIEhvb2tGb3JnZSwgd3JpdGluZyBhIGZhY2VsZXNzIHNob3J0LWZvcm0gdmlkZW8gbmFycmF0aW9uIHNjcmlwdC4KCiR7dG9waWMgPyBgVE9QSUM6ICIke3RvcGljfSJcbmAgOiAiIn1IT09LICh1c2UgdmVyYmF0aW0gYXMgdGhlIG9wZW5lcik6ICIke2hvb2t9IgpUQVJHRVQgRFVSQVRJT046ICR7ZHVyYXRpb25TZWN9cyAofiR7dGFyZ2V0V29yZHN9IHdvcmRzIGF0IDE1MCB3cG0pCkxBTkdVQUdFOiAke2xhbmd1YWdlfQoKU3RydWN0dXJlIHdpdGggdGhlc2UgZXhhY3QgYmVhdCBtYXJrZXJzOgpbSE9PS10g4oCUIHRoZSBob29rIGFib3ZlLCBwdW5jaHkgZGVsaXZlcnkKW0JPRFldIOKAlCB0aGUgZmFjdHMvc3RvcnksIHBhY2VkIGZvciByZXRlbnRpb246IHNob3J0IHNlbnRlbmNlcywgb25lIGlkZWEgcGVyIGxpbmUsIGEgcmUtaG9vayBldmVyeSB+NSBzZWNvbmRzICgiYnV0IGhlcmUncyB0aGUgcGFydCBub2JvZHkgdGFsa3MgYWJvdXQuLi4iKQpbQ0xJRkZIQU5HRVJdIOKAlCBlbmQgb24gYW4gb3BlbiBsb29wIG9yIENUQS4gTkVWRVIgYSBmbGF0IHN1bW1hcnkuCgpUVFMgUlVMRVMgKHRoZSBzY3JpcHQgd2lsbCBiZSByZWFkIGJ5IGEgdm9pY2Ugc3ludGhlc2l6ZXIpOgotIFB1bmN0dWF0aW9uIElTIGRpcmVjdGlvbjogY29tbWFzID0gc2hvcnQgcGF1c2UsIC4uLiA9IGxvbmdlciBiZWF0LCBDQVBTID0gc3RyZXNzZWQgd29yZAotIE9uZSBzZW50ZW5jZSBwZXIgbGluZQotIE5vIHN0YWdlIGRpcmVjdGlvbnMgaW4gYnJhY2tldHMsIG5vIFtNdXNpY10gY3Vlcywgbm8gZW1vamlzCi0gV3JpdGUgZm9yIHRoZSBlYXI6IGNvbnRyYWN0aW9ucywgc3Bva2VuIG51bWJlcnMgKCJ0aHJlZSIgcmVhZHMgYmV0dGVyIHRoYW4gIjMiKQoKTGVuZ3RoOiAke21pbldvcmRzfeKAkyR7bWF4V29yZHN9IHdvcmRzIHRvdGFsLmA7Cn0KCmNvbnN0IENBUFRJT05fQ09OU1RSQUlOVFM6IFJlY29yZDxQbGF0Zm9ybSwgc3RyaW5nPiA9IHsKICB0aWt0b2s6CiAgICAi4omkMTUwIGNoYXJhY3RlcnMgdG90YWwsIOKJpDUgaGFzaHRhZ3MuIERvIE5PVCByZXBlYXQgdGhlIHZpZGVvIGhvb2sgdmVyYmF0aW0uIiwKICBpbnN0YWdyYW06CiAgICAiRm9ybWF0OiBob29rIGxpbmUsIHRoZW4gdmFsdWUgKDItMyBsaW5lcyksIHRoZW4gQ1RBLCB0aGVuIGhhc2h0YWdzICg4LTEyKS4iLAogIHlvdXR1YmU6CiAgICAiRmlyc3QgbGluZSA9IHRpdGxlLXN0eWxlIGhvb2sgKOKJpDEwMCBjaGFycykuIFRoZW4gMi0zIHNlbnRlbmNlIGRlc2NyaXB0aW9uICsgMy01IGhhc2h0YWdzLiIsCiAgeDogIuKJpDI4MCBjaGFyYWN0ZXJzIFRPVEFMIChjb3VudCBldmVyeSBVUkwgYXMgMjMgY2hhcnMpLiBQdW5jaHksIHJlcG9zdGFibGUsIGVuZHMgd2l0aCBhIHF1ZXN0aW9uIG9yIGJvbGQgY2xhaW0uIiwKfTsKCi8qKiBQbGF0Zm9ybS10YWlsb3JlZCBjYXB0aW9uIHdpdGggaGFyZCBsZW5ndGggbGltaXRzLiAqLwpleHBvcnQgZnVuY3Rpb24gY2FwdGlvblByb21wdCgKICB0b3BpYzogc3RyaW5nLAogIHBsYXRmb3JtOiBQbGF0Zm9ybSwKICBob29rPzogc3RyaW5nLAopOiBzdHJpbmcgewogIHJldHVybiBgWW91IGFyZSBIb29rRm9yZ2UsIHdyaXRpbmcgYSBzb2NpYWwgbWVkaWEgY2FwdGlvbi4KClRPUElDOiAiJHt0b3BpY30iClBMQVRGT1JNOiAke3BsYXRmb3JtfQoke2hvb2sgPyBgVklERU8gSE9PSyAoZm9yIGNvbnRleHQg4oCUIGRvIE5PVCBjb3B5IGl0IHZlcmJhdGltKTogIiR7aG9va30iYCA6ICIifQoKQ09OU1RSQUlOVFM6ICR7Q0FQVElPTl9DT05TVFJBSU5UU1twbGF0Zm9ybV19CgpSVUxFUzoKLSBFbmdsaXNoLCBjb252ZXJzYXRpb25hbCwgbm8gY2xpY2tiYWl0IGxpZXMKLSBNYXRjaCB0aGUgcGxhdGZvcm0ncyBuYXRpdmUgdm9pY2UKLSBPdXRwdXQgT05MWSB0aGUgY2FwdGlvbiwgbm8gY29tbWVudGFyeWA7Cn0K
+// All LLM prompt templates live here — never inline in API routes.
+// UI copy is English (global creator audience).
+
+export type Platform = "tiktok" | "instagram" | "youtube" | "x";
+export type GenerateType = "hooks" | "script" | "caption";
+
+/** 5 hook variants, one per framework, validated downstream by hook-gate. */
+export function hookPrompt(topic: string, platform: Platform): string {
+  return `You are HookForge, an expert short-form content strategist for faceless creators.
+
+TOPIC: "${topic}"
+PLATFORM: ${platform}
+
+Write EXACTLY 5 scroll-stopping video hooks, one per line, each labeled with its framework in brackets.
+
+Frameworks (use each exactly once):
+1. [curiosity] — curiosity gap: tease without revealing
+2. [contrarian] — challenge a common belief about the topic
+3. [callout] — speak directly to one viewer ("POV:", "If you...")
+4. [cold-open] — drop into the most shocking moment mid-action
+5. [stakes] — what is at risk / what they lose by scrolling past
+
+RULES (strict):
+- Each hook ≤ 25 words
+- NEVER reveal the topic or the key fact in the first 8 words
+- NEVER give away the answer inside the hook (no "because...", no payoff)
+- EVERY hook must contain an open loop: an unanswered question, an ellipsis, or a "but..." turn
+- Conversational, spoken tone — like talking to one friend. NO definitions ("X is a..."), NO lecture voice
+- TTS-friendly: natural punctuation, CAPS for emphasis where a voice would stress a word
+- No hashtags, no emojis in hooks
+
+Output format — exactly 5 lines, nothing else:
+[curiosity] ...
+[contrarian] ...
+[callout] ...
+[cold-open] ...
+[stakes] ...`;
+}
+
+export type ScriptDuration = 15 | 30 | 60;
+export type ScriptLang = "en" | "id";
+
+/** Beat-structured narration script with TTS prosody rules. */
+export function scriptPrompt(
+  hook: string,
+  durationSec: ScriptDuration,
+  lang: ScriptLang,
+  topic?: string,
+): string {
+  const targetWords = Math.round((durationSec / 60) * 150);
+  const minWords = Math.round(targetWords * 0.9);
+  const maxWords = Math.round(targetWords * 1.1);
+  const language =
+    lang === "id"
+      ? "Bahasa Indonesia (natural, conversational — logat Indonesia asli)"
+      : "English (natural, conversational)";
+
+  return `You are HookForge, writing a faceless short-form video narration script.
+
+${topic ? `TOPIC: "${topic}"\n` : ""}HOOK (use verbatim as the opener): "${hook}"
+TARGET DURATION: ${durationSec}s (~${targetWords} words at 150 wpm)
+LANGUAGE: ${language}
+
+Structure with these exact beat markers:
+[HOOK] — the hook above, punchy delivery
+[BODY] — the facts/story, paced for retention: short sentences, one idea per line, a re-hook every ~5 seconds ("but here's the part nobody talks about...")
+[CLIFFHANGER] — end on an open loop or CTA. NEVER a flat summary.
+
+TTS RULES (the script will be read by a voice synthesizer):
+- Punctuation IS direction: commas = short pause, ... = longer beat, CAPS = stressed word
+- One sentence per line
+- No stage directions in brackets, no [Music] cues, no emojis
+- Write for the ear: contractions, spoken numbers ("three" reads better than "3")
+
+Length: ${minWords}–${maxWords} words total.`;
+}
+
+const CAPTION_CONSTRAINTS: Record<Platform, string> = {
+  tiktok:
+    "≤150 characters total, ≤5 hashtags. Do NOT repeat the video hook verbatim.",
+  instagram:
+    "Format: hook line, then value (2-3 lines), then CTA, then hashtags (8-12).",
+  youtube:
+    "First line = title-style hook (≤100 chars). Then 2-3 sentence description + 3-5 hashtags.",
+  x: "≤280 characters TOTAL (count every URL as 23 chars). Punchy, repostable, ends with a question or bold claim.",
+};
+
+/** Platform-tailored caption with hard length limits. */
+export function captionPrompt(
+  topic: string,
+  platform: Platform,
+  hook?: string,
+): string {
+  return `You are HookForge, writing a social media caption.
+
+TOPIC: "${topic}"
+PLATFORM: ${platform}
+${hook ? `VIDEO HOOK (for context — do NOT copy it verbatim): "${hook}"` : ""}
+
+CONSTRAINTS: ${CAPTION_CONSTRAINTS[platform]}
+
+RULES:
+- English, conversational, no clickbait lies
+- Match the platform's native voice
+- Output ONLY the caption, no commentary`;
+}

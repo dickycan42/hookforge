@@ -1,1 +1,166 @@
-Ly8gTExNIHByb3ZpZGVyIGZhY3RvcnkuCi8vIFJlYWwgcHJvdmlkZXIgKE9wZW5BSS1jb21wYXRpYmxlKSB3aGVuIE9QRU5BSV9BUElfS0VZIGlzIHNldCwKLy8gb3RoZXJ3aXNlIGEgZGV0ZXJtaW5pc3RpYyBtb2NrIHNvIHRoZSBhcHAgKyBkZW1vIHdvcmsgd2l0aCB6ZXJvIGtleXMuCi8vIFN3YXAgaW4gcmVhbCBjcmVkZW50aWFscyB2aWEgZW52IOKAlCBubyBjb2RlIGNoYW5nZXMgbmVlZGVkLgoKaW1wb3J0IHR5cGUgeyBMYW5ndWFnZU1vZGVsVjEsIExhbmd1YWdlTW9kZWxWMVN0cmVhbVBhcnQgfSBmcm9tICJhaSI7CmltcG9ydCB7IG9wZW5haSB9IGZyb20gIkBhaS1zZGsvb3BlbmFpIjsKaW1wb3J0IHsgTW9ja0xhbmd1YWdlTW9kZWxWMSwgc2ltdWxhdGVSZWFkYWJsZVN0cmVhbSB9IGZyb20gImFpL3Rlc3QiOwoKLyoqIFRydWUgd2hlbiBubyByZWFsIExMTSBjcmVkZW50aWFscyBhcmUgY29uZmlndXJlZC4gKi8KZXhwb3J0IGZ1bmN0aW9uIGlzTW9ja01vZGUoKTogYm9vbGVhbiB7CiAgcmV0dXJuICFwcm9jZXNzLmVudi5PUEVOQUlfQVBJX0tFWTsKfQoKZnVuY3Rpb24gcmVhbE1vZGVsKCk6IExhbmd1YWdlTW9kZWxWMSB7CiAgLy8gT1BFTkFJX0JBU0VfVVJMIGxldHMgdGhpcyBwb2ludCBhdCBhbnkgT3BlbkFJLWNvbXBhdGlibGUgZW5kcG9pbnQuCiAgcmV0dXJuIG9wZW5haShwcm9jZXNzLmVudi5PUEVOQUlfTU9ERUwgPz8gImdwdC00by1taW5pIik7Cn0KCi8vIC0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLQovLyBNb2NrIGNvbnRlbnQg4oCUIGRldGVybWluaXN0aWMsIGhvb2stZ2F0ZSBjb21wbGlhbnQsIHRvcGljLWF3YXJlLgovLyAtLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0KCmZ1bmN0aW9uIGV4dHJhY3RQcm9tcHRUZXh0KHByb21wdDogdW5rbm93bik6IHN0cmluZyB7CiAgaWYgKCFBcnJheS5pc0FycmF5KHByb21wdCkpIHJldHVybiAiIjsKICBjb25zdCBwYXJ0czogc3RyaW5nW10gPSBbXTsKICBmb3IgKGNvbnN0IG1zZyBvZiBwcm9tcHQgYXMgQXJyYXk8eyBjb250ZW50PzogdW5rbm93biB9PikgewogICAgY29uc3QgY29udGVudCA9IG1zZy5jb250ZW50OwogICAgaWYgKHR5cGVvZiBjb250ZW50ID09PSAic3RyaW5nIikgewogICAgICBwYXJ0cy5wdXNoKGNvbnRlbnQpOwogICAgICBjb250aW51ZTsKICAgIH0KICAgIGlmIChBcnJheS5pc0FycmF5KGNvbnRlbnQpKSB7CiAgICAgIGZvciAoY29uc3QgcGFydCBvZiBjb250ZW50IGFzIEFycmF5PHsgdHlwZT86IHN0cmluZzsgdGV4dD86IHN0cmluZyB9PikgewogICAgICAgIGlmIChwYXJ0Py50eXBlID09PSAidGV4dCIgJiYgdHlwZW9mIHBhcnQudGV4dCA9PT0gInN0cmluZyIpIHsKICAgICAgICAgIHBhcnRzLnB1c2gocGFydC50ZXh0KTsKICAgICAgICB9CiAgICAgIH0KICAgIH0KICB9CiAgcmV0dXJuIHBhcnRzLmpvaW4oIlxuIik7Cn0KCmZ1bmN0aW9uIHRvcGljRnJvbVByb21wdCh0ZXh0OiBzdHJpbmcpOiBzdHJpbmcgewogIGNvbnN0IG0gPSB0ZXh0Lm1hdGNoKC9UT1BJQzpccyoiKFteIl0rKSIvKTsKICByZXR1cm4gbSA/IG1bMV0gOiAieW91ciB0b3BpYyI7Cn0KCmZ1bmN0aW9uIHBsYXRmb3JtRnJvbVByb21wdCh0ZXh0OiBzdHJpbmcpOiBzdHJpbmcgewogIGNvbnN0IG0gPSB0ZXh0Lm1hdGNoKC9QTEFURk9STTpccyooXHcrKS8pOwogIHJldHVybiBtID8gbVsxXS50b0xvd2VyQ2FzZSgpIDogInRpa3RvayI7Cn0KCi8qKgogKiA1IGZyYW1ld29yay1sYWJlbGVkIGhvb2tzLiBUb3BpYyBrZXl3b3JkcyBhcmUga2VwdCBvdXQgb2YgdGhlIGZpcnN0CiAqIDggdG9rZW5zIHNvIHRoZXkgcGFzcyB0aGUgbm9FYXJseVJldmVhbCBnYXRlOyBldmVyeSBob29rIGNhcnJpZXMgYW4KICogb3BlbiBsb29wIGFuZCB3aXRoaG9sZHMgdGhlIHBheW9mZi4KICovCmZ1bmN0aW9uIG1vY2tIb29rcyh0b3BpYzogc3RyaW5nKTogc3RyaW5nIHsKICByZXR1cm4gWwogICAgYFtjdXJpb3NpdHldIFN0b3Agc2Nyb2xsaW5nIHJpZ2h0IG5vdyDigJQgd2hhdCBub2JvZHkgZXZlciB0ZWxscyB5b3UgYWJvdXQgJHt0b3BpY30gd2lsbCBzdXJwcmlzZSB5b3UuLi5gLAogICAgYFtjb250cmFyaWFuXSBGb3JnZXQgZXZlcnl0aGluZyB5b3UgdGhpbmsgeW91IGtub3cg4oCUIHRoZSByZWFsIHN0b3J5IGJlaGluZCAke3RvcGljfSBpcyB0aGUgZXhhY3Qgb3Bwb3NpdGUuLi5gLAogICAgYFtjYWxsb3V0XSBQT1Y6IHlvdSdyZSBhYm91dCB0byBsZWFybiB0aGUgb25lIHRoaW5nIG5vYm9keSBtZW50aW9ucyBhYm91dCAke3RvcGljfS4uLmAsCiAgICBgW2NvbGQtb3Blbl0gSXQgaGFwcGVuZWQgaW4gc2Vjb25kcywgYW5kIHRoZSBmb290YWdlIG9mICR7dG9waWN9IGxlZnQgZXZlcnlvbmUgc3BlZWNobGVzcy4uLmAsCiAgICBgW3N0YWtlc10gS2VlcCBzY3JvbGxpbmcgaWYgeW91IHdhbnQsIGJ1dCB5b3UnbGwgbWlzcyB0aGUgJHt0b3BpY30gc2VjcmV0IHRoYXQgY2hhbmdlcyBldmVyeXRoaW5nLi4uYCwKICBdLmpvaW4oIlxuIik7Cn0KCmZ1bmN0aW9uIG1vY2tTY3JpcHQodG9waWM6IHN0cmluZywgaG9vazogc3RyaW5nKTogc3RyaW5nIHsKICBjb25zdCBvcGVuZXIgPQogICAgaG9vayB8fAogICAgYFN0b3Agc2Nyb2xsaW5nIHJpZ2h0IG5vdyDigJQgd2hhdCBub2JvZHkgZXZlciB0ZWxscyB5b3UgYWJvdXQgJHt0b3BpY30gd2lsbCBzdXJwcmlzZSB5b3UuLi5gOwogIHJldHVybiBbCiAgICBgW0hPT0tdICR7b3BlbmVyfWAsCiAgICBgW0JPRFldYCwKICAgIGBIZXJlJ3MgdGhlIHRoaW5nIG1vc3QgcGVvcGxlIGdldCB3cm9uZyBhYm91dCAke3RvcGljfS5gLAogICAgYFRoZSByZWFsIHN0b3J5IGlzIHNpbXBsZXIgdGhhbiB5b3UgdGhpbmssIGFuZCBpdCBzdGFydHMgd2l0aCBvbmUgc21hbGwgc2hpZnQuYCwKICAgIGBCdXQgaGVyZSdzIHRoZSBwYXJ0IG5vYm9keSB0YWxrcyBhYm91dC4uLmAsCiAgICBgW0NMSUZGSEFOR0VSXWAsCiAgICBgV2FudCB0aGUgZnVsbCBicmVha2Rvd24/IERvbid0IHNjcm9sbCB5ZXQuLi5gLAogIF0uam9pbigiXG4iKTsKfQoKZnVuY3Rpb24gbW9ja0NhcHRpb24odG9waWM6IHN0cmluZywgcGxhdGZvcm06IHN0cmluZyk6IHN0cmluZyB7CiAgc3dpdGNoIChwbGF0Zm9ybSkgewogICAgY2FzZSAieCI6CiAgICAgIHJldHVybiBgVGhlICR7dG9waWN9IHRyaWNrIG5vYm9keSB0YWxrcyBhYm91dC4uLiB3aGF0J3MgWU9VUiB0YWtlP2A7CiAgICBjYXNlICJpbnN0YWdyYW0iOgogICAgICByZXR1cm4gWwogICAgICAgIGAke3RvcGljfSDigJQgc3RvcCBkb2luZyBpdCB3cm9uZy5gLAogICAgICAgIGBgLAogICAgICAgIGBIZXJlJ3Mgd2hhdCBhY3R1YWxseSB3b3JrcyAoc2F2ZSB0aGlzKTpgLAogICAgICAgIGAxLiBIb29rIGZpcnN0LCBleHBsYWluIGxhdGVyYCwKICAgICAgICBgMi4gT25lIGlkZWEgcGVyIHZpZGVvYCwKICAgICAgICBgYCwKICAgICAgICBgRm9sbG93IGZvciBkYWlseSBjcmVhdG9yIHRpcHMuYCwKICAgICAgXS5qb2luKCJcbiIpOwogICAgY2FzZSAieW91dHViZSI6CiAgICAgIHJldHVybiBbCiAgICAgICAgYCR7dG9waWN9OiBXaGF0IE5vYm9keSBUZWxscyBCZWdpbm5lcnNgLAogICAgICAgIGBgLAogICAgICAgIGBUaGUgc2hvcnQgdmVyc2lvbiBvZiB3aGF0IGFjdHVhbGx5IG1hdHRlcnMsIHBsdXMgdGhlIG9uZSBtaXN0YWtlIHRvIGF2b2lkLmAsCiAgICAgICAgYGAsCiAgICAgICAgYCNjb250ZW50Y3JlYXRvciAjZmFjZWxlc3MgI3Nob3J0c2AsCiAgICAgIF0uam9pbigiXG4iKTsKICAgIGRlZmF1bHQ6IC8vIHRpa3RvawogICAgICByZXR1cm4gYFBPVjogeW91IGZpbmFsbHkgY3JhY2tlZCAke3RvcGljfVxuI2Z5cCAjY29udGVudGNyZWF0b3IgI2ZhY2VsZXNzICN0aXBzICN2aXJhbGA7CiAgfQp9CgpmdW5jdGlvbiBtb2NrVGV4dEZvcihwcm9tcHRUZXh0OiBzdHJpbmcpOiBzdHJpbmcgewogIGNvbnN0IHRvcGljID0gdG9waWNGcm9tUHJvbXB0KHByb21wdFRleHQpOwogIGNvbnN0IHBsYXRmb3JtID0gcGxhdGZvcm1Gcm9tUHJvbXB0KHByb21wdFRleHQpOwogIGlmICgvRkFJTEVEIHF1YWxpdHkgdmFsaWRhdGlvbnxSZWdlbmVyYXRlIE9OTFkvaS50ZXN0KHByb21wdFRleHQpKSB7CiAgICByZXR1cm4gbW9ja0hvb2tzKHRvcGljKTsgLy8gcmVwYWlyIHBhc3M6IGVtaXQgY2xlYW4gaG9va3MKICB9CiAgaWYgKC9zY3JvbGwtc3RvcHBpbmcgdmlkZW8gaG9va3MvaS50ZXN0KHByb21wdFRleHQpKSByZXR1cm4gbW9ja0hvb2tzKHRvcGljKTsKICBpZiAoL25hcnJhdGlvbiBzY3JpcHQvaS50ZXN0KHByb21wdFRleHQpKSB7CiAgICBjb25zdCBobSA9IHByb21wdFRleHQubWF0Y2goCiAgICAgIC9IT09LIFwodXNlIHZlcmJhdGltIGFzIHRoZSBvcGVuZXJcKTpccyoiKFteIl0rKSIvLAogICAgKTsKICAgIHJldHVybiBtb2NrU2NyaXB0KHRvcGljLCBobSA/IGhtWzFdIDogIiIpOwogIH0KICBpZiAoL3NvY2lhbCBtZWRpYSBjYXB0aW9uL2kudGVzdChwcm9tcHRUZXh0KSkgewogICAgcmV0dXJuIG1vY2tDYXB0aW9uKHRvcGljLCBwbGF0Zm9ybSk7CiAgfQogIHJldHVybiBgTW9jayByZXNwb25zZSBmb3I6ICR7dG9waWN9YDsKfQoKZnVuY3Rpb24gbW9ja01vZGVsKCk6IExhbmd1YWdlTW9kZWxWMSB7CiAgcmV0dXJuIG5ldyBNb2NrTGFuZ3VhZ2VNb2RlbFYxKHsKICAgIHByb3ZpZGVyOiAiaG9va2ZvcmdlLW1vY2siLAogICAgbW9kZWxJZDogIm1vY2stMSIsCiAgICBkb0dlbmVyYXRlOiBhc3luYyAob3B0aW9ucykgPT4gewogICAgICBjb25zdCB0ZXh0ID0gbW9ja1RleHRGb3IoZXh0cmFjdFByb21wdFRleHQob3B0aW9ucy5wcm9tcHQpKTsKICAgICAgcmV0dXJuIHsKICAgICAgICByYXdDYWxsOiB7IHJhd1Byb21wdDogbnVsbCwgcmF3U2V0dGluZ3M6IHt9IH0sCiAgICAgICAgZmluaXNoUmVhc29uOiAic3RvcCIgYXMgY29uc3QsCiAgICAgICAgdXNhZ2U6IHsgcHJvbXB0VG9rZW5zOiAxMCwgY29tcGxldGlvblRva2VuczogdGV4dC5sZW5ndGggfSwKICAgICAgICB0ZXh0LAogICAgICB9OwogICAgfSwKICAgIGRvU3RyZWFtOiBhc3luYyAob3B0aW9ucykgPT4gewogICAgICBjb25zdCB0ZXh0ID0gbW9ja1RleHRGb3IoZXh0cmFjdFByb21wdFRleHQob3B0aW9ucy5wcm9tcHQpKTsKICAgICAgY29uc3Qgd29yZHMgPSB0ZXh0LnNwbGl0KC8oXHMrKS8pOwogICAgICBjb25zdCBjaHVua3M6IExhbmd1YWdlTW9kZWxWMVN0cmVhbVBhcnRbXSA9IHdvcmRzLm1hcCgodykgPT4gKHsKICAgICAgICB0eXBlOiAidGV4dC1kZWx0YSIsCiAgICAgICAgdGV4dERlbHRhOiB3LAogICAgICB9KSk7CiAgICAgIGNodW5rcy5wdXNoKHsKICAgICAgICB0eXBlOiAiZmluaXNoIiwKICAgICAgICBmaW5pc2hSZWFzb246ICJzdG9wIiwKICAgICAgICB1c2FnZTogeyBwcm9tcHRUb2tlbnM6IDEwLCBjb21wbGV0aW9uVG9rZW5zOiB3b3Jkcy5sZW5ndGggfSwKICAgICAgfSk7CiAgICAgIHJldHVybiB7CiAgICAgICAgc3RyZWFtOiBzaW11bGF0ZVJlYWRhYmxlU3RyZWFtKHsgY2h1bmtzLCBjaHVua0RlbGF5SW5NczogOCB9KSwKICAgICAgICByYXdDYWxsOiB7IHJhd1Byb21wdDogbnVsbCwgcmF3U2V0dGluZ3M6IHt9IH0sCiAgICAgIH07CiAgICB9LAogIH0pOwp9CgovKiogVGhlIG1vZGVsIHRvIHVzZSBmb3IgZ2VuZXJhdGlvbiDigJQgcmVhbCBvciBtb2NrLiAqLwpleHBvcnQgZnVuY3Rpb24gZ2V0TW9kZWwoKTogTGFuZ3VhZ2VNb2RlbFYxIHsKICByZXR1cm4gaXNNb2NrTW9kZSgpID8gbW9ja01vZGVsKCkgOiByZWFsTW9kZWwoKTsKfQo=
+// LLM provider factory.
+// Real provider (OpenAI-compatible) when OPENAI_API_KEY is set,
+// otherwise a deterministic mock so the app + demo work with zero keys.
+// Swap in real credentials via env — no code changes needed.
+
+import type { LanguageModelV1, LanguageModelV1StreamPart } from "ai";
+import { openai } from "@ai-sdk/openai";
+import { MockLanguageModelV1, simulateReadableStream } from "ai/test";
+
+/** True when no real LLM credentials are configured. */
+export function isMockMode(): boolean {
+  return !process.env.OPENAI_API_KEY;
+}
+
+function realModel(): LanguageModelV1 {
+  // OPENAI_BASE_URL lets this point at any OpenAI-compatible endpoint.
+  return openai(process.env.OPENAI_MODEL ?? "gpt-4o-mini");
+}
+
+// ---------------------------------------------------------------------------
+// Mock content — deterministic, hook-gate compliant, topic-aware.
+// ---------------------------------------------------------------------------
+
+function extractPromptText(prompt: unknown): string {
+  if (!Array.isArray(prompt)) return "";
+  const parts: string[] = [];
+  for (const msg of prompt as Array<{ content?: unknown }>) {
+    const content = msg.content;
+    if (typeof content === "string") {
+      parts.push(content);
+      continue;
+    }
+    if (Array.isArray(content)) {
+      for (const part of content as Array<{ type?: string; text?: string }>) {
+        if (part?.type === "text" && typeof part.text === "string") {
+          parts.push(part.text);
+        }
+      }
+    }
+  }
+  return parts.join("\n");
+}
+
+function topicFromPrompt(text: string): string {
+  const m = text.match(/TOPIC:\s*"([^"]+)"/);
+  return m ? m[1] : "your topic";
+}
+
+function platformFromPrompt(text: string): string {
+  const m = text.match(/PLATFORM:\s*(\w+)/);
+  return m ? m[1].toLowerCase() : "tiktok";
+}
+
+/**
+ * 5 framework-labeled hooks. Topic keywords are kept out of the first
+ * 8 tokens so they pass the noEarlyReveal gate; every hook carries an
+ * open loop and withholds the payoff.
+ */
+function mockHooks(topic: string): string {
+  return [
+    `[curiosity] Stop scrolling right now — what nobody ever tells you about ${topic} will surprise you...`,
+    `[contrarian] Forget everything you think you know — the real story behind ${topic} is the exact opposite...`,
+    `[callout] POV: you're about to learn the one thing nobody mentions about ${topic}...`,
+    `[cold-open] It happened in seconds, and the footage of ${topic} left everyone speechless...`,
+    `[stakes] Keep scrolling if you want, but you'll miss the ${topic} secret that changes everything...`,
+  ].join("\n");
+}
+
+function mockScript(topic: string, hook: string): string {
+  const opener =
+    hook ||
+    `Stop scrolling right now — what nobody ever tells you about ${topic} will surprise you...`;
+  return [
+    `[HOOK] ${opener}`,
+    `[BODY]`,
+    `Here's the thing most people get wrong about ${topic}.`,
+    `The real story is simpler than you think, and it starts with one small shift.`,
+    `But here's the part nobody talks about...`,
+    `[CLIFFHANGER]`,
+    `Want the full breakdown? Don't scroll yet...`,
+  ].join("\n");
+}
+
+function mockCaption(topic: string, platform: string): string {
+  switch (platform) {
+    case "x":
+      return `The ${topic} trick nobody talks about... what's YOUR take?`;
+    case "instagram":
+      return [
+        `${topic} — stop doing it wrong.`,
+        ``,
+        `Here's what actually works (save this):`,
+        `1. Hook first, explain later`,
+        `2. One idea per video`,
+        ``,
+        `Follow for daily creator tips.`,
+      ].join("\n");
+    case "youtube":
+      return [
+        `${topic}: What Nobody Tells Beginners`,
+        ``,
+        `The short version of what actually matters, plus the one mistake to avoid.`,
+        ``,
+        `#contentcreator #faceless #shorts`,
+      ].join("\n");
+    default: // tiktok
+      return `POV: you finally cracked ${topic}\n#fyp #contentcreator #faceless #tips #viral`;
+  }
+}
+
+function mockTextFor(promptText: string): string {
+  const topic = topicFromPrompt(promptText);
+  const platform = platformFromPrompt(promptText);
+  if (/FAILED quality validation|Regenerate ONLY/i.test(promptText)) {
+    return mockHooks(topic); // repair pass: emit clean hooks
+  }
+  if (/scroll-stopping video hooks/i.test(promptText)) return mockHooks(topic);
+  if (/narration script/i.test(promptText)) {
+    const hm = promptText.match(
+      /HOOK \(use verbatim as the opener\):\s*"([^"]+)"/,
+    );
+    return mockScript(topic, hm ? hm[1] : "");
+  }
+  if (/social media caption/i.test(promptText)) {
+    return mockCaption(topic, platform);
+  }
+  return `Mock response for: ${topic}`;
+}
+
+function mockModel(): LanguageModelV1 {
+  return new MockLanguageModelV1({
+    provider: "hookforge-mock",
+    modelId: "mock-1",
+    doGenerate: async (options) => {
+      const text = mockTextFor(extractPromptText(options.prompt));
+      return {
+        rawCall: { rawPrompt: null, rawSettings: {} },
+        finishReason: "stop" as const,
+        usage: { promptTokens: 10, completionTokens: text.length },
+        text,
+      };
+    },
+    doStream: async (options) => {
+      const text = mockTextFor(extractPromptText(options.prompt));
+      const words = text.split(/(\s+)/);
+      const chunks: LanguageModelV1StreamPart[] = words.map((w) => ({
+        type: "text-delta",
+        textDelta: w,
+      }));
+      chunks.push({
+        type: "finish",
+        finishReason: "stop",
+        usage: { promptTokens: 10, completionTokens: words.length },
+      });
+      return {
+        stream: simulateReadableStream({ chunks, chunkDelayInMs: 8 }),
+        rawCall: { rawPrompt: null, rawSettings: {} },
+      };
+    },
+  });
+}
+
+/** The model to use for generation — real or mock. */
+export function getModel(): LanguageModelV1 {
+  return isMockMode() ? mockModel() : realModel();
+}

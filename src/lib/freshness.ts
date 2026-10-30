@@ -1,1 +1,146 @@
-Ly8gVG9waWMgZnJlc2huZXNzIGNoZWNrIOKAlCBmdXp6eSBkZWR1cGUgb3ZlciA5MC1kYXkgaGlzdG9yeS4KLy8gVXNlcyBVcHN0YXNoIFJlZGlzIHdoZW4gY29uZmlndXJlZDsgZGVncmFkZXMgdG8gInVua25vd24iIHdpdGhvdXQgaXQuCgppbXBvcnQgeyBSZWRpcyB9IGZyb20gIkB1cHN0YXNoL3JlZGlzIjsKCmV4cG9ydCBjb25zdCBGUkVTSE5FU1NfVEhSRVNIT0xEID0gMC44Owpjb25zdCBOSU5FVFlfREFZU19NUyA9IDkwICogMjQgKiA2MCAqIDYwICogMTAwMDsKY29uc3QgUkVESVNfS0VZID0gImhvb2tmb3JnZTp0b3BpY3MiOwoKY29uc3QgU1RPUFdPUkRTID0gbmV3IFNldChbCiAgImEiLCAiYW4iLCAidGhlIiwgImFuZCIsICJvciIsICJidXQiLCAib2YiLCAidG8iLCAiaW4iLCAib24iLCAiZm9yIiwKICAid2l0aCIsICJhYm91dCIsICJpcyIsICJhcmUiLCAid2FzIiwgIndlcmUiLCAiYmUiLCAiYmVlbiIsICJpdCIsICJpdHMiLAogICJ0aGlzIiwgInRoYXQiLCAidGhlc2UiLCAidGhvc2UiLCAieW91IiwgInlvdXIiLCAid2UiLCAidGhleSIsICJoZSIsCiAgInNoZSIsICJhdCIsICJieSIsICJmcm9tIiwgImFzIiwgImRvIiwgImRvZXMiLCAiZGlkIiwgIndpbGwiLCAid291bGQiLAogICJjYW4iLCAiY291bGQiLCAic2hvdWxkIiwgImhvdyIsICJ3aGF0IiwgIndoZW4iLCAid2hlcmUiLCAid2h5IiwgIndoaWNoIiwKXSk7CgpmdW5jdGlvbiB0b2tlbml6ZSh0ZXh0OiBzdHJpbmcpOiBzdHJpbmdbXSB7CiAgcmV0dXJuIHRleHQKICAgIC50b0xvd2VyQ2FzZSgpCiAgICAucmVwbGFjZSgvW15hLXowLTlccyddL2csICIgIikKICAgIC5zcGxpdCgvXHMrLykKICAgIC5maWx0ZXIoQm9vbGVhbik7Cn0KCi8qKiBOb3JtYWxpemUgYSB0b3BpYyB0byBhIHNvcnRlZCwgZGVkdXBlZCBrZXl3b3JkIGxpc3QuICovCmV4cG9ydCBmdW5jdGlvbiBub3JtYWxpemVUb3BpYyh0b3BpYzogc3RyaW5nKTogc3RyaW5nW10gewogIHJldHVybiBbCiAgICAuLi5uZXcgU2V0KHRva2VuaXplKHRvcGljKS5maWx0ZXIoKHcpID0+ICFTVE9QV09SRFMuaGFzKHcpICYmIHcubGVuZ3RoID4gMikpLAogIF0uc29ydCgpOwp9CgovKiogSmFjY2FyZCBzaW1pbGFyaXR5IGJldHdlZW4gdHdvIGtleXdvcmQgbGlzdHMgKDDigJMxKS4gKi8KZXhwb3J0IGZ1bmN0aW9uIGphY2NhcmRTaW1pbGFyaXR5KGE6IHN0cmluZ1tdLCBiOiBzdHJpbmdbXSk6IG51bWJlciB7CiAgY29uc3Qgc2V0QSA9IG5ldyBTZXQoYSk7CiAgY29uc3Qgc2V0QiA9IG5ldyBTZXQoYik7CiAgaWYgKHNldEEuc2l6ZSA9PT0gMCAmJiBzZXRCLnNpemUgPT09IDApIHJldHVybiAxOwogIGxldCBpbnRlcnNlY3Rpb24gPSAwOwogIGZvciAoY29uc3QgdyBvZiBzZXRBKSB7CiAgICBpZiAoc2V0Qi5oYXModykpIGludGVyc2VjdGlvbisrOwogIH0KICBjb25zdCB1bmlvbiA9IHNldEEuc2l6ZSArIHNldEIuc2l6ZSAtIGludGVyc2VjdGlvbjsKICByZXR1cm4gdW5pb24gPT09IDAgPyAwIDogaW50ZXJzZWN0aW9uIC8gdW5pb247Cn0KCmZ1bmN0aW9uIGdldFJlZGlzKCk6IFJlZGlzIHwgbnVsbCB7CiAgY29uc3QgdXJsID0gcHJvY2Vzcy5lbnYuVVBTVEFTSF9SRURJU19SRVNUX1VSTDsKICBjb25zdCB0b2tlbiA9IHByb2Nlc3MuZW52LlVQU1RBU0hfUkVESVNfUkVTVF9UT0tFTjsKICBpZiAoIXVybCB8fCAhdG9rZW4pIHJldHVybiBudWxsOwogIHJldHVybiBuZXcgUmVkaXMoeyB1cmwsIHRva2VuIH0pOwp9CgppbnRlcmZhY2UgU3RvcmVkVG9waWMgewogIC8qKiBub3JtYWxpemVkIGtleXdvcmQgc3RyaW5nIChtZW1iZXIgaWRlbnRpdHkpICovCiAgdDogc3RyaW5nOwogIC8qKiBvcmlnaW5hbCB0b3BpYyB0ZXh0LCBmb3IgdGhlIHdhcm5pbmcgYmFubmVyICovCiAgb3JpZzogc3RyaW5nOwogIC8qKiBJU08gdGltZXN0YW1wIG9mIGZpcnN0IHVzZSAqLwogIGF0OiBzdHJpbmc7Cn0KCmV4cG9ydCBpbnRlcmZhY2UgRnJlc2huZXNzUmVzdWx0IHsKICBzdGF0dXM6ICJmcmVzaCIgfCAic3RhbGUiIHwgInVua25vd24iOwogIC8qKiBzaW1pbGFyaXR5IG9mIHRoZSBjbG9zZXN0IG1hdGNoICgw4oCTMSksIHdoZW4gc3RhbGUgKi8KICBzaW1pbGFyaXR5PzogbnVtYmVyOwogIC8qKiBJU08gZGF0ZSB0aGUgbWF0Y2hlZCB0b3BpYyB3YXMgbGFzdCB1c2VkLCB3aGVuIHN0YWxlICovCiAgbGFzdFVzZWQ/OiBzdHJpbmc7CiAgLyoqIG9yaWdpbmFsIHRleHQgb2YgdGhlIG1hdGNoZWQgdG9waWMsIHdoZW4gc3RhbGUgKi8KICBtYXRjaGVkVG9waWM/OiBzdHJpbmc7Cn0KCi8qKgogKiBGdXp6eS1tYXRjaCBhIHRvcGljIGFnYWluc3QgdGhlIGxhc3QgOTAgZGF5cyBvZiBoaXN0b3J5LgogKiBSZXR1cm5zICJ1bmtub3duIiB3aGVuIFJlZGlzIGlzIG5vdCBjb25maWd1cmVkIOKAlCBnZW5lcmF0aW9uIGNvbnRpbnVlcy4KICovCmV4cG9ydCBhc3luYyBmdW5jdGlvbiBjaGVja0ZyZXNobmVzcyh0b3BpYzogc3RyaW5nKTogUHJvbWlzZTxGcmVzaG5lc3NSZXN1bHQ+IHsKICBjb25zdCByZWRpcyA9IGdldFJlZGlzKCk7CiAgaWYgKCFyZWRpcykgcmV0dXJuIHsgc3RhdHVzOiAidW5rbm93biIgfTsKCiAgY29uc3Qgbm93ID0gRGF0ZS5ub3coKTsKICBjb25zdCBjdXRvZmYgPSBub3cgLSBOSU5FVFlfREFZU19NUzsKICBjb25zdCBrZXl3b3JkcyA9IG5vcm1hbGl6ZVRvcGljKHRvcGljKTsKCiAgdHJ5IHsKICAgIC8vIHBydW5lIGVudHJpZXMgb2xkZXIgdGhhbiA5MCBkYXlzCiAgICBhd2FpdCByZWRpcy56cmVtcmFuZ2VieXNjb3JlKFJFRElTX0tFWSwgMCwgY3V0b2ZmKTsKCiAgICBjb25zdCBtZW1iZXJzID0gYXdhaXQgcmVkaXMuenJhbmdlPHN0cmluZ1tdPigKICAgICAgUkVESVNfS0VZLAogICAgICBjdXRvZmYsCiAgICAgIG5vdywKICAgICAgeyBieVNjb3JlOiB0cnVlIH0sCiAgICApOwoKICAgIGxldCBiZXN0OiBTdG9yZWRUb3BpYyB8IG51bGwgPSBudWxsOwogICAgbGV0IGJlc3RTY29yZSA9IDA7CgogICAgZm9yIChjb25zdCByYXcgb2YgbWVtYmVycykgewogICAgICBsZXQgc3RvcmVkOiBTdG9yZWRUb3BpYzsKICAgICAgdHJ5IHsKICAgICAgICBzdG9yZWQgPSBKU09OLnBhcnNlKHJhdykgYXMgU3RvcmVkVG9waWM7CiAgICAgIH0gY2F0Y2ggewogICAgICAgIGNvbnRpbnVlOwogICAgICB9CiAgICAgIGNvbnN0IHNjb3JlID0gamFjY2FyZFNpbWlsYXJpdHkoa2V5d29yZHMsIHN0b3JlZC50LnNwbGl0KCIgIikpOwogICAgICBpZiAoc2NvcmUgPiBiZXN0U2NvcmUpIHsKICAgICAgICBiZXN0U2NvcmUgPSBzY29yZTsKICAgICAgICBiZXN0ID0gc3RvcmVkOwogICAgICB9CiAgICB9CgogICAgaWYgKGJlc3QgJiYgYmVzdFNjb3JlID49IEZSRVNITkVTU19USFJFU0hPTEQpIHsKICAgICAgcmV0dXJuIHsKICAgICAgICBzdGF0dXM6ICJzdGFsZSIsCiAgICAgICAgc2ltaWxhcml0eTogTWF0aC5yb3VuZChiZXN0U2NvcmUgKiAxMDApIC8gMTAwLAogICAgICAgIGxhc3RVc2VkOiBiZXN0LmF0LAogICAgICAgIG1hdGNoZWRUb3BpYzogYmVzdC5vcmlnLAogICAgICB9OwogICAgfQogICAgcmV0dXJuIHsgc3RhdHVzOiAiZnJlc2giIH07CiAgfSBjYXRjaCB7CiAgICAvLyBSZWRpcyBkb3duIOKAlCBkZWdyYWRlLCBuZXZlciBibG9jayBnZW5lcmF0aW9uCiAgICByZXR1cm4geyBzdGF0dXM6ICJ1bmtub3duIiB9OwogIH0KfQoKLyoqIFJlY29yZCBhIHRvcGljIGludG8gdGhlIDkwLWRheSBoaXN0b3J5IChuby1vcCB3aXRob3V0IFJlZGlzKS4gKi8KZXhwb3J0IGFzeW5jIGZ1bmN0aW9uIHJlY29yZFRvcGljKHRvcGljOiBzdHJpbmcpOiBQcm9taXNlPHZvaWQ+IHsKICBjb25zdCByZWRpcyA9IGdldFJlZGlzKCk7CiAgaWYgKCFyZWRpcykgcmV0dXJuOwoKICBjb25zdCBzdG9yZWQ6IFN0b3JlZFRvcGljID0gewogICAgdDogbm9ybWFsaXplVG9waWModG9waWMpLmpvaW4oIiAiKSwKICAgIG9yaWc6IHRvcGljLnNsaWNlKDAsIDEyMCksCiAgICBhdDogbmV3IERhdGUoKS50b0lTT1N0cmluZygpLAogIH07CgogIHRyeSB7CiAgICBhd2FpdCByZWRpcy56YWRkKFJFRElTX0tFWSwgewogICAgICBzY29yZTogRGF0ZS5ub3coKSwKICAgICAgbWVtYmVyOiBKU09OLnN0cmluZ2lmeShzdG9yZWQpLAogICAgfSk7CiAgfSBjYXRjaCB7CiAgICAvLyBiZXN0LWVmZm9ydCBvbmx5CiAgfQp9Cg==
+// Topic freshness check — fuzzy dedupe over 90-day history.
+// Uses Upstash Redis when configured; degrades to "unknown" without it.
+
+import { Redis } from "@upstash/redis";
+
+export const FRESHNESS_THRESHOLD = 0.8;
+const NINETY_DAYS_MS = 90 * 24 * 60 * 60 * 1000;
+const REDIS_KEY = "hookforge:topics";
+
+const STOPWORDS = new Set([
+  "a", "an", "the", "and", "or", "but", "of", "to", "in", "on", "for",
+  "with", "about", "is", "are", "was", "were", "be", "been", "it", "its",
+  "this", "that", "these", "those", "you", "your", "we", "they", "he",
+  "she", "at", "by", "from", "as", "do", "does", "did", "will", "would",
+  "can", "could", "should", "how", "what", "when", "where", "why", "which",
+]);
+
+function tokenize(text: string): string[] {
+  return text
+    .toLowerCase()
+    .replace(/[^a-z0-9\s']/g, " ")
+    .split(/\s+/)
+    .filter(Boolean);
+}
+
+/** Normalize a topic to a sorted, deduped keyword list. */
+export function normalizeTopic(topic: string): string[] {
+  return [
+    ...new Set(tokenize(topic).filter((w) => !STOPWORDS.has(w) && w.length > 2)),
+  ].sort();
+}
+
+/** Jaccard similarity between two keyword lists (0–1). */
+export function jaccardSimilarity(a: string[], b: string[]): number {
+  const setA = new Set(a);
+  const setB = new Set(b);
+  if (setA.size === 0 && setB.size === 0) return 1;
+  let intersection = 0;
+  for (const w of setA) {
+    if (setB.has(w)) intersection++;
+  }
+  const union = setA.size + setB.size - intersection;
+  return union === 0 ? 0 : intersection / union;
+}
+
+function getRedis(): Redis | null {
+  const url = process.env.UPSTASH_REDIS_REST_URL;
+  const token = process.env.UPSTASH_REDIS_REST_TOKEN;
+  if (!url || !token) return null;
+  return new Redis({ url, token });
+}
+
+interface StoredTopic {
+  /** normalized keyword string (member identity) */
+  t: string;
+  /** original topic text, for the warning banner */
+  orig: string;
+  /** ISO timestamp of first use */
+  at: string;
+}
+
+export interface FreshnessResult {
+  status: "fresh" | "stale" | "unknown";
+  /** similarity of the closest match (0–1), when stale */
+  similarity?: number;
+  /** ISO date the matched topic was last used, when stale */
+  lastUsed?: string;
+  /** original text of the matched topic, when stale */
+  matchedTopic?: string;
+}
+
+/**
+ * Fuzzy-match a topic against the last 90 days of history.
+ * Returns "unknown" when Redis is not configured — generation continues.
+ */
+export async function checkFreshness(topic: string): Promise<FreshnessResult> {
+  const redis = getRedis();
+  if (!redis) return { status: "unknown" };
+
+  const now = Date.now();
+  const cutoff = now - NINETY_DAYS_MS;
+  const keywords = normalizeTopic(topic);
+
+  try {
+    // prune entries older than 90 days
+    await redis.zremrangebyscore(REDIS_KEY, 0, cutoff);
+
+    const members = await redis.zrange<string[]>(
+      REDIS_KEY,
+      cutoff,
+      now,
+      { byScore: true },
+    );
+
+    let best: StoredTopic | null = null;
+    let bestScore = 0;
+
+    for (const raw of members) {
+      let stored: StoredTopic;
+      try {
+        stored = JSON.parse(raw) as StoredTopic;
+      } catch {
+        continue;
+      }
+      const score = jaccardSimilarity(keywords, stored.t.split(" "));
+      if (score > bestScore) {
+        bestScore = score;
+        best = stored;
+      }
+    }
+
+    if (best && bestScore >= FRESHNESS_THRESHOLD) {
+      return {
+        status: "stale",
+        similarity: Math.round(bestScore * 100) / 100,
+        lastUsed: best.at,
+        matchedTopic: best.orig,
+      };
+    }
+    return { status: "fresh" };
+  } catch {
+    // Redis down — degrade, never block generation
+    return { status: "unknown" };
+  }
+}
+
+/** Record a topic into the 90-day history (no-op without Redis). */
+export async function recordTopic(topic: string): Promise<void> {
+  const redis = getRedis();
+  if (!redis) return;
+
+  const stored: StoredTopic = {
+    t: normalizeTopic(topic).join(" "),
+    orig: topic.slice(0, 120),
+    at: new Date().toISOString(),
+  };
+
+  try {
+    await redis.zadd(REDIS_KEY, {
+      score: Date.now(),
+      member: JSON.stringify(stored),
+    });
+  } catch {
+    // best-effort only
+  }
+}

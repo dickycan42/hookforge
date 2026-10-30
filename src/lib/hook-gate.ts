@@ -1,1 +1,115 @@
-Ly8gSG9va0ZvcmdlIDQtY2hlY2sgaG9vayBnYXRlLgovLyBQdXJlIGZ1bmN0aW9ucyBvbmx5IOKAlCBubyBJL08sIG5vIHNpZGUgZWZmZWN0cy4gRnVsbHkgY292ZXJlZCBieSBWaXRlc3QuCgpjb25zdCBTVE9QV09SRFMgPSBuZXcgU2V0KFsKICAiYSIsICJhbiIsICJ0aGUiLCAiYW5kIiwgIm9yIiwgImJ1dCIsICJvZiIsICJ0byIsICJpbiIsICJvbiIsICJmb3IiLAogICJ3aXRoIiwgImFib3V0IiwgImlzIiwgImFyZSIsICJ3YXMiLCAid2VyZSIsICJiZSIsICJiZWVuIiwgIml0IiwgIml0cyIsCiAgInRoaXMiLCAidGhhdCIsICJ0aGVzZSIsICJ0aG9zZSIsICJ5b3UiLCAieW91ciIsICJ3ZSIsICJ0aGV5IiwgImhlIiwKICAic2hlIiwgImF0IiwgImJ5IiwgImZyb20iLCAiYXMiLCAiZG8iLCAiZG9lcyIsICJkaWQiLCAid2lsbCIsICJ3b3VsZCIsCiAgImNhbiIsICJjb3VsZCIsICJzaG91bGQiLCAiaG93IiwgIndoYXQiLCAid2hlbiIsICJ3aGVyZSIsICJ3aHkiLCAid2hpY2giLApdKTsKCmZ1bmN0aW9uIHRva2VuaXplKHRleHQ6IHN0cmluZyk6IHN0cmluZ1tdIHsKICByZXR1cm4gdGV4dAogICAgLnRvTG93ZXJDYXNlKCkKICAgIC5yZXBsYWNlKC9bXmEtejAtOVxzJ10vZywgIiAiKQogICAgLnNwbGl0KC9ccysvKQogICAgLmZpbHRlcihCb29sZWFuKTsKfQoKZnVuY3Rpb24gdG9waWNLZXl3b3Jkcyh0b3BpYzogc3RyaW5nKTogc3RyaW5nW10gewogIHJldHVybiB0b2tlbml6ZSh0b3BpYykuZmlsdGVyKCh3KSA9PiAhU1RPUFdPUkRTLmhhcyh3KSAmJiB3Lmxlbmd0aCA+IDIpOwp9CgovKioKICogQ2hlY2sgMSDigJQgbm8gZWFybHkgcmV2ZWFsOiB0b3BpYyBrZXl3b3JkcyBtdXN0IG5vdCBhcHBlYXIKICogaW4gdGhlIGZpcnN0IDggd29yZHMgb2YgdGhlIGhvb2sgKH4yIHNlY29uZHMgb2YgcmVhZGluZykuCiAqLwpleHBvcnQgZnVuY3Rpb24gbm9FYXJseVJldmVhbChob29rOiBzdHJpbmcsIHRvcGljOiBzdHJpbmcpOiBib29sZWFuIHsKICBjb25zdCBrZXl3b3JkcyA9IHRvcGljS2V5d29yZHModG9waWMpOwogIGlmIChrZXl3b3Jkcy5sZW5ndGggPT09IDApIHJldHVybiB0cnVlOwogIGNvbnN0IGZpcnN0RWlnaHQgPSBuZXcgU2V0KHRva2VuaXplKGhvb2spLnNsaWNlKDAsIDgpKTsKICByZXR1cm4gIWtleXdvcmRzLnNvbWUoKGspID0+IGZpcnN0RWlnaHQuaGFzKGspKTsKfQoKY29uc3QgUEFZT0ZGX1BBVFRFUk5TOiBSZWdFeHBbXSA9IFsKICAvXGJiZWNhdXNlXGIvaSwKICAvXGJ0aGUgYW5zd2VyIGlzXGIvaSwKICAvXGJpdCc/cyBiZWNhdXNlXGIvaSwKICAvXGJ0aGUgcmVhc29uIGlzXGIvaSwKICAvXGJoZXJlJz9zIHRoZSBhbnN3ZXJcYi9pLAogIC9cYnNpbXBseSBwdXRcYi9pLAogIC9cYmluIHNob3J0XGIvaSwKXTsKCi8qKgogKiBDaGVjayAyIOKAlCB3aXRoaG9sZHMgYW5zd2VyOiBubyBwYXlvZmYgcGhyYXNlcyB0aGF0IHJlc29sdmUKICogdGhlIGN1cmlvc2l0eSBpbnNpZGUgdGhlIGhvb2sgaXRzZWxmLgogKi8KZXhwb3J0IGZ1bmN0aW9uIHdpdGhob2xkc0Fuc3dlcihob29rOiBzdHJpbmcpOiBib29sZWFuIHsKICByZXR1cm4gIVBBWU9GRl9QQVRURVJOUy5zb21lKChwKSA9PiBwLnRlc3QoaG9vaykpOwp9Cgpjb25zdCBPUEVOX0xPT1BfUEFUVEVSTlM6IFJlZ0V4cFtdID0gWwogIC9cPy8sIC8vIHVuYW5zd2VyZWQgcXVlc3Rpb24KICAvXC5cLlwuLywgLy8gZWxsaXBzaXMKICAvXGJ3aGF0IGlmXGIvaSwKICAvXGJpbWFnaW5lXGIvaSwKICAvXGJub2JvZHkgKHRlbGxzfHRvbGR8dGFsa3N8bWVudGlvbnMpXGIvaSwKICAvXGJzZWNyZXRcYi9pLAogIC9cYnRoZSB0cnV0aCBhYm91dFxiL2ksCiAgL1xiaGVyZSc/cyB3aHlcYi9pLAogIC9cYnlvdSB3b24nP3QgYmVsaWV2ZVxiL2ksCiAgL1xic3RvcCBkb2luZ1xiL2ksCiAgL1xidW50aWxcYi9pLAogIC9cYmJ1dFxiL2ksIC8vICJidXQuLi4iIHR1cm4g4oCUIHRoZSBjbGFzc2ljIHdpdGhoZWxkIHBheW9mZgogIC9cYndhaXQgZm9yXGIvaSwKICAvXGJzdGF5IHRpbGwgdGhlIGVuZFxiL2ksCl07CgovKioKICogQ2hlY2sgMyDigJQgb3BlbiBsb29wOiB0aGUgaG9vayBtdXN0IGxlYXZlIHNvbWV0aGluZyB1bmFuc3dlcmVkLgogKi8KZXhwb3J0IGZ1bmN0aW9uIGhhc09wZW5Mb29wKGhvb2s6IHN0cmluZyk6IGJvb2xlYW4gewogIHJldHVybiBPUEVOX0xPT1BfUEFUVEVSTlMuc29tZSgocCkgPT4gcC50ZXN0KGhvb2spKTsKfQoKY29uc3QgREVGSU5JVElPTl9QQVRURVJOUzogUmVnRXhwW10gPSBbCiAgL15ccyooYW4/fHRoZSlccytbXHcnLV0rXHMraXNccysoYXxhbnx0aGUpXGIvaSwgLy8gIkFuIG9jdG9wdXMgaXMgYS4uLiIKICAvXGJpcyBkZWZpbmVkIGFzXGIvaSwKICAvXGJyZWZlcnMgdG9cYi9pLAogIC9cYmNhbiBiZSBkZXNjcmliZWQgYXNcYi9pLApdOwoKLyoqCiAqIENoZWNrIDQg4oCUIGNvbnZlcnNhdGlvbmFsOiByZWplY3QgZGVmaW5pdGlvbi9sZWN0dXJlIHBhdHRlcm5zLgogKi8KZXhwb3J0IGZ1bmN0aW9uIGlzQ29udmVyc2F0aW9uYWwoaG9vazogc3RyaW5nKTogYm9vbGVhbiB7CiAgcmV0dXJuICFERUZJTklUSU9OX1BBVFRFUk5TLnNvbWUoKHApID0+IHAudGVzdChob29rKSk7Cn0KCmV4cG9ydCBpbnRlcmZhY2UgSG9va0dhdGVDaGVja3MgewogIG5vRWFybHlSZXZlYWw6IGJvb2xlYW47CiAgd2l0aGhvbGRzQW5zd2VyOiBib29sZWFuOwogIGhhc09wZW5Mb29wOiBib29sZWFuOwogIGlzQ29udmVyc2F0aW9uYWw6IGJvb2xlYW47Cn0KCmV4cG9ydCBpbnRlcmZhY2UgSG9va0dhdGVSZXN1bHQgewogIHBhc3NlZDogYm9vbGVhbjsKICBjaGVja3M6IEhvb2tHYXRlQ2hlY2tzOwp9CgovKiogUnVuIGFsbCA0IGNoZWNrcyBhZ2FpbnN0IGEgaG9vayArIHRvcGljIHBhaXIuICovCmV4cG9ydCBmdW5jdGlvbiB2YWxpZGF0ZUhvb2soaG9vazogc3RyaW5nLCB0b3BpYzogc3RyaW5nKTogSG9va0dhdGVSZXN1bHQgewogIGNvbnN0IGNoZWNrczogSG9va0dhdGVDaGVja3MgPSB7CiAgICBub0Vhcmx5UmV2ZWFsOiBub0Vhcmx5UmV2ZWFsKGhvb2ssIHRvcGljKSwKICAgIHdpdGhob2xkc0Fuc3dlcjogd2l0aGhvbGRzQW5zd2VyKGhvb2spLAogICAgaGFzT3Blbkxvb3A6IGhhc09wZW5Mb29wKGhvb2spLAogICAgaXNDb252ZXJzYXRpb25hbDogaXNDb252ZXJzYXRpb25hbChob29rKSwKICB9OwogIHJldHVybiB7CiAgICBwYXNzZWQ6IE9iamVjdC52YWx1ZXMoY2hlY2tzKS5ldmVyeShCb29sZWFuKSwKICAgIGNoZWNrcywKICB9Owp9Cg==
+// HookForge 4-check hook gate.
+// Pure functions only — no I/O, no side effects. Fully covered by Vitest.
+
+const STOPWORDS = new Set([
+  "a", "an", "the", "and", "or", "but", "of", "to", "in", "on", "for",
+  "with", "about", "is", "are", "was", "were", "be", "been", "it", "its",
+  "this", "that", "these", "those", "you", "your", "we", "they", "he",
+  "she", "at", "by", "from", "as", "do", "does", "did", "will", "would",
+  "can", "could", "should", "how", "what", "when", "where", "why", "which",
+]);
+
+function tokenize(text: string): string[] {
+  return text
+    .toLowerCase()
+    .replace(/[^a-z0-9\s']/g, " ")
+    .split(/\s+/)
+    .filter(Boolean);
+}
+
+function topicKeywords(topic: string): string[] {
+  return tokenize(topic).filter((w) => !STOPWORDS.has(w) && w.length > 2);
+}
+
+/**
+ * Check 1 — no early reveal: topic keywords must not appear
+ * in the first 8 words of the hook (~2 seconds of reading).
+ */
+export function noEarlyReveal(hook: string, topic: string): boolean {
+  const keywords = topicKeywords(topic);
+  if (keywords.length === 0) return true;
+  const firstEight = new Set(tokenize(hook).slice(0, 8));
+  return !keywords.some((k) => firstEight.has(k));
+}
+
+const PAYOFF_PATTERNS: RegExp[] = [
+  /\bbecause\b/i,
+  /\bthe answer is\b/i,
+  /\bit'?s because\b/i,
+  /\bthe reason is\b/i,
+  /\bhere'?s the answer\b/i,
+  /\bsimply put\b/i,
+  /\bin short\b/i,
+];
+
+/**
+ * Check 2 — withholds answer: no payoff phrases that resolve
+ * the curiosity inside the hook itself.
+ */
+export function withholdsAnswer(hook: string): boolean {
+  return !PAYOFF_PATTERNS.some((p) => p.test(hook));
+}
+
+const OPEN_LOOP_PATTERNS: RegExp[] = [
+  /\?/, // unanswered question
+  /\.\.\./, // ellipsis
+  /\bwhat if\b/i,
+  /\bimagine\b/i,
+  /\bnobody (tells|told|talks|mentions)\b/i,
+  /\bsecret\b/i,
+  /\bthe truth about\b/i,
+  /\bhere'?s why\b/i,
+  /\byou won'?t believe\b/i,
+  /\bstop doing\b/i,
+  /\buntil\b/i,
+  /\bbut\b/i, // "but..." turn — the classic withheld payoff
+  /\bwait for\b/i,
+  /\bstay till the end\b/i,
+];
+
+/**
+ * Check 3 — open loop: the hook must leave something unanswered.
+ */
+export function hasOpenLoop(hook: string): boolean {
+  return OPEN_LOOP_PATTERNS.some((p) => p.test(hook));
+}
+
+const DEFINITION_PATTERNS: RegExp[] = [
+  /^\s*(an?|the)\s+[\w'-]+\s+is\s+(a|an|the)\b/i, // "An octopus is a..."
+  /\bis defined as\b/i,
+  /\brefers to\b/i,
+  /\bcan be described as\b/i,
+];
+
+/**
+ * Check 4 — conversational: reject definition/lecture patterns.
+ */
+export function isConversational(hook: string): boolean {
+  return !DEFINITION_PATTERNS.some((p) => p.test(hook));
+}
+
+export interface HookGateChecks {
+  noEarlyReveal: boolean;
+  withholdsAnswer: boolean;
+  hasOpenLoop: boolean;
+  isConversational: boolean;
+}
+
+export interface HookGateResult {
+  passed: boolean;
+  checks: HookGateChecks;
+}
+
+/** Run all 4 checks against a hook + topic pair. */
+export function validateHook(hook: string, topic: string): HookGateResult {
+  const checks: HookGateChecks = {
+    noEarlyReveal: noEarlyReveal(hook, topic),
+    withholdsAnswer: withholdsAnswer(hook),
+    hasOpenLoop: hasOpenLoop(hook),
+    isConversational: isConversational(hook),
+  };
+  return {
+    passed: Object.values(checks).every(Boolean),
+    checks,
+  };
+}

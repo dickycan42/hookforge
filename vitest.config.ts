@@ -1,1 +1,9 @@
-aW1wb3J0IHsgZGVmaW5lQ29uZmlnIH0gZnJvbSAidml0ZXN0L2NvbmZpZyI7CgovLyBOb2RlLW9ubHkgdGVzdHMgKHNyYy8qKi8qLnRlc3QudHMpIOKAlCBubyBKU1gsIHNvIG5vIFJlYWN0IHBsdWdpbiBuZWVkZWQuCmV4cG9ydCBkZWZhdWx0IGRlZmluZUNvbmZpZyh7CiAgdGVzdDogewogICAgZW52aXJvbm1lbnQ6ICJub2RlIiwKICAgIGluY2x1ZGU6IFsic3JjLyoqLyoudGVzdC50cyJdLAogIH0sCn0pOwo=
+import { defineConfig } from "vitest/config";
+
+// Node-only tests (src/**/*.test.ts) — no JSX, so no React plugin needed.
+export default defineConfig({
+  test: {
+    environment: "node",
+    include: ["src/**/*.test.ts"],
+  },
+});
