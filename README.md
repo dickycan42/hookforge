@@ -1,1 +1,36 @@
-IyDwn5SlIEhvb2tGb3JnZQoKQUkgaG9vayArIHNjcmlwdCArIGNhcHRpb24gZ2VuZXJhdG9yIGZvciBmYWNlbGVzcyBjb250ZW50IGNyZWF0b3JzLgpCdWlsdCB3aXRoICoqS2lybyoqIGZvciAqKktpcm93ZWVuIDIwMjYqKiDigJQgRnJhbmtlbnN0ZWluIGNhdGVnb3J5LgoKIyMgV2hhdCBpdCBkb2VzCgpFbnRlciBhIHRvcGljIOKGkiBnZXQ6CjEuICoqNSBzY3JvbGwtc3RvcHBpbmcgaG9va3MqKiAoY3VyaW9zaXR5IC8gY29udHJhcmlhbiAvIGNhbGxvdXQgLyBjb2xkLW9wZW4gLyBzdGFrZXMpLCBlYWNoIHZhbGlkYXRlZCBieSBhIDQtY2hlY2sgcXVhbGl0eSBnYXRlCjIuICoqRnVsbCBuYXJyYXRpb24gc2NyaXB0Kiogd2l0aCBUVFMtZnJpZW5kbHkgcHVuY3R1YXRpb24sIGJlYXQgc3RydWN0dXJlIChob29rIOKGkiBib2R5IOKGkiBjbGlmZmhhbmdlcikKMy4gKipQbGF0Zm9ybSBjYXB0aW9ucyoqIChUaWtUb2sgLyBJRyAvIFggLyBZb3VUdWJlKSB3aXRoIGNvcnJlY3QgbGVuZ3RoIGxpbWl0cwoKUGx1cyBhICoqdG9waWMgZnJlc2huZXNzIGNoZWNrKiogdGhhdCB3YXJucyB5b3UgYmVmb3JlIHJlcGVhdGluZyByZWNlbnQgY29udGVudC4KCiMjIFRoZSBGcmFua2Vuc3RlaW4gc3RpdGNoCgpIb29rRm9yZ2UgY29tYmluZXMgdGVjaG5vbG9naWVzIG5vdCBub3JtYWxseSBmb3VuZCB0b2dldGhlcjoKLSBMTE0gdGV4dCBnZW5lcmF0aW9uIChjcmVhdGl2ZSB3cml0aW5nKQotIFByb2dyYW1tYXRpYyBjb250ZW50LXBzeWNob2xvZ3kgdmFsaWRhdG9ycyAodGhlIDQtY2hlY2sgaG9vayBnYXRlKQotIFRUUyBwcm9zb2R5IHJ1bGVzIChwdW5jdHVhdGlvbi1hcy1kaXJlY3Rpb24gZm9yIHZvaWNlIHN5bnRoZXNpcykKLSBDcm9zcy1wbGF0Zm9ybSBkZWR1cGUgbG9naWMgKGZ1enp5IHRvcGljIG1hdGNoaW5nIG92ZXIgOTAtZGF5IGhpc3RvcnkpCgojIyBUZWNoCgpOZXh0LmpzIDE1IMK3IFR5cGVTY3JpcHQgwrcgVGFpbHdpbmQgwrcgVmVyY2VsIEFJIFNESyDCtyBVcHN0YXNoIFJlZGlzCgojIyBLaXJvIHVzYWdlCgpUaGlzIHByb2plY3Qgd2FzIGJ1aWx0IHNwZWMtZmlyc3Qgd2l0aCBLaXJvOgotICoqU3BlY3MqKiDihpIgYC5raXJvL3NwZWNzL2hvb2tmb3JnZS9gIChyZXF1aXJlbWVudHMsIGRlc2lnbiwgdGFza3MpCi0gKipTdGVlcmluZyoqIOKGkiBgLmtpcm8vc3RlZXJpbmcvYCAocHJvZHVjdCwgdGVjaCwgc3RydWN0dXJlKQotICoqSG9va3MqKiDihpIgYC5raXJvL2hvb2tzL2AgKGxpbnQgKyB0eXBlY2hlY2sgb24gc2F2ZSkKCiMjIERldnBvc3QKClN1Ym1pc3Npb246IEtpcm93ZWVuIDIwMjYgKEZyYW5rZW5zdGVpbikg4oCUIGRlYWRsaW5lIERlYyA0LCAyMDI2IDJQTSBQVC4K
+# 🔥 HookForge
+
+AI hook + script + caption generator for faceless content creators.
+Built with **Kiro** for **Kiroween 2026** — Frankenstein category.
+
+## What it does
+
+Enter a topic → get:
+1. **5 scroll-stopping hooks** (curiosity / contrarian / callout / cold-open / stakes), each validated by a 4-check quality gate
+2. **Full narration script** with TTS-friendly punctuation, beat structure (hook → body → cliffhanger)
+3. **Platform captions** (TikTok / IG / X / YouTube) with correct length limits
+
+Plus a **topic freshness check** that warns you before repeating recent content.
+
+## The Frankenstein stitch
+
+HookForge combines technologies not normally found together:
+- LLM text generation (creative writing)
+- Programmatic content-psychology validators (the 4-check hook gate)
+- TTS prosody rules (punctuation-as-direction for voice synthesis)
+- Cross-platform dedupe logic (fuzzy topic matching over 90-day history)
+
+## Tech
+
+Next.js 15 · TypeScript · Tailwind · Vercel AI SDK · Upstash Redis
+
+## Kiro usage
+
+This project was built spec-first with Kiro:
+- **Specs** → `.kiro/specs/hookforge/` (requirements, design, tasks)
+- **Steering** → `.kiro/steering/` (product, tech, structure)
+- **Hooks** → `.kiro/hooks/` (lint + typecheck on save)
+
+## Devpost
+
+Submission: Kiroween 2026 (Frankenstein) — deadline Dec 4, 2026 2PM PT.

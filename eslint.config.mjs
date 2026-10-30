@@ -1,1 +1,19 @@
-aW1wb3J0IHsgZGlybmFtZSB9IGZyb20gInBhdGgiOwppbXBvcnQgeyBmaWxlVVJMVG9QYXRoIH0gZnJvbSAidXJsIjsKaW1wb3J0IHsgRmxhdENvbXBhdCB9IGZyb20gIkBlc2xpbnQvZXNsaW50cmMiOwoKY29uc3QgX19maWxlbmFtZSA9IGZpbGVVUkxUb1BhdGgoaW1wb3J0Lm1ldGEudXJsKTsKY29uc3QgX19kaXJuYW1lID0gZGlybmFtZShfX2ZpbGVuYW1lKTsKCmNvbnN0IGNvbXBhdCA9IG5ldyBGbGF0Q29tcGF0KHsKICBiYXNlRGlyZWN0b3J5OiBfX2Rpcm5hbWUsCn0pOwoKY29uc3QgZXNsaW50Q29uZmlnID0gWwogIC4uLmNvbXBhdC5leHRlbmRzKCJuZXh0L2NvcmUtd2ViLXZpdGFscyIsICJuZXh0L3R5cGVzY3JpcHQiKSwKICB7CiAgICBpZ25vcmVzOiBbIi5uZXh0LyoqIiwgIm5vZGVfbW9kdWxlcy8qKiJdLAogIH0sCl07CgpleHBvcnQgZGVmYXVsdCBlc2xpbnRDb25maWc7Cg==
+import { dirname } from "path";
+import { fileURLToPath } from "url";
+import { FlatCompat } from "@eslint/eslintrc";
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
+
+const compat = new FlatCompat({
+  baseDirectory: __dirname,
+});
+
+const eslintConfig = [
+  ...compat.extends("next/core-web-vitals", "next/typescript"),
+  {
+    ignores: [".next/**", "node_modules/**"],
+  },
+];
+
+export default eslintConfig;

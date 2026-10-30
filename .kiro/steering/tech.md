@@ -1,1 +1,26 @@
-IyBUZWNoIFN0YWNrIOKAlCBIb29rRm9yZ2UKCiMjIEZyb250ZW5kCi0gKipOZXh0LmpzIDE1KiogKEFwcCBSb3V0ZXIpICsgKipUeXBlU2NyaXB0Kiog4oCUIGZhc3QgaXRlcmF0aW9uLCBlYXN5IFZlcmNlbCBkZXBsb3kKLSAqKlRhaWx3aW5kIENTUyoqIOKAlCB1dGlsaXR5IHN0eWxpbmcsIGRhcmstbW9kZS1maXJzdCBVSQotICoqUmVhY3QqKiDigJQgaW50ZXJhY3RpdmUgaG9vay9zY3JpcHQgZWRpdG9yCgojIyBCYWNrZW5kCi0gKipOZXh0LmpzIEFQSSByb3V0ZXMqKiDigJQgc2luZ2xlIGRlcGxveWFibGUgdW5pdAotICoqVmVyY2VsIEFJIFNESyoqIOKAlCBzdHJlYW1pbmcgTExNIHJlc3BvbnNlcwotICoqTW9kZWw6KiogdmlhIEtpcm8gY3JlZGl0cyAvIGNvbmZpZ3VyYWJsZSBwcm92aWRlciAoT3BlbkFJLWNvbXBhdGlibGUgZW5kcG9pbnQpCgojIyBEYXRhCi0gKipVcHN0YXNoIFJlZGlzKiogKGZyZWUgdGllcikg4oCUIHRvcGljIGZyZXNobmVzcyBkZWR1cGUgc3RvcmUgKFRUTCA5MCBkYXlzKQotIE5vIHVzZXIgYWNjb3VudHMgZm9yIE1WUCDigJQgbG9jYWxTdG9yYWdlIGZvciBoaXN0b3J5CgojIyBEZXYgVG9vbHMKLSAqKktpcm8qKiDigJQgc3BlYy1kcml2ZW4gZGV2ZWxvcG1lbnQsIGFnZW50IGhvb2tzLCBzdGVlcmluZwotICoqRVNMaW50ICsgUHJldHRpZXIqKiDigJQgZW5mb3JjZWQgdmlhIEtpcm8gUG9zdEZpbGVTYXZlIGhvb2sKLSAqKlZpdGVzdCoqIOKAlCB1bml0IHRlc3RzIGZvciBob29rLWdhdGUgdmFsaWRhdG9ycwoKIyMgQ29uc3RyYWludHMKLSBNdXN0IGRlcGxveSB0byBhIHB1YmxpYyBVUkwgZm9yIERldnBvc3Qgc3VibWlzc2lvbgotIE11c3QgYmUgYnVpbHQgd2l0aCBLaXJvIChzcGVjcywgaG9va3MsIHN0ZWVyaW5nLCBNQ1AgdXNhZ2UgZG9jdW1lbnRlZCkKLSBSZXBvIG11c3Qga2VlcCBgLmtpcm8vYCBkaXJlY3RvcnkgYXQgcm9vdCwgbmV2ZXIgaW4gLmdpdGlnbm9yZQotIDMtbWludXRlIGRlbW8gdmlkZW8gcmVxdWlyZWQgZm9yIHN1Ym1pc3Npb24K
+# Tech Stack — HookForge
+
+## Frontend
+- **Next.js 15** (App Router) + **TypeScript** — fast iteration, easy Vercel deploy
+- **Tailwind CSS** — utility styling, dark-mode-first UI
+- **React** — interactive hook/script editor
+
+## Backend
+- **Next.js API routes** — single deployable unit
+- **Vercel AI SDK** — streaming LLM responses
+- **Model:** via Kiro credits / configurable provider (OpenAI-compatible endpoint)
+
+## Data
+- **Upstash Redis** (free tier) — topic freshness dedupe store (TTL 90 days)
+- No user accounts for MVP — localStorage for history
+
+## Dev Tools
+- **Kiro** — spec-driven development, agent hooks, steering
+- **ESLint + Prettier** — enforced via Kiro PostFileSave hook
+- **Vitest** — unit tests for hook-gate validators
+
+## Constraints
+- Must deploy to a public URL for Devpost submission
+- Must be built with Kiro (specs, hooks, steering, MCP usage documented)
+- Repo must keep `.kiro/` directory at root, never in .gitignore
+- 3-minute demo video required for submission
