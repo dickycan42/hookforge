@@ -1,1 +1,38 @@
-Ly8gUE9TVCAvYXBpL2ZyZXNobmVzcyDigJQgdG9waWMgZnJlc2huZXNzIGNoZWNrIChmdXp6eSBkZWR1cGUsIDkwLWRheSB3aW5kb3cpLgovLwovLyBCb2R5OiB7IHRvcGljOiBzdHJpbmcsIHJlY29yZD86IGJvb2xlYW4gfQovLyAtIEFsd2F5cyByZXR1cm5zIHRoZSBmcmVzaG5lc3MgdmVyZGljdCBmb3IgYHRvcGljYC4KLy8gLSBXaGVuIGByZWNvcmQ6IHRydWVgIGFuZCB0aGUgdmVyZGljdCBpcyAiZnJlc2giLCB0aGUgdG9waWMgaXMgYWxzbwovLyAgIGFwcGVuZGVkIHRvIGhpc3RvcnkgKHNvIHRoZSBuZXh0IGNoZWNrIHNlZXMgaXQpLgovLyAtIFdpdGhvdXQgUmVkaXMgY29uZmlndXJlZCB0aGUgdmVyZGljdCBpcyAidW5rbm93biIgYW5kIGdlbmVyYXRpb24KLy8gICBjb250aW51ZXMg4oCUIG5ldmVyIGEgYmxvY2tlci4KCmltcG9ydCB7IGNoZWNrRnJlc2huZXNzLCByZWNvcmRUb3BpYyB9IGZyb20gIkAvbGliL2ZyZXNobmVzcyI7CgpleHBvcnQgYXN5bmMgZnVuY3Rpb24gUE9TVChyZXE6IFJlcXVlc3QpOiBQcm9taXNlPFJlc3BvbnNlPiB7CiAgbGV0IGJvZHk6IHsgdG9waWM/OiB1bmtub3duOyByZWNvcmQ/OiB1bmtub3duIH07CiAgdHJ5IHsKICAgIGJvZHkgPSAoYXdhaXQgcmVxLmpzb24oKSkgYXMgeyB0b3BpYz86IHVua25vd247IHJlY29yZD86IHVua25vd24gfTsKICB9IGNhdGNoIHsKICAgIHJldHVybiBSZXNwb25zZS5qc29uKHsgZXJyb3I6ICJJbnZhbGlkIEpTT04gYm9keS4iIH0sIHsgc3RhdHVzOiA0MDAgfSk7CiAgfQoKICBjb25zdCB0b3BpYyA9IHR5cGVvZiBib2R5LnRvcGljID09PSAic3RyaW5nIiA/IGJvZHkudG9waWMudHJpbSgpIDogIiI7CiAgaWYgKCF0b3BpYykgewogICAgcmV0dXJuIFJlc3BvbnNlLmpzb24oeyBlcnJvcjogInRvcGljIGlzIHJlcXVpcmVkLiIgfSwgeyBzdGF0dXM6IDQwMCB9KTsKICB9CiAgaWYgKHRvcGljLmxlbmd0aCA+IDIwMCkgewogICAgcmV0dXJuIFJlc3BvbnNlLmpzb24oCiAgICAgIHsgZXJyb3I6ICJ0b3BpYyBtdXN0IGJlIDIwMCBjaGFyYWN0ZXJzIG9yIGZld2VyLiIgfSwKICAgICAgeyBzdGF0dXM6IDQwMCB9LAogICAgKTsKICB9CgogIGNvbnN0IHJlc3VsdCA9IGF3YWl0IGNoZWNrRnJlc2huZXNzKHRvcGljKTsKCiAgaWYgKGJvZHkucmVjb3JkID09PSB0cnVlICYmIHJlc3VsdC5zdGF0dXMgPT09ICJmcmVzaCIpIHsKICAgIGF3YWl0IHJlY29yZFRvcGljKHRvcGljKTsKICB9CgogIHJldHVybiBSZXNwb25zZS5qc29uKHJlc3VsdCk7Cn0K
+// POST /api/freshness — topic freshness check (fuzzy dedupe, 90-day window).
+//
+// Body: { topic: string, record?: boolean }
+// - Always returns the freshness verdict for `topic`.
+// - When `record: true` and the verdict is "fresh", the topic is also
+//   appended to history (so the next check sees it).
+// - Without Redis configured the verdict is "unknown" and generation
+//   continues — never a blocker.
+
+import { checkFreshness, recordTopic } from "@/lib/freshness";
+
+export async function POST(req: Request): Promise<Response> {
+  let body: { topic?: unknown; record?: unknown };
+  try {
+    body = (await req.json()) as { topic?: unknown; record?: unknown };
+  } catch {
+    return Response.json({ error: "Invalid JSON body." }, { status: 400 });
+  }
+
+  const topic = typeof body.topic === "string" ? body.topic.trim() : "";
+  if (!topic) {
+    return Response.json({ error: "topic is required." }, { status: 400 });
+  }
+  if (topic.length > 200) {
+    return Response.json(
+      { error: "topic must be 200 characters or fewer." },
+      { status: 400 },
+    );
+  }
+
+  const result = await checkFreshness(topic);
+
+  if (body.record === true && result.status === "fresh") {
+    await recordTopic(topic);
+  }
+
+  return Response.json(result);
+}

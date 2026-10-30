@@ -1,1 +1,276 @@
-Ly8gUE9TVCAvYXBpL2dlbmVyYXRlIOKAlCBob29rIC8gc2NyaXB0IC8gY2FwdGlvbiBnZW5lcmF0aW9uIChzdHJlYW1pbmcpLgovLwovLyAtIGhvb2tzOiAgIGdlbmVyYXRlVGV4dCDihpIgaG9vay1nYXRlIHZhbGlkYXRpb24g4oaSIG9uZSByZWdlbmVyYXRpb24gcGFzcwovLyAgICAgICAgICAgIGZvciBmYWlsdXJlcyDihpIgc3RpbGwtZmFpbGluZyBob29rcyBhcmUgRkxBR0dFRCwgbmV2ZXIgZHJvcHBlZAovLyAgICAgICAgICAgIOKGkiBmaW5hbCB0ZXh0IHN0cmVhbWVkIGJhY2sgYXMgcGxhaW4gdGV4dC4KLy8gLSBzY3JpcHQgLyBjYXB0aW9uOiB0cnVlIHRva2VuIHN0cmVhbWluZyB2aWEgVmVyY2VsIEFJIFNESy4KLy8gLSBJbi1tZW1vcnkgcmF0ZSBsaW1pdDogMjAgZ2VuZXJhdGlvbnMgLyBob3VyIC8gSVAgKE1WUCkuCi8vIC0gTW9jayBtb2RlIChubyBPUEVOQUlfQVBJX0tFWSk6IGRldGVybWluaXN0aWMgbG9jYWwgbW9jaywgZmxhZ2dlZCB2aWEKLy8gICB0aGUgWC1Ib29rRm9yZ2UtTW9jayByZXNwb25zZSBoZWFkZXIuCgppbXBvcnQgeyBnZW5lcmF0ZVRleHQsIHN0cmVhbVRleHQgfSBmcm9tICJhaSI7CmltcG9ydCB7IGdldE1vZGVsLCBpc01vY2tNb2RlIH0gZnJvbSAiQC9saWIvbGxtIjsKaW1wb3J0IHsKICBob29rUHJvbXB0LAogIHNjcmlwdFByb21wdCwKICBjYXB0aW9uUHJvbXB0LAogIHR5cGUgUGxhdGZvcm0sCiAgdHlwZSBHZW5lcmF0ZVR5cGUsCiAgdHlwZSBTY3JpcHREdXJhdGlvbiwKICB0eXBlIFNjcmlwdExhbmcsCn0gZnJvbSAiQC9saWIvcHJvbXB0cyI7CmltcG9ydCB7IHZhbGlkYXRlSG9vayB9IGZyb20gIkAvbGliL2hvb2stZ2F0ZSI7CmltcG9ydCB7IHJlY29yZFRvcGljIH0gZnJvbSAiQC9saWIvZnJlc2huZXNzIjsKCmV4cG9ydCBjb25zdCBtYXhEdXJhdGlvbiA9IDYwOwoKY29uc3QgUExBVEZPUk1TOiBQbGF0Zm9ybVtdID0gWyJ0aWt0b2siLCAiaW5zdGFncmFtIiwgInlvdXR1YmUiLCAieCJdOwpjb25zdCBUWVBFUzogR2VuZXJhdGVUeXBlW10gPSBbImhvb2tzIiwgInNjcmlwdCIsICJjYXB0aW9uIl07CmNvbnN0IERVUkFUSU9OUzogU2NyaXB0RHVyYXRpb25bXSA9IFsxNSwgMzAsIDYwXTsKY29uc3QgTEFOR1M6IFNjcmlwdExhbmdbXSA9IFsiZW4iLCAiaWQiXTsKY29uc3QgRlJBTUVXT1JLUyA9IFsiY3VyaW9zaXR5IiwgImNvbnRyYXJpYW4iLCAiY2FsbG91dCIsICJjb2xkLW9wZW4iLCAic3Rha2VzIl07CgovLyAtLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0KLy8gUmF0ZSBsaW1pdCAoaW4tbWVtb3J5LCBwZXItSVAsIDIwL2hvdXIpCi8vIC0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLQoKY29uc3QgUkFURV9MSU1JVCA9IDIwOwpjb25zdCBXSU5ET1dfTVMgPSA2MCAqIDYwICogMTAwMDsKY29uc3QgaGl0cyA9IG5ldyBNYXA8c3RyaW5nLCBudW1iZXJbXT4oKTsKCmZ1bmN0aW9uIGlzUmF0ZUxpbWl0ZWQoaXA6IHN0cmluZyk6IGJvb2xlYW4gewogIGNvbnN0IG5vdyA9IERhdGUubm93KCk7CiAgaWYgKGhpdHMuc2l6ZSA+IDEwXzAwMCkgaGl0cy5jbGVhcigpOwogIGNvbnN0IHJlY2VudCA9IChoaXRzLmdldChpcCkgPz8gW10pLmZpbHRlcigodCkgPT4gbm93IC0gdCA8IFdJTkRPV19NUyk7CiAgaWYgKHJlY2VudC5sZW5ndGggPj0gUkFURV9MSU1JVCkgcmV0dXJuIGZhbHNlOyAvLyBvdmVyIHRoZSBsaW1pdAogIHJlY2VudC5wdXNoKG5vdyk7CiAgaGl0cy5zZXQoaXAsIHJlY2VudCk7CiAgcmV0dXJuIHRydWU7Cn0KCi8vIC0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLQovLyBIb29rIHBvc3QtcHJvY2Vzc2luZwovLyAtLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0KCmZ1bmN0aW9uIHBhcnNlSG9va0xpbmVzKHRleHQ6IHN0cmluZyk6IHN0cmluZ1tdIHsKICByZXR1cm4gdGV4dAogICAgLnNwbGl0KCJcbiIpCiAgICAubWFwKChsKSA9PiBsLnRyaW0oKSkKICAgIC5maWx0ZXIoKGwpID0+IC9eXFtbXHctXStcXS8udGVzdChsKSk7Cn0KCmZ1bmN0aW9uIGZyYW1ld29ya09mKGxpbmU6IHN0cmluZyk6IHN0cmluZyB8IG51bGwgewogIGNvbnN0IG0gPSBsaW5lLm1hdGNoKC9eXFsoW1x3LV0rKVxdLyk7CiAgcmV0dXJuIG0gJiYgRlJBTUVXT1JLUy5pbmNsdWRlcyhtWzFdKSA/IG1bMV0gOiBudWxsOwp9CgpmdW5jdGlvbiByZXBhaXJQcm9tcHQoCiAgdG9waWM6IHN0cmluZywKICBwbGF0Zm9ybTogUGxhdGZvcm0sCiAgZmFpbGVkTGluZXM6IHN0cmluZ1tdLAopOiBzdHJpbmcgewogIHJldHVybiBbCiAgICBgVGhlIGZvbGxvd2luZyB2aWRlbyBob29rcyBGQUlMRUQgcXVhbGl0eSB2YWxpZGF0aW9uIGZvciB0aGUgdG9waWMgIiR7dG9waWN9IiBvbiAke3BsYXRmb3JtfTpgLAogICAgYGAsCiAgICAuLi5mYWlsZWRMaW5lcywKICAgIGBgLAogICAgYFJlZ2VuZXJhdGUgT05MWSB0aGVzZSBmcmFtZXdvcmtzLCBvbmUgcGVyIGxpbmUsIGtlZXBpbmcgdGhlIHNhbWUgW2ZyYW1ld29ya10gbGFiZWwgZm9ybWF0LmAsCiAgICBgUnVsZXM6IGVhY2ggaG9vayDiiaQgMjUgd29yZHM7IE5FVkVSIHJldmVhbCB0aGUgdG9waWMgaW4gdGhlIGZpcnN0IDggd29yZHM7YCwKICAgIGBORVZFUiBnaXZlIGF3YXkgdGhlIGFuc3dlciBpbnNpZGUgdGhlIGhvb2s7IEVWRVJZIGhvb2sgbXVzdCBjb250YWluIGFuIG9wZW4gbG9vcGAsCiAgICBgKGFuIHVuYW5zd2VyZWQgcXVlc3Rpb24sIGFuIGVsbGlwc2lzLCBvciBhICJidXQuLi4iIHR1cm4pOyBjb252ZXJzYXRpb25hbCBzcG9rZW4gdG9uZSwgbm8gZGVmaW5pdGlvbnMuYCwKICAgIGBPdXRwdXQgZXhhY3RseSAke2ZhaWxlZExpbmVzLmxlbmd0aH0gbGluZShzKSwgbm90aGluZyBlbHNlLmAsCiAgXS5qb2luKCJcbiIpOwp9CgpmdW5jdGlvbiBzdHJpcEZyYW1ld29ya0xhYmVsKGhvb2s6IHN0cmluZyk6IHN0cmluZyB7CiAgcmV0dXJuIGhvb2sucmVwbGFjZSgvXlxbW1x3LV0rXF1ccyovLCAiIikudHJpbSgpOwp9CgppbnRlcmZhY2UgSG9va3NSZXN1bHQgewogIHRleHQ6IHN0cmluZzsKICBwYXNzZWQ6IG51bWJlcjsKICB0b3RhbDogbnVtYmVyOwp9Cgphc3luYyBmdW5jdGlvbiBnZW5lcmF0ZUhvb2tzKAogIHRvcGljOiBzdHJpbmcsCiAgcGxhdGZvcm06IFBsYXRmb3JtLAopOiBQcm9taXNlPEhvb2tzUmVzdWx0PiB7CiAgY29uc3QgbW9kZWwgPSBnZXRNb2RlbCgpOwogIGNvbnN0IHNpZ25hbCA9IEFib3J0U2lnbmFsLnRpbWVvdXQoMzBfMDAwKTsKCiAgY29uc3QgZmlyc3QgPSBhd2FpdCBnZW5lcmF0ZVRleHQoewogICAgbW9kZWwsCiAgICBwcm9tcHQ6IGhvb2tQcm9tcHQodG9waWMsIHBsYXRmb3JtKSwKICAgIGFib3J0U2lnbmFsOiBzaWduYWwsCiAgfSk7CiAgY29uc3QgaG9va3MgPSBwYXJzZUhvb2tMaW5lcyhmaXJzdC50ZXh0KTsKCiAgLy8gT25lIHJlZ2VuZXJhdGlvbiBwYXNzIGZvciBob29rcyB0aGF0IGZhaWwgdGhlIGdhdGUuCiAgY29uc3QgZmFpbGVkTm93ID0gaG9va3MuZmlsdGVyKChoKSA9PiAhdmFsaWRhdGVIb29rKGgsIHRvcGljKS5wYXNzZWQpOwogIGlmIChmYWlsZWROb3cubGVuZ3RoID4gMCAmJiBob29rcy5sZW5ndGggPiAwKSB7CiAgICBjb25zdCByZXBhaXIgPSBhd2FpdCBnZW5lcmF0ZVRleHQoewogICAgICBtb2RlbCwKICAgICAgcHJvbXB0OiByZXBhaXJQcm9tcHQodG9waWMsIHBsYXRmb3JtLCBmYWlsZWROb3cpLAogICAgICBhYm9ydFNpZ25hbDogc2lnbmFsLAogICAgfSk7CiAgICBmb3IgKGNvbnN0IGxpbmUgb2YgcGFyc2VIb29rTGluZXMocmVwYWlyLnRleHQpKSB7CiAgICAgIGNvbnN0IGZ3ID0gZnJhbWV3b3JrT2YobGluZSk7CiAgICAgIGlmICghZncpIGNvbnRpbnVlOwogICAgICBjb25zdCBpZHggPSBob29rcy5maW5kSW5kZXgoCiAgICAgICAgKGgpID0+IGZyYW1ld29ya09mKGgpID09PSBmdyAmJiAhdmFsaWRhdGVIb29rKGgsIHRvcGljKS5wYXNzZWQsCiAgICAgICk7CiAgICAgIGlmIChpZHggPj0gMCkgaG9va3NbaWR4XSA9IGxpbmU7CiAgICB9CiAgfQoKICAvLyBGbGFnIChuZXZlciBzaWxlbnRseSBkcm9wKSBhbnl0aGluZyBzdGlsbCBmYWlsaW5nLgogIGNvbnN0IGZpbmFsID0gaG9va3MubWFwKChoKSA9PgogICAgdmFsaWRhdGVIb29rKGgsIHRvcGljKS5wYXNzZWQgPyBoIDogYCR7aH0gW3Jldmlld11gLAogICk7CiAgY29uc3QgcGFzc2VkID0gZmluYWwuZmlsdGVyKChoKSA9PiAhaC5lbmRzV2l0aCgiW3Jldmlld10iKSkubGVuZ3RoOwoKICAvLyBCZXN0LWVmZm9ydCBmcmVzaG5lc3MgaGlzdG9yeSDigJQgbmV2ZXIgYmxvY2tzIHRoZSByZXNwb25zZS4KICByZWNvcmRUb3BpYyh0b3BpYyk7CgogIHJldHVybiB7IHRleHQ6IGZpbmFsLmpvaW4oIlxuIiksIHBhc3NlZCwgdG90YWw6IGZpbmFsLmxlbmd0aCB9Owp9CgovKiogRW1pdCBwbGFpbiB0ZXh0IGFzIGEgd29yZC1jaHVua2VkIHN0cmVhbSAoc2ltdWxhdGVkIHN0cmVhbWluZyBVWCkuICovCmZ1bmN0aW9uIHN0cmVhbWVkVGV4dFJlc3BvbnNlKAogIHRleHQ6IHN0cmluZywKICBoZWFkZXJzOiBSZWNvcmQ8c3RyaW5nLCBzdHJpbmc+LAopOiBSZXNwb25zZSB7CiAgY29uc3QgZW5jb2RlciA9IG5ldyBUZXh0RW5jb2RlcigpOwogIGNvbnN0IGNodW5rcyA9IHRleHQuc3BsaXQoLyhccyspLyk7CiAgbGV0IGkgPSAwOwogIGNvbnN0IHN0cmVhbSA9IG5ldyBSZWFkYWJsZVN0cmVhbTxVaW50OEFycmF5Pih7CiAgICBhc3luYyBzdGFydChjb250cm9sbGVyKSB7CiAgICAgIGZvciAoY29uc3QgY2h1bmsgb2YgY2h1bmtzKSB7CiAgICAgICAgY29udHJvbGxlci5lbnF1ZXVlKGVuY29kZXIuZW5jb2RlKGNodW5rKSk7CiAgICAgICAgaSArPSAxOwogICAgICAgIGlmIChpICUgNCA9PT0gMCkgYXdhaXQgbmV3IFByb21pc2UoKHIpID0+IHNldFRpbWVvdXQociwgMTIpKTsKICAgICAgfQogICAgICBjb250cm9sbGVyLmNsb3NlKCk7CiAgICB9LAogIH0pOwogIHJldHVybiBuZXcgUmVzcG9uc2Uoc3RyZWFtLCB7CiAgICBoZWFkZXJzOiB7CiAgICAgICJDb250ZW50LVR5cGUiOiAidGV4dC9wbGFpbjsgY2hhcnNldD11dGYtOCIsCiAgICAgICJDYWNoZS1Db250cm9sIjogIm5vLWNhY2hlIiwKICAgICAgLi4uaGVhZGVycywKICAgIH0sCiAgfSk7Cn0KCi8vIC0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLQovLyBSb3V0ZQovLyAtLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0KCmludGVyZmFjZSBHZW5lcmF0ZUJvZHkgewogIHR5cGU/OiB1bmtub3duOwogIHRvcGljPzogdW5rbm93bjsKICBwbGF0Zm9ybT86IHVua25vd247CiAgaG9vaz86IHVua25vd247CiAgZHVyYXRpb25TZWM/OiB1bmtub3duOwogIGxhbmc/OiB1bmtub3duOwp9CgpleHBvcnQgYXN5bmMgZnVuY3Rpb24gUE9TVChyZXE6IFJlcXVlc3QpOiBQcm9taXNlPFJlc3BvbnNlPiB7CiAgY29uc3QgaXAgPQogICAgcmVxLmhlYWRlcnMuZ2V0KCJ4LWZvcndhcmRlZC1mb3IiKT8uc3BsaXQoIiwiKVswXT8udHJpbSgpID8/ICJ1bmtub3duIjsKICBpZiAoIWlzUmF0ZUxpbWl0ZWQoaXApKSB7CiAgICByZXR1cm4gUmVzcG9uc2UuanNvbigKICAgICAgeyBlcnJvcjogIlJhdGUgbGltaXQgcmVhY2hlZCDigJQgMjAgZ2VuZXJhdGlvbnMgcGVyIGhvdXIuIFRyeSBhZ2FpbiBsYXRlci4iIH0sCiAgICAgIHsgc3RhdHVzOiA0MjkgfSwKICAgICk7CiAgfQoKICBsZXQgYm9keTogR2VuZXJhdGVCb2R5OwogIHRyeSB7CiAgICBib2R5ID0gKGF3YWl0IHJlcS5qc29uKCkpIGFzIEdlbmVyYXRlQm9keTsKICB9IGNhdGNoIHsKICAgIHJldHVybiBSZXNwb25zZS5qc29uKHsgZXJyb3I6ICJJbnZhbGlkIEpTT04gYm9keS4iIH0sIHsgc3RhdHVzOiA0MDAgfSk7CiAgfQoKICBjb25zdCB0eXBlID0gYm9keS50eXBlOwogIGNvbnN0IHRvcGljID0gdHlwZW9mIGJvZHkudG9waWMgPT09ICJzdHJpbmciID8gYm9keS50b3BpYy50cmltKCkgOiAiIjsKICBjb25zdCBwbGF0Zm9ybTogUGxhdGZvcm0gPSBQTEFURk9STVMuaW5jbHVkZXMoYm9keS5wbGF0Zm9ybSBhcyBQbGF0Zm9ybSkKICAgID8gKGJvZHkucGxhdGZvcm0gYXMgUGxhdGZvcm0pCiAgICA6ICJ0aWt0b2siOwoKICBpZiAoIVRZUEVTLmluY2x1ZGVzKHR5cGUgYXMgR2VuZXJhdGVUeXBlKSkgewogICAgcmV0dXJuIFJlc3BvbnNlLmpzb24oCiAgICAgIHsgZXJyb3I6ICJ0eXBlIG11c3QgYmUgb25lIG9mOiBob29rcywgc2NyaXB0LCBjYXB0aW9uLiIgfSwKICAgICAgeyBzdGF0dXM6IDQwMCB9LAogICAgKTsKICB9CiAgaWYgKCF0b3BpYykgewogICAgcmV0dXJuIFJlc3BvbnNlLmpzb24oeyBlcnJvcjogInRvcGljIGlzIHJlcXVpcmVkLiIgfSwgeyBzdGF0dXM6IDQwMCB9KTsKICB9CiAgaWYgKHRvcGljLmxlbmd0aCA+IDIwMCkgewogICAgcmV0dXJuIFJlc3BvbnNlLmpzb24oCiAgICAgIHsgZXJyb3I6ICJ0b3BpYyBtdXN0IGJlIDIwMCBjaGFyYWN0ZXJzIG9yIGZld2VyLiIgfSwKICAgICAgeyBzdGF0dXM6IDQwMCB9LAogICAgKTsKICB9CgogIGNvbnN0IGV4dHJhSGVhZGVyczogUmVjb3JkPHN0cmluZywgc3RyaW5nPiA9IHt9OwogIGlmIChpc01vY2tNb2RlKCkpIGV4dHJhSGVhZGVyc1siWC1Ib29rRm9yZ2UtTW9jayJdID0gIjEiOwoKICB0cnkgewogICAgaWYgKHR5cGUgPT09ICJob29rcyIpIHsKICAgICAgY29uc3QgeyB0ZXh0LCBwYXNzZWQsIHRvdGFsIH0gPSBhd2FpdCBnZW5lcmF0ZUhvb2tzKAogICAgICAgIHRvcGljLAogICAgICAgIHBsYXRmb3JtLAogICAgICApOwogICAgICByZXR1cm4gc3RyZWFtZWRUZXh0UmVzcG9uc2UodGV4dCwgewogICAgICAgIC4uLmV4dHJhSGVhZGVycywKICAgICAgICAiWC1Ib29rRm9yZ2UtR2F0ZSI6IGAke3Bhc3NlZH0vJHt0b3RhbH1gLAogICAgICB9KTsKICAgIH0KCiAgICBjb25zdCBtb2RlbCA9IGdldE1vZGVsKCk7CiAgICBjb25zdCBzaWduYWwgPSBBYm9ydFNpZ25hbC50aW1lb3V0KDMwXzAwMCk7CgogICAgaWYgKHR5cGUgPT09ICJzY3JpcHQiKSB7CiAgICAgIGNvbnN0IGhvb2sgPQogICAgICAgIHR5cGVvZiBib2R5Lmhvb2sgPT09ICJzdHJpbmciICYmIGJvZHkuaG9vay50cmltKCkKICAgICAgICAgID8gc3RyaXBGcmFtZXdvcmtMYWJlbChib2R5Lmhvb2sudHJpbSgpKQogICAgICAgICAgOiAiIjsKICAgICAgY29uc3QgZHVyYXRpb25TZWM6IFNjcmlwdER1cmF0aW9uID0gRFVSQVRJT05TLmluY2x1ZGVzKAogICAgICAgIGJvZHkuZHVyYXRpb25TZWMgYXMgU2NyaXB0RHVyYXRpb24sCiAgICAgICkKICAgICAgICA/IChib2R5LmR1cmF0aW9uU2VjIGFzIFNjcmlwdER1cmF0aW9uKQogICAgICAgIDogMzA7CiAgICAgIGNvbnN0IGxhbmc6IFNjcmlwdExhbmcgPSBMQU5HUy5pbmNsdWRlcyhib2R5LmxhbmcgYXMgU2NyaXB0TGFuZykKICAgICAgICA/IChib2R5LmxhbmcgYXMgU2NyaXB0TGFuZykKICAgICAgICA6ICJlbiI7CiAgICAgIGNvbnN0IHJlc3VsdCA9IHN0cmVhbVRleHQoewogICAgICAgIG1vZGVsLAogICAgICAgIHByb21wdDogc2NyaXB0UHJvbXB0KGhvb2ssIGR1cmF0aW9uU2VjLCBsYW5nLCB0b3BpYyksCiAgICAgICAgYWJvcnRTaWduYWw6IHNpZ25hbCwKICAgICAgfSk7CiAgICAgIHJldHVybiByZXN1bHQudG9UZXh0U3RyZWFtUmVzcG9uc2UoeyBoZWFkZXJzOiBleHRyYUhlYWRlcnMgfSk7CiAgICB9CgogICAgLy8gY2FwdGlvbgogICAgY29uc3QgaG9vayA9CiAgICAgIHR5cGVvZiBib2R5Lmhvb2sgPT09ICJzdHJpbmciICYmIGJvZHkuaG9vay50cmltKCkKICAgICAgICA/IHN0cmlwRnJhbWV3b3JrTGFiZWwoYm9keS5ob29rLnRyaW0oKSkKICAgICAgICA6IHVuZGVmaW5lZDsKICAgIGNvbnN0IHJlc3VsdCA9IHN0cmVhbVRleHQoewogICAgICBtb2RlbCwKICAgICAgcHJvbXB0OiBjYXB0aW9uUHJvbXB0KHRvcGljLCBwbGF0Zm9ybSwgaG9vayksCiAgICAgIGFib3J0U2lnbmFsOiBzaWduYWwsCiAgICB9KTsKICAgIHJldHVybiByZXN1bHQudG9UZXh0U3RyZWFtUmVzcG9uc2UoeyBoZWFkZXJzOiBleHRyYUhlYWRlcnMgfSk7CiAgfSBjYXRjaCAoZXJyKSB7CiAgICAvLyBOZXZlciBsZWFrIHN0YWNrIHRyYWNlcyB0byB0aGUgY2xpZW50LgogICAgY29uc29sZS5lcnJvcigiWy9hcGkvZ2VuZXJhdGVdIiwgZXJyIGluc3RhbmNlb2YgRXJyb3IgPyBlcnIubWVzc2FnZSA6IGVycik7CiAgICByZXR1cm4gUmVzcG9uc2UuanNvbigKICAgICAgeyBlcnJvcjogIkdlbmVyYXRpb24gZmFpbGVkLiBQbGVhc2UgdHJ5IGFnYWluLiIgfSwKICAgICAgeyBzdGF0dXM6IDUwMCB9LAogICAgKTsKICB9Cn0K
+// POST /api/generate — hook / script / caption generation (streaming).
+//
+// - hooks:   generateText → hook-gate validation → one regeneration pass
+//            for failures → still-failing hooks are FLAGGED, never dropped
+//            → final text streamed back as plain text.
+// - script / caption: true token streaming via Vercel AI SDK.
+// - In-memory rate limit: 20 generations / hour / IP (MVP).
+// - Mock mode (no OPENAI_API_KEY): deterministic local mock, flagged via
+//   the X-HookForge-Mock response header.
+
+import { generateText, streamText } from "ai";
+import { getModel, isMockMode } from "@/lib/llm";
+import {
+  hookPrompt,
+  scriptPrompt,
+  captionPrompt,
+  type Platform,
+  type GenerateType,
+  type ScriptDuration,
+  type ScriptLang,
+} from "@/lib/prompts";
+import { validateHook } from "@/lib/hook-gate";
+import { recordTopic } from "@/lib/freshness";
+
+export const maxDuration = 60;
+
+const PLATFORMS: Platform[] = ["tiktok", "instagram", "youtube", "x"];
+const TYPES: GenerateType[] = ["hooks", "script", "caption"];
+const DURATIONS: ScriptDuration[] = [15, 30, 60];
+const LANGS: ScriptLang[] = ["en", "id"];
+const FRAMEWORKS = ["curiosity", "contrarian", "callout", "cold-open", "stakes"];
+
+// ---------------------------------------------------------------------------
+// Rate limit (in-memory, per-IP, 20/hour)
+// ---------------------------------------------------------------------------
+
+const RATE_LIMIT = 20;
+const WINDOW_MS = 60 * 60 * 1000;
+const hits = new Map<string, number[]>();
+
+function isRateLimited(ip: string): boolean {
+  const now = Date.now();
+  if (hits.size > 10_000) hits.clear();
+  const recent = (hits.get(ip) ?? []).filter((t) => now - t < WINDOW_MS);
+  if (recent.length >= RATE_LIMIT) return false; // over the limit
+  recent.push(now);
+  hits.set(ip, recent);
+  return true;
+}
+
+// ---------------------------------------------------------------------------
+// Hook post-processing
+// ---------------------------------------------------------------------------
+
+function parseHookLines(text: string): string[] {
+  return text
+    .split("\n")
+    .map((l) => l.trim())
+    .filter((l) => /^\[[\w-]+\]/.test(l));
+}
+
+function frameworkOf(line: string): string | null {
+  const m = line.match(/^\[([\w-]+)\]/);
+  return m && FRAMEWORKS.includes(m[1]) ? m[1] : null;
+}
+
+function repairPrompt(
+  topic: string,
+  platform: Platform,
+  failedLines: string[],
+): string {
+  return [
+    `The following video hooks FAILED quality validation for the topic "${topic}" on ${platform}:`,
+    ``,
+    ...failedLines,
+    ``,
+    `Regenerate ONLY these frameworks, one per line, keeping the same [framework] label format.`,
+    `Rules: each hook ≤ 25 words; NEVER reveal the topic in the first 8 words;`,
+    `NEVER give away the answer inside the hook; EVERY hook must contain an open loop`,
+    `(an unanswered question, an ellipsis, or a "but..." turn); conversational spoken tone, no definitions.`,
+    `Output exactly ${failedLines.length} line(s), nothing else.`,
+  ].join("\n");
+}
+
+function stripFrameworkLabel(hook: string): string {
+  return hook.replace(/^\[[\w-]+\]\s*/, "").trim();
+}
+
+interface HooksResult {
+  text: string;
+  passed: number;
+  total: number;
+}
+
+async function generateHooks(
+  topic: string,
+  platform: Platform,
+): Promise<HooksResult> {
+  const model = getModel();
+  const signal = AbortSignal.timeout(30_000);
+
+  const first = await generateText({
+    model,
+    prompt: hookPrompt(topic, platform),
+    abortSignal: signal,
+  });
+  const hooks = parseHookLines(first.text);
+
+  // One regeneration pass for hooks that fail the gate.
+  const failedNow = hooks.filter((h) => !validateHook(h, topic).passed);
+  if (failedNow.length > 0 && hooks.length > 0) {
+    const repair = await generateText({
+      model,
+      prompt: repairPrompt(topic, platform, failedNow),
+      abortSignal: signal,
+    });
+    for (const line of parseHookLines(repair.text)) {
+      const fw = frameworkOf(line);
+      if (!fw) continue;
+      const idx = hooks.findIndex(
+        (h) => frameworkOf(h) === fw && !validateHook(h, topic).passed,
+      );
+      if (idx >= 0) hooks[idx] = line;
+    }
+  }
+
+  // Flag (never silently drop) anything still failing.
+  const final = hooks.map((h) =>
+    validateHook(h, topic).passed ? h : `${h} [review]`,
+  );
+  const passed = final.filter((h) => !h.endsWith("[review]")).length;
+
+  // Best-effort freshness history — never blocks the response.
+  recordTopic(topic);
+
+  return { text: final.join("\n"), passed, total: final.length };
+}
+
+/** Emit plain text as a word-chunked stream (simulated streaming UX). */
+function streamedTextResponse(
+  text: string,
+  headers: Record<string, string>,
+): Response {
+  const encoder = new TextEncoder();
+  const chunks = text.split(/(\s+)/);
+  let i = 0;
+  const stream = new ReadableStream<Uint8Array>({
+    async start(controller) {
+      for (const chunk of chunks) {
+        controller.enqueue(encoder.encode(chunk));
+        i += 1;
+        if (i % 4 === 0) await new Promise((r) => setTimeout(r, 12));
+      }
+      controller.close();
+    },
+  });
+  return new Response(stream, {
+    headers: {
+      "Content-Type": "text/plain; charset=utf-8",
+      "Cache-Control": "no-cache",
+      ...headers,
+    },
+  });
+}
+
+// ---------------------------------------------------------------------------
+// Route
+// ---------------------------------------------------------------------------
+
+interface GenerateBody {
+  type?: unknown;
+  topic?: unknown;
+  platform?: unknown;
+  hook?: unknown;
+  durationSec?: unknown;
+  lang?: unknown;
+}
+
+export async function POST(req: Request): Promise<Response> {
+  const ip =
+    req.headers.get("x-forwarded-for")?.split(",")[0]?.trim() ?? "unknown";
+  if (!isRateLimited(ip)) {
+    return Response.json(
+      { error: "Rate limit reached — 20 generations per hour. Try again later." },
+      { status: 429 },
+    );
+  }
+
+  let body: GenerateBody;
+  try {
+    body = (await req.json()) as GenerateBody;
+  } catch {
+    return Response.json({ error: "Invalid JSON body." }, { status: 400 });
+  }
+
+  const type = body.type;
+  const topic = typeof body.topic === "string" ? body.topic.trim() : "";
+  const platform: Platform = PLATFORMS.includes(body.platform as Platform)
+    ? (body.platform as Platform)
+    : "tiktok";
+
+  if (!TYPES.includes(type as GenerateType)) {
+    return Response.json(
+      { error: "type must be one of: hooks, script, caption." },
+      { status: 400 },
+    );
+  }
+  if (!topic) {
+    return Response.json({ error: "topic is required." }, { status: 400 });
+  }
+  if (topic.length > 200) {
+    return Response.json(
+      { error: "topic must be 200 characters or fewer." },
+      { status: 400 },
+    );
+  }
+
+  const extraHeaders: Record<string, string> = {};
+  if (isMockMode()) extraHeaders["X-HookForge-Mock"] = "1";
+
+  try {
+    if (type === "hooks") {
+      const { text, passed, total } = await generateHooks(
+        topic,
+        platform,
+      );
+      return streamedTextResponse(text, {
+        ...extraHeaders,
+        "X-HookForge-Gate": `${passed}/${total}`,
+      });
+    }
+
+    const model = getModel();
+    const signal = AbortSignal.timeout(30_000);
+
+    if (type === "script") {
+      const hook =
+        typeof body.hook === "string" && body.hook.trim()
+          ? stripFrameworkLabel(body.hook.trim())
+          : "";
+      const durationSec: ScriptDuration = DURATIONS.includes(
+        body.durationSec as ScriptDuration,
+      )
+        ? (body.durationSec as ScriptDuration)
+        : 30;
+      const lang: ScriptLang = LANGS.includes(body.lang as ScriptLang)
+        ? (body.lang as ScriptLang)
+        : "en";
+      const result = streamText({
+        model,
+        prompt: scriptPrompt(hook, durationSec, lang, topic),
+        abortSignal: signal,
+      });
+      return result.toTextStreamResponse({ headers: extraHeaders });
+    }
+
+    // caption
+    const hook =
+      typeof body.hook === "string" && body.hook.trim()
+        ? stripFrameworkLabel(body.hook.trim())
+        : undefined;
+    const result = streamText({
+      model,
+      prompt: captionPrompt(topic, platform, hook),
+      abortSignal: signal,
+    });
+    return result.toTextStreamResponse({ headers: extraHeaders });
+  } catch (err) {
+    // Never leak stack traces to the client.
+    console.error("[/api/generate]", err instanceof Error ? err.message : err);
+    return Response.json(
+      { error: "Generation failed. Please try again." },
+      { status: 500 },
+    );
+  }
+}

@@ -1,1 +1,20 @@
-aW1wb3J0IHR5cGUgeyBNZXRhZGF0YSB9IGZyb20gIm5leHQiOwppbXBvcnQgIi4vZ2xvYmFscy5jc3MiOwoKZXhwb3J0IGNvbnN0IG1ldGFkYXRhOiBNZXRhZGF0YSA9IHsKICB0aXRsZTogIkhvb2tGb3JnZSDigJQgQUkgaG9va3MsIHNjcmlwdHMgJiBjYXB0aW9ucyBmb3IgZmFjZWxlc3MgY3JlYXRvcnMiLAogIGRlc2NyaXB0aW9uOgogICAgIkdlbmVyYXRlIHNjcm9sbC1zdG9wcGluZyBob29rcywgZnVsbCBuYXJyYXRpb24gc2NyaXB0cywgYW5kIHBsYXRmb3JtIGNhcHRpb25zIGZyb20gb25lIHRvcGljLiIsCn07CgpleHBvcnQgZGVmYXVsdCBmdW5jdGlvbiBSb290TGF5b3V0KHsKICBjaGlsZHJlbiwKfTogewogIGNoaWxkcmVuOiBSZWFjdC5SZWFjdE5vZGU7Cn0pIHsKICByZXR1cm4gKAogICAgPGh0bWwgbGFuZz0iZW4iPgogICAgICA8Ym9keSBjbGFzc05hbWU9ImJnLXppbmMtOTUwIHRleHQtemluYy0xMDAgYW50aWFsaWFzZWQiPntjaGlsZHJlbn08L2JvZHk+CiAgICA8L2h0bWw+CiAgKTsKfQo=
+import type { Metadata } from "next";
+import "./globals.css";
+
+export const metadata: Metadata = {
+  title: "HookForge — AI hooks, scripts & captions for faceless creators",
+  description:
+    "Generate scroll-stopping hooks, full narration scripts, and platform captions from one topic.",
+};
+
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
+  return (
+    <html lang="en">
+      <body className="bg-zinc-950 text-zinc-100 antialiased">{children}</body>
+    </html>
+  );
+}
