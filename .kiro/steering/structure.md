@@ -1,1 +1,30 @@
-IyBQcm9qZWN0IFN0cnVjdHVyZSDigJQgSG9va0ZvcmdlCgpgYGAKaG9va2ZvcmdlLwrilJzilIDilIAgLmtpcm8vICAgICAgICAgICAgICAgICAgICAjIEtpcm8gY29uZmlndXJhdGlvbiAoUkVRVUlSRUQgYnkgS2lyb3dlZW4gcnVsZXMpCuKUgiAgIOKUnOKUgOKUgCBzdGVlcmluZy8gICAgICAgICAgICAgIyBwcm9kdWN0Lm1kLCB0ZWNoLm1kLCBzdHJ1Y3R1cmUubWQgKyBkb21haW4gZmlsZXMK4pSCICAg4pSc4pSA4pSAIHNwZWNzL2hvb2tmb3JnZS8gICAgICAjIHJlcXVpcmVtZW50cy5tZCwgZGVzaWduLm1kLCB0YXNrcy5tZArilIIgICDilJTilIDilIAgaG9va3MvICAgICAgICAgICAgICAgICMgbGludC1vbi1zYXZlLmpzb24sIHRlc3Qtb24tc2F2ZS5qc29uCuKUnOKUgOKUgCBzcmMvCuKUgiAgIOKUnOKUgOKUgCBhcHAvICAgICAgICAgICAgICAgICAgIyBOZXh0LmpzIEFwcCBSb3V0ZXIgcGFnZXMK4pSCICAg4pSCICAg4pSc4pSA4pSAIHBhZ2UudHN4ICAgICAgICAgICMgTGFuZGluZyArIGdlbmVyYXRvciBVSQrilIIgICDilIIgICDilJzilIDilIAgYXBpL2dlbmVyYXRlLyAgICAgIyBIb29rL3NjcmlwdC9jYXB0aW9uIGdlbmVyYXRpb24gZW5kcG9pbnQK4pSCICAg4pSCICAg4pSU4pSA4pSAIGFwaS9mcmVzaG5lc3MvICAgICMgVG9waWMgZGVkdXBlIGNoZWNrIGVuZHBvaW50CuKUgiAgIOKUnOKUgOKUgCBsaWIvCuKUgiAgIOKUgiAgIOKUnOKUgOKUgCBob29rLWdhdGUudHMgICAgICAjIDQtY2hlY2sgaG9vayB2YWxpZGF0b3IgKHB1cmUgZnVuY3Rpb25zLCB0ZXN0ZWQpCuKUgiAgIOKUgiAgIOKUnOKUgOKUgCBwcm9tcHRzLnRzICAgICAgICAjIExMTSBwcm9tcHQgdGVtcGxhdGVzCuKUgiAgIOKUgiAgIOKUlOKUgOKUgCBmcmVzaG5lc3MudHMgICAgICAjIFJlZGlzIGRlZHVwZSBsb2dpYwrilIIgICDilJTilIDilIAgY29tcG9uZW50cy8gICAgICAgICAgICMgVUkgY29tcG9uZW50cwrilJzilIDilIAgcHVibGljLyAgICAgICAgICAgICAgICAgICAjIFN0YXRpYyBhc3NldHMK4pSc4pSA4pSAIHBhY2thZ2UuanNvbgrilJzilIDilIAgdHNjb25maWcuanNvbgrilJzilIDilIAgUkVBRE1FLm1kCuKUlOKUgOKUgCAuZ2l0aWdub3JlICAgICAgICAgICAgICAgICMgbXVzdCBOT1QgaW5jbHVkZSAua2lyby8KYGBgCgojIyBDb252ZW50aW9ucwotIEFsbCBMTE0gcHJvbXB0cyBsaXZlIGluIGBzcmMvbGliL3Byb21wdHMudHNgIOKAlCBuZXZlciBpbmxpbmUgaW4gcm91dGVzCi0gVmFsaWRhdG9ycyBpbiBgc3JjL2xpYi9gIGFyZSBwdXJlIGZ1bmN0aW9ucyB3aXRoIFZpdGVzdCBjb3ZlcmFnZQotIEFQSSByb3V0ZXMgcmV0dXJuIHN0cmVhbWluZyByZXNwb25zZXMgdmlhIFZlcmNlbCBBSSBTREsKLSBVSSBjb3B5IGluIEVuZ2xpc2ggKGdsb2JhbCBjcmVhdG9yIGF1ZGllbmNlKQo=
+# Project Structure — HookForge
+
+```
+hookforge/
+├── .kiro/                    # Kiro configuration (REQUIRED by Kiroween rules)
+│   ├── steering/             # product.md, tech.md, structure.md + domain files
+│   ├── specs/hookforge/      # requirements.md, design.md, tasks.md
+│   └── hooks/                # lint-on-save.json, test-on-save.json
+├── src/
+│   ├── app/                  # Next.js App Router pages
+│   │   ├── page.tsx          # Landing + generator UI
+│   │   ├── api/generate/     # Hook/script/caption generation endpoint
+│   │   └── api/freshness/    # Topic dedupe check endpoint
+│   ├── lib/
+│   │   ├── hook-gate.ts      # 4-check hook validator (pure functions, tested)
+│   │   ├── prompts.ts        # LLM prompt templates
+│   │   └── freshness.ts      # Redis dedupe logic
+│   └── components/           # UI components
+├── public/                   # Static assets
+├── package.json
+├── tsconfig.json
+├── README.md
+└── .gitignore                # must NOT include .kiro/
+```
+
+## Conventions
+- All LLM prompts live in `src/lib/prompts.ts` — never inline in routes
+- Validators in `src/lib/` are pure functions with Vitest coverage
+- API routes return streaming responses via Vercel AI SDK
+- UI copy in English (global creator audience)

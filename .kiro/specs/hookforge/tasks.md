@@ -1,1 +1,28 @@
-IyBUYXNrcyDigJQgSG9va0ZvcmdlIE1WUAoKIyMgV2F2ZSAxIChubyBkZXBlbmRlbmNpZXMg4oCUIHJ1biBjb25jdXJyZW50bHkpCi0gW3hdIDEuIFNjYWZmb2xkIE5leHQuanMgMTUgKyBUeXBlU2NyaXB0ICsgVGFpbHdpbmQgcHJvamVjdAotIFt4XSAyLiBXcml0ZSBgc3JjL2xpYi9ob29rLWdhdGUudHNgIHZhbGlkYXRvcnMgKDQgY2hlY2tzIGFzIHB1cmUgZnVuY3Rpb25zKQotIFt4XSAzLiBXcml0ZSBgc3JjL2xpYi9wcm9tcHRzLnRzYCAoaG9vay9zY3JpcHQvY2FwdGlvbiB0ZW1wbGF0ZXMpCi0gW3hdIDQuIFNldCB1cCBVcHN0YXNoIFJlZGlzICsgYHNyYy9saWIvZnJlc2huZXNzLnRzYAoKIyMgV2F2ZSAyIChkZXBlbmRzIG9uIFdhdmUgMSkg4oCUIERPTkUgMzEvMTAKLSBbeF0gNS4gQnVpbGQgYFBPU1QgL2FwaS9nZW5lcmF0ZWAgc3RyZWFtaW5nIHJvdXRlIChob29rcy9zY3JpcHQvY2FwdGlvbikKLSBbeF0gNi4gQnVpbGQgYFBPU1QgL2FwaS9mcmVzaG5lc3NgIHJvdXRlCi0gW3hdIDcuIFZpdGVzdCB1bml0IHRlc3RzIGZvciBob29rLWdhdGUgdmFsaWRhdG9ycwoKIyMgV2F2ZSAzIChkZXBlbmRzIG9uIFdhdmUgMikKLSBbeF0gOC4gQnVpbGQgZ2VuZXJhdG9yIFVJIChgcGFnZS50c3hgKTogaW5wdXQsIHRhYnMsIHN0cmVhbWluZyBvdXRwdXQsIGNvcHkgYnV0dG9ucwotIFt4XSA5LiBGcmVzaG5lc3Mgd2FybmluZyBiYW5uZXIgKyBoaXN0b3J5IChsb2NhbFN0b3JhZ2UpCgojIyBXYXZlIDQgKGRlcGVuZHMgb24gV2F2ZSAzKSDigJQgUEFSVElBTCAzMS8xMAotIFsgXSAxMC4gRGVwbG95IHRvIFZlcmNlbCwgdmVyaWZ5IHB1YmxpYyBVUkwg4oCUIEJMT0NLRUQ6IFZlcmNlbCBNQ1AgbGFja3MgdGVhbSBzY29wZSBhY2Nlc3MgKDQwMyk7IG5lZWRzIHVzZXIgdG8gZ3JhbnQgdGVhbSBhY2Nlc3Mgb3IgZGVwbG95IG1hbnVhbGx5IHZpYSBkYXNoYm9hcmQKLSBbeF0gMTEuIERlbW8gdmlkZW8gc2hvdCBsaXN0ICsgc2NyaXB0IHdyaXR0ZW4g4oaSIERFTU8tU0NSSVBULm1kIChyZWNvcmRpbmcgaXMgbWFudWFsKQotIFt4XSAxMi4gRGV2cG9zdCBzdWJtaXNzaW9uIGRvY3Mgd3JpdHRlbiDihpIgU1VCTUlTU0lPTi5tZCAoY2F0ZWdvcnk6IEZyYW5rZW5zdGVpbikKLSBbeF0gTElDRU5TRSAoTUlUKSBhZGRlZCDigJQgS2lyb3dlZW4gb3Blbi1zb3VyY2UgcmVxdWlyZW1lbnQKCiMjIEtpcm8gZmVhdHVyZSB1c2FnZSAoZm9yIHN1Ym1pc3Npb24gZG9jcykKLSBbeF0gU3BlY3M6IHRoaXMgc3BlYyBkcm92ZSB0aGUgYnVpbGQgKHJlcXVpcmVtZW50cyDihpIgZGVzaWduIOKGkiB0YXNrcykKLSBbeF0gU3RlZXJpbmc6IHByb2R1Y3QubWQgLyB0ZWNoLm1kIC8gc3RydWN0dXJlLm1kIGd1aWRlZCBhbGwgZ2VuZXJhdGlvbgotIFt4XSBIb29rczogbGludC1vbi1zYXZlICsgdGVzdC1vbi1zYXZlIChzZWUgLmtpcm8vaG9va3MvKQotIFt4XSBNQ1A6IGV2YWx1YXRlZCBmZXRjaCBNQ1AgZm9yIGNvbXBldGl0b3IgcmVzZWFyY2g7IGRlZmVycmVkIHBvc3QtTVZQCg==
+# Tasks — HookForge MVP
+
+## Wave 1 (no dependencies — run concurrently)
+- [x] 1. Scaffold Next.js 15 + TypeScript + Tailwind project
+- [x] 2. Write `src/lib/hook-gate.ts` validators (4 checks as pure functions)
+- [x] 3. Write `src/lib/prompts.ts` (hook/script/caption templates)
+- [x] 4. Set up Upstash Redis + `src/lib/freshness.ts`
+
+## Wave 2 (depends on Wave 1) — DONE 31/10
+- [x] 5. Build `POST /api/generate` streaming route (hooks/script/caption)
+- [x] 6. Build `POST /api/freshness` route
+- [x] 7. Vitest unit tests for hook-gate validators
+
+## Wave 3 (depends on Wave 2)
+- [x] 8. Build generator UI (`page.tsx`): input, tabs, streaming output, copy buttons
+- [x] 9. Freshness warning banner + history (localStorage)
+
+## Wave 4 (depends on Wave 3) — PARTIAL 31/10
+- [ ] 10. Deploy to Vercel, verify public URL — BLOCKED: Vercel MCP lacks team scope access (403); needs user to grant team access or deploy manually via dashboard
+- [x] 11. Demo video shot list + script written → DEMO-SCRIPT.md (recording is manual)
+- [x] 12. Devpost submission docs written → SUBMISSION.md (category: Frankenstein)
+- [x] LICENSE (MIT) added — Kiroween open-source requirement
+
+## Kiro feature usage (for submission docs)
+- [x] Specs: this spec drove the build (requirements → design → tasks)
+- [x] Steering: product.md / tech.md / structure.md guided all generation
+- [x] Hooks: lint-on-save + test-on-save (see .kiro/hooks/)
+- [x] MCP: evaluated fetch MCP for competitor research; deferred post-MVP

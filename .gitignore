@@ -1,1 +1,7 @@
-bm9kZV9tb2R1bGVzLwoubmV4dC8KLmVudgouZW52LmxvY2FsCioubG9nCi5EU19TdG9yZQojIE5PVEU6IC5raXJvLyBtdXN0IE5FVkVSIGJlIGFkZGVkIGhlcmUgKEtpcm93ZWVuIHJlcXVpcmVtZW50KQo=
+node_modules/
+.next/
+.env
+.env.local
+*.log
+.DS_Store
+# NOTE: .kiro/ must NEVER be added here (Kiroween requirement)

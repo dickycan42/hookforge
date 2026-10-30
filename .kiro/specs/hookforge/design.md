@@ -1,1 +1,63 @@
-IyBEZXNpZ24g4oCUIEhvb2tGb3JnZSBNVlAKCiMjIEFyY2hpdGVjdHVyZQoKYGBgCuKUjOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUkCAgICAg4pSM4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSQICAgICDilIzilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilJAK4pSCICBOZXh0LmpzIFVJIOKUguKUgOKUgOKUgOKUgOKWtuKUgiAgQVBJIHJvdXRlcyAgICAgIOKUguKUgOKUgOKUgOKUgOKWtuKUgiAgTExNICAgICAg4pSCCuKUgiAgKFZlcmNlbCkgICDilILil4DilIDilIDilIDilIDilIIgIChzdHJlYW1pbmcpICAgICDilILil4DilIDilIDilIDilIDilIIgIChLaXJvICQpIOKUggrilJTilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilJggICAgIOKUlOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUmCAgICAg4pSU4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSYCiAgICAgICAgICAgICAgICAgICAgICAgICAgIOKUggogICAgICAgICAgICAgICAgICAgICAgICAgICDilrwKICAgICAgICAgICAgICAgICAgICDilIzilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilJAKICAgICAgICAgICAgICAgICAgICDilIIgVXBzdGFzaCBSZWRpc+KUgiAgKHRvcGljIGhpc3RvcnksIDkwZCBUVEwpCiAgICAgICAgICAgICAgICAgICAg4pSU4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSYCmBgYAoKU2luZ2xlIE5leHQuanMgYXBwIG9uIFZlcmNlbC4gTm8gc2VwYXJhdGUgYmFja2VuZCDigJQgQVBJIHJvdXRlcyBoYW5kbGUgZ2VuZXJhdGlvbgphbmQgZnJlc2huZXNzIGNoZWNrcy4gU3RyZWFtaW5nIHZpYSBWZXJjZWwgQUkgU0RLIGZvciBwZXJjZWl2ZWQgc3BlZWQuCgojIyBDb21wb25lbnRzCgojIyMgMS4gR2VuZXJhdG9yIFVJIChgc3JjL2FwcC9wYWdlLnRzeGApCi0gVG9waWMgaW5wdXQgKyBwbGF0Zm9ybSBwaWxscyArIGR1cmF0aW9uIHNlbGVjdG9yCi0gVGhyZWUgdGFiczogSG9va3MgLyBTY3JpcHQgLyBDYXB0aW9uCi0gU3RyZWFtaW5nIHRleHQgYXJlYSB3aXRoIGNvcHkgYnV0dG9ucwotIEZyZXNobmVzcyB3YXJuaW5nIGJhbm5lcgoKIyMjIDIuIEdlbmVyYXRpb24gQVBJIChgc3JjL2FwcC9hcGkvZ2VuZXJhdGUvcm91dGUudHNgKQotIFBPU1QgeyB0eXBlOiAnaG9va3MnfCdzY3JpcHQnfCdjYXB0aW9uJywgdG9waWMsIHBsYXRmb3JtLCBvcHRpb25zIH0KLSBCdWlsZHMgcHJvbXB0IGZyb20gYHNyYy9saWIvcHJvbXB0cy50c2AsIHN0cmVhbXMgTExNIHJlc3BvbnNlCi0gRm9yIGhvb2tzOiBwb3N0LXByb2Nlc3NlcyBlYWNoIGhvb2sgdGhyb3VnaCBgaG9vay1nYXRlLnRzYCB2YWxpZGF0b3I7CiAgZmFpbGVkIGhvb2tzIGFyZSByZWdlbmVyYXRlZCBvbmNlLCB0aGVuIGZsYWdnZWQgKG5ldmVyIHNpbGVudGx5IGRyb3BwZWQpCgojIyMgMy4gSG9vayBHYXRlIChgc3JjL2xpYi9ob29rLWdhdGUudHNgKQpQdXJlLWZ1bmN0aW9uIHZhbGlkYXRvcnMgaW1wbGVtZW50aW5nIHRoZSA0IGNoZWNrczoKLSBgbm9FYXJseVJldmVhbChob29rLCB0b3BpYylgIOKAlCB0b3BpYyBrZXl3b3JkcyBhYnNlbnQgZnJvbSBmaXJzdCA4IHdvcmRzCi0gYHdpdGhob2xkc0Fuc3dlcihob29rKWAg4oCUIG5vIHBheW9mZiBwaHJhc2VzICgiYmVjYXVzZSIsICJ0aGUgYW5zd2VyIGlzIikKLSBgaGFzT3Blbkxvb3AoaG9vaylgIOKAlCBjb250YWlucyAiPyIgb3Igb3Blbi1sb29wIHBhdHRlcm5zCi0gYGlzQ29udmVyc2F0aW9uYWwoaG9vaylgIOKAlCByZWplY3RzIGRlZmluaXRpb24gcGF0dGVybnMgKCJYIGlzIGEuLi4iKQoKIyMjIDQuIEZyZXNobmVzcyAoYHNyYy9saWIvZnJlc2huZXNzLnRzYCArIGBhcGkvZnJlc2huZXNzL3JvdXRlLnRzYCkKLSBOb3JtYWxpemUgdG9waWMgKGxvd2VyY2FzZSwgc3RyaXAgc3RvcHdvcmRzKSDihpIgc2ltaWxhcml0eSB2cyBzdG9yZWQgdG9waWNzCi0gSmFjY2FyZCBzaW1pbGFyaXR5IOKJpSAwLjgg4oaSIHdhcm4KCiMjIyA1LiBQcm9tcHRzIChgc3JjL2xpYi9wcm9tcHRzLnRzYCkKLSBgaG9va1Byb21wdCh0b3BpYywgcGxhdGZvcm0pYCDigJQgNSB2YXJpYW50cywgZnJhbWV3b3JrLWxhYmVsZWQsIFRUUy1hd2FyZQotIGBzY3JpcHRQcm9tcHQoaG9vaywgZHVyYXRpb24sIGxhbmcpYCDigJQgYmVhdC1zdHJ1Y3R1cmVkLCBwdW5jdHVhdGlvbi1kcml2ZW4KLSBgY2FwdGlvblByb21wdCh0b3BpYywgcGxhdGZvcm0pYCDigJQgbGVuZ3RoLWNvbnN0cmFpbmVkIHBlciBwbGF0Zm9ybQoKIyMgRGF0YSBGbG93CjEuIFVzZXIgZW50ZXJzIHRvcGljIOKGkiBmcmVzaG5lc3MgY2hlY2sgcnVucyBpbiBwYXJhbGxlbCB3aXRoIGhvb2sgZ2VuZXJhdGlvbgoyLiBIb29rcyBzdHJlYW0gaW4g4oaSIGVhY2ggdmFsaWRhdGVkIGJ5IGhvb2stZ2F0ZSDihpIgVUkgc2hvd3MgcGFzcy9mYWlsIGJhZGdlCjMuIFVzZXIgcGlja3MgaG9vayDihpIgc2NyaXB0IGdlbmVyYXRpb24g4oaSIGNhcHRpb24gZ2VuZXJhdGlvbiAoY2hhaW5lZCwgY2FuY2VsbGFibGUpCgojIyBFcnJvciBIYW5kbGluZwotIExMTSB0aW1lb3V0ICgzMHMpIOKGkiBmcmllbmRseSByZXRyeSBVSSwgbm8gc3RhY2sgdHJhY2VzCi0gUmVkaXMgZG93biDihpIgZnJlc2huZXNzIGNoZWNrIGRlZ3JhZGVzIHRvICJ1bmtub3duIiwgZ2VuZXJhdGlvbiBjb250aW51ZXMKLSBSYXRlIGxpbWl0OiAyMCBnZW5lcmF0aW9ucy9ob3VyL0lQIChpbi1tZW1vcnksIE1WUCkKCiMjIFRlc3RpbmcgU3RyYXRlZ3kKLSBWaXRlc3QgdW5pdCB0ZXN0cyBmb3IgYWxsIGBob29rLWdhdGUudHNgIHZhbGlkYXRvcnMgKHBvc2l0aXZlICsgbmVnYXRpdmUgY2FzZXMpCi0gUHJvbXB0IHNuYXBzaG90IHRlc3RzIChlbnN1cmUgdGVtcGxhdGUgY2hhbmdlcyBhcmUgZGVsaWJlcmF0ZSkKLSBNYW51YWwgUUEgY2hlY2tsaXN0IGZvciBVSSBmbG93cyBiZWZvcmUgZGVtbyByZWNvcmRpbmcK
+# Design — HookForge MVP
+
+## Architecture
+
+```
+┌─────────────┐     ┌──────────────────┐     ┌───────────┐
+│  Next.js UI │────▶│  API routes      │────▶│  LLM      │
+│  (Vercel)   │◀────│  (streaming)     │◀────│  (Kiro $) │
+└─────────────┘     └──────────────────┘     └───────────┘
+                           │
+                           ▼
+                    ┌──────────────┐
+                    │ Upstash Redis│  (topic history, 90d TTL)
+                    └──────────────┘
+```
+
+Single Next.js app on Vercel. No separate backend — API routes handle generation
+and freshness checks. Streaming via Vercel AI SDK for perceived speed.
+
+## Components
+
+### 1. Generator UI (`src/app/page.tsx`)
+- Topic input + platform pills + duration selector
+- Three tabs: Hooks / Script / Caption
+- Streaming text area with copy buttons
+- Freshness warning banner
+
+### 2. Generation API (`src/app/api/generate/route.ts`)
+- POST { type: 'hooks'|'script'|'caption', topic, platform, options }
+- Builds prompt from `src/lib/prompts.ts`, streams LLM response
+- For hooks: post-processes each hook through `hook-gate.ts` validator;
+  failed hooks are regenerated once, then flagged (never silently dropped)
+
+### 3. Hook Gate (`src/lib/hook-gate.ts`)
+Pure-function validators implementing the 4 checks:
+- `noEarlyReveal(hook, topic)` — topic keywords absent from first 8 words
+- `withholdsAnswer(hook)` — no payoff phrases ("because", "the answer is")
+- `hasOpenLoop(hook)` — contains "?" or open-loop patterns
+- `isConversational(hook)` — rejects definition patterns ("X is a...")
+
+### 4. Freshness (`src/lib/freshness.ts` + `api/freshness/route.ts`)
+- Normalize topic (lowercase, strip stopwords) → similarity vs stored topics
+- Jaccard similarity ≥ 0.8 → warn
+
+### 5. Prompts (`src/lib/prompts.ts`)
+- `hookPrompt(topic, platform)` — 5 variants, framework-labeled, TTS-aware
+- `scriptPrompt(hook, duration, lang)` — beat-structured, punctuation-driven
+- `captionPrompt(topic, platform)` — length-constrained per platform
+
+## Data Flow
+1. User enters topic → freshness check runs in parallel with hook generation
+2. Hooks stream in → each validated by hook-gate → UI shows pass/fail badge
+3. User picks hook → script generation → caption generation (chained, cancellable)
+
+## Error Handling
+- LLM timeout (30s) → friendly retry UI, no stack traces
+- Redis down → freshness check degrades to "unknown", generation continues
+- Rate limit: 20 generations/hour/IP (in-memory, MVP)
+
+## Testing Strategy
+- Vitest unit tests for all `hook-gate.ts` validators (positive + negative cases)
+- Prompt snapshot tests (ensure template changes are deliberate)
+- Manual QA checklist for UI flows before demo recording

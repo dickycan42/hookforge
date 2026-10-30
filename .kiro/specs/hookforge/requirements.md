@@ -1,1 +1,56 @@
-IyBSZXF1aXJlbWVudHMg4oCUIEhvb2tGb3JnZSBNVlAKCiMjIFVzZXIgU3RvcmllcwoKIyMjIFVTLTE6IEdlbmVyYXRlIGhvb2tzIGZyb20gYSB0b3BpYwoqKkFzIGEqKiBmYWNlbGVzcyBjb250ZW50IGNyZWF0b3IsCioqSSB3YW50KiogdG8gZW50ZXIgYSB0b3BpYyBhbmQgZ2V0IDUgaG9vayB2YXJpYW50cywKKipTbyB0aGF0KiogSSBjYW4gcGljayBhIHNjcm9sbC1zdG9wcGluZyBvcGVuZXIgd2l0aG91dCB3cml0ZXIncyBibG9jay4KCioqQWNjZXB0YW5jZSBDcml0ZXJpYToqKgotIFsgXSBJbnB1dDogdG9waWMgdGV4dCAoMeKAkzEyMCBjaGFycykgKyBwbGF0Zm9ybSBzZWxlY3RvciAoVGlrVG9rL0lHL1lUL1gpCi0gWyBdIE91dHB1dDogNSBob29rcywgZWFjaCDiiaQgMjUgd29yZHMsIGxhYmVsZWQgYnkgZnJhbWV3b3JrIChjdXJpb3NpdHkvY29udHJhcmlhbi9jYWxsb3V0L2NvbGQtb3Blbi9zdGFrZXMpCi0gWyBdIEVhY2ggaG9vayBwYXNzZXMgdGhlIDQtY2hlY2sgZ2F0ZSAodmFsaWRhdGVkIHByb2dyYW1tYXRpY2FsbHkpOgogIDEuIERvZXMgbm90IHJldmVhbCB0aGUgdG9waWMvZmFjdCBpbiB0aGUgZmlyc3QgMiBzZWNvbmRzIG9mIHJlYWRpbmcKICAyLiBXaXRoaG9sZHMgdGhlIGFuc3dlciAobm8gcGF5b2ZmIGluIHRoZSBob29rIGl0c2VsZikKICAzLiBDb250YWlucyDiiaUxIG9wZW4gbG9vcCBvciB1bmFuc3dlcmVkIHF1ZXN0aW9uCiAgNC4gQ29udmVyc2F0aW9uYWwgdG9uZSAobm8gZGVmaW5pdGlvbnMsIG5vICJYIGlzLi4uIikKLSBbIF0gR2VuZXJhdGlvbiBzdHJlYW1zIHRva2VuLWJ5LXRva2VuOyB0b3RhbCBsYXRlbmN5IDwgMTVzCgojIyMgVVMtMjogQnVpbGQgYSBmdWxsIHNjcmlwdCBmcm9tIGEgaG9vawoqKkFzIGEqKiBjcmVhdG9yLAoqKkkgd2FudCoqIHRvIGV4cGFuZCBhIGNob3NlbiBob29rIGludG8gYSBmdWxsIG5hcnJhdGlvbiBzY3JpcHQsCioqU28gdGhhdCoqIEkgY2FuIHBhc3RlIGl0IGludG8gVFRTIGFuZCBwcm9kdWNlIGEgdmlkZW8uCgoqKkFjY2VwdGFuY2UgQ3JpdGVyaWE6KioKLSBbIF0gSW5wdXQ6IHNlbGVjdGVkIGhvb2sgKyB0YXJnZXQgZHVyYXRpb24gKDE1cy8zMHMvNjBzKSArIGxhbmd1YWdlIChFTi9JRCkKLSBbIF0gT3V0cHV0OiBzY3JpcHQgd2l0aCBiZWF0IG1hcmtlcnMgKEhPT0sgLyBCT0RZIC8gQ0xJRkZIQU5HRVIpLCBUVFMgcHVuY3R1YXRpb24gKGNvbW1hcywgZWxsaXBzZXMsIENBUFMgZm9yIGVtcGhhc2lzKQotIFsgXSBTY3JpcHQgZW5kcyB3aXRoIGEgY2xpZmZoYW5nZXIgb3IgQ1RBLCBuZXZlciBhIGZsYXQgc3VtbWFyeQotIFsgXSBXb3JkIGNvdW50IG1hdGNoZXMgZHVyYXRpb24gKMKxMTAlIGF0IDE1MCB3cG0pCgojIyMgVVMtMzogQ29tcG9zZSBwbGF0Zm9ybSBjYXB0aW9uCioqQXMgYSoqIGNyZWF0b3IsCioqSSB3YW50KiogYSBjYXB0aW9uIHRhaWxvcmVkIHRvIHRoZSBwb3N0aW5nIHBsYXRmb3JtLAoqKlNvIHRoYXQqKiBJIGRvbid0IHJld3JpdGUgbWFudWFsbHkgcGVyIHBsYXRmb3JtLgoKKipBY2NlcHRhbmNlIENyaXRlcmlhOioqCi0gWyBdIFRpa1Rvazog4omkMTUwIGNoYXJzLCDiiaQ1IGhhc2h0YWdzLCBob29rIG5vdCByZXBlYXRlZCB2ZXJiYXRpbQotIFsgXSBYOiDiiaQyODAgY2hhcnMgKFVSTHMgY291bnRlZCBhcyAyMyBjaGFycykKLSBbIF0gSUc6IGhvb2sgKyB2YWx1ZSArIENUQSArIGhhc2h0YWdzCi0gWyBdIE9uZS1jbGljayBjb3B5IGJ1dHRvbiBwZXIgY2FwdGlvbgoKIyMjIFVTLTQ6IFRvcGljIGZyZXNobmVzcyBjaGVjawoqKkFzIGEqKiBjcmVhdG9yIHJ1bm5pbmcgZGFpbHkgY29udGVudCwKKipJIHdhbnQqKiBhIHdhcm5pbmcgaWYgSSByZXVzZSBhIHJlY2VudCB0b3BpYywKKipTbyB0aGF0KiogSSBkb24ndCByZXBlYXQgY29udGVudCBhY3Jvc3MgcGxhdGZvcm1zLgoKKipBY2NlcHRhbmNlIENyaXRlcmlhOioqCi0gWyBdIE9uIGdlbmVyYXRlLCB0b3BpYyBpcyBmdXp6eS1tYXRjaGVkIGFnYWluc3QgbGFzdCA5MCBkYXlzIG9mIGhpc3RvcnkKLSBbIF0gTWF0Y2gg4omlIDgwJSBzaW1pbGFyaXR5IOKGkiB3YXJuaW5nIGJhbm5lciB3aXRoIGRhdGUgb2YgbGFzdCB1c2UKLSBbIF0gSGlzdG9yeSBzdG9yZWQgaW4gUmVkaXMgd2l0aCA5MC1kYXkgVFRMCgojIyBOb24tRnVuY3Rpb25hbAotIFB1YmxpYyBkZXBsb3kgVVJMIChWZXJjZWwpIGZvciBEZXZwb3N0IHN1Ym1pc3Npb24KLSBgLmtpcm8vYCBkaXJlY3RvcnkgYXQgcmVwbyByb290IChoYWNrYXRob24gcmVxdWlyZW1lbnQpCi0gMy1taW51dGUgZGVtbyB2aWRlbyBzY3JpcHQgcHJlcGFyZWQKLSBBbGwgY29weSBpbiBFbmdsaXNoCg==
+# Requirements — HookForge MVP
+
+## User Stories
+
+### US-1: Generate hooks from a topic
+**As a** faceless content creator,
+**I want** to enter a topic and get 5 hook variants,
+**So that** I can pick a scroll-stopping opener without writer's block.
+
+**Acceptance Criteria:**
+- [ ] Input: topic text (1–120 chars) + platform selector (TikTok/IG/YT/X)
+- [ ] Output: 5 hooks, each ≤ 25 words, labeled by framework (curiosity/contrarian/callout/cold-open/stakes)
+- [ ] Each hook passes the 4-check gate (validated programmatically):
+  1. Does not reveal the topic/fact in the first 2 seconds of reading
+  2. Withholds the answer (no payoff in the hook itself)
+  3. Contains ≥1 open loop or unanswered question
+  4. Conversational tone (no definitions, no "X is...")
+- [ ] Generation streams token-by-token; total latency < 15s
+
+### US-2: Build a full script from a hook
+**As a** creator,
+**I want** to expand a chosen hook into a full narration script,
+**So that** I can paste it into TTS and produce a video.
+
+**Acceptance Criteria:**
+- [ ] Input: selected hook + target duration (15s/30s/60s) + language (EN/ID)
+- [ ] Output: script with beat markers (HOOK / BODY / CLIFFHANGER), TTS punctuation (commas, ellipses, CAPS for emphasis)
+- [ ] Script ends with a cliffhanger or CTA, never a flat summary
+- [ ] Word count matches duration (±10% at 150 wpm)
+
+### US-3: Compose platform caption
+**As a** creator,
+**I want** a caption tailored to the posting platform,
+**So that** I don't rewrite manually per platform.
+
+**Acceptance Criteria:**
+- [ ] TikTok: ≤150 chars, ≤5 hashtags, hook not repeated verbatim
+- [ ] X: ≤280 chars (URLs counted as 23 chars)
+- [ ] IG: hook + value + CTA + hashtags
+- [ ] One-click copy button per caption
+
+### US-4: Topic freshness check
+**As a** creator running daily content,
+**I want** a warning if I reuse a recent topic,
+**So that** I don't repeat content across platforms.
+
+**Acceptance Criteria:**
+- [ ] On generate, topic is fuzzy-matched against last 90 days of history
+- [ ] Match ≥ 80% similarity → warning banner with date of last use
+- [ ] History stored in Redis with 90-day TTL
+
+## Non-Functional
+- Public deploy URL (Vercel) for Devpost submission
+- `.kiro/` directory at repo root (hackathon requirement)
+- 3-minute demo video script prepared
+- All copy in English

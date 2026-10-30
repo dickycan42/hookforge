@@ -1,1 +1,23 @@
-IyBQcm9kdWN0IE92ZXJ2aWV3IOKAlCBIb29rRm9yZ2UKCiMjIFB1cnBvc2UKSG9va0ZvcmdlIGlzIGFuIEFJLXBvd2VyZWQgY29udGVudCBhc3Npc3RhbnQgZm9yIGZhY2VsZXNzIGNvbnRlbnQgY3JlYXRvcnMuIEl0IGdlbmVyYXRlcyBzY3JvbGwtc3RvcHBpbmcgaG9va3MsIGZ1bGwgdmlkZW8gc2NyaXB0cywgYW5kIGNhcHRpb25zIGZyb20gYSBzaW5nbGUgdG9waWMgaW5wdXQg4oCUIGNvbXByZXNzaW5nIGhvdXJzIG9mIGNvbnRlbnQgcGxhbm5pbmcgaW50byBzZWNvbmRzLgoKIyMgVGFyZ2V0IFVzZXJzCi0gRmFjZWxlc3MgY29udGVudCBjcmVhdG9ycyAoVGlrVG9rLCBJRyBSZWVscywgWW91VHViZSBTaG9ydHMpCi0gU29jaWFsIG1lZGlhIG1hbmFnZXJzIGFuZCBzbWFsbCBhZ2VuY2llcwotIFNvbG8gY3JlYXRvcnMgcnVubmluZyBtdWx0aS1wbGF0Zm9ybSBjb250ZW50IHNjaGVkdWxlcwoKIyMgS2V5IEZlYXR1cmVzIChNVlApCjEuICoqSG9vayBHZW5lcmF0b3IqKiDigJQgNSBob29rIHZhcmlhbnRzIHBlciB0b3BpYyAoY3VyaW9zaXR5IGdhcCwgY29udHJhcmlhbiwgY2FsbG91dCwgY29sZC1vcGVuLCBzdGFrZXMpLCBmb2xsb3dpbmcgdGhlIDQtY2hlY2sgaG9vayBnYXRlIChubyB0b3BpYyByZXZlYWwgaW4gZmlyc3QgMnMsIHdpdGhoZWxkIGFuc3dlciwgb3BlbiBsb29wLCByZS1ob29rIHBhdHRlcm4pLgoyLiAqKlNjcmlwdCBCdWlsZGVyKiog4oCUIGZ1bGwgbmFycmF0aW9uIHNjcmlwdCB3aXRoIFRUUy1mcmllbmRseSBwdW5jdHVhdGlvbiwgcGFjaW5nIG5vdGVzLCBhbmQgYmVhdCBzdHJ1Y3R1cmUgKGhvb2sg4oaSIGZhY3RzIOKGkiBjbGlmZmhhbmdlcikuCjMuICoqQ2FwdGlvbiBDb21wb3NlcioqIOKAlCBwbGF0Zm9ybS1zcGVjaWZpYyBjYXB0aW9ucyAoVGlrVG9rIOKJpDE1MCBjaGFycyArIGhhc2h0YWdzLCBJRywgWCDiiaQyODAgY2hhcnMpLgo0LiAqKlRvcGljIEZyZXNobmVzcyBDaGVjayoqIOKAlCB3YXJuIGlmIGEgdG9waWMgd2FzIHJlY2VudGx5IHVzZWQgKGNyb3NzLXBsYXRmb3JtIGRlZHVwZSkuCgojIyBCdXNpbmVzcyBPYmplY3RpdmVzCi0gV2luIEtpcm93ZWVuIDIwMjYsIEZyYW5rZW5zdGVpbiBjYXRlZ29yeSAoJDEwMCwwMDAgcHJpemUgcG9vbCkuCi0gRG9nZm9vZCB0aGUgdG9vbCBpbiB0aGUgdXNlcidzIG93biBjb250ZW50IG9wZXJhdGlvbiAoVGhlIFZpcmFsIFZhdWx0KS4KLSBQb3N0LWhhY2thdGhvbjogc2hpcCBhcyBhIHBhaWQgbWljcm8tU2FhUyBmb3IgY3JlYXRvcnMuCgojIyBGcmFua2Vuc3RlaW4gQW5nbGUKU3RpdGNoZXMgdG9nZXRoZXI6IExMTSB0ZXh0IGdlbmVyYXRpb24gKyBUVFMgcHJvc29keSBydWxlcyArIGNvbnRlbnQtcHN5Y2hvbG9neSBob29rIGZyYW1ld29ya3MgKyBjcm9zcy1wbGF0Zm9ybSBkZWR1cGUgbG9naWMg4oCUIHRlY2hub2xvZ2llcyBub3Qgbm9ybWFsbHkgY29tYmluZWQgaW4gb25lIHRvb2wuCg==
+# Product Overview — HookForge
+
+## Purpose
+HookForge is an AI-powered content assistant for faceless content creators. It generates scroll-stopping hooks, full video scripts, and captions from a single topic input — compressing hours of content planning into seconds.
+
+## Target Users
+- Faceless content creators (TikTok, IG Reels, YouTube Shorts)
+- Social media managers and small agencies
+- Solo creators running multi-platform content schedules
+
+## Key Features (MVP)
+1. **Hook Generator** — 5 hook variants per topic (curiosity gap, contrarian, callout, cold-open, stakes), following the 4-check hook gate (no topic reveal in first 2s, withheld answer, open loop, re-hook pattern).
+2. **Script Builder** — full narration script with TTS-friendly punctuation, pacing notes, and beat structure (hook → facts → cliffhanger).
+3. **Caption Composer** — platform-specific captions (TikTok ≤150 chars + hashtags, IG, X ≤280 chars).
+4. **Topic Freshness Check** — warn if a topic was recently used (cross-platform dedupe).
+
+## Business Objectives
+- Win Kiroween 2026, Frankenstein category ($100,000 prize pool).
+- Dogfood the tool in the user's own content operation (The Viral Vault).
+- Post-hackathon: ship as a paid micro-SaaS for creators.
+
+## Frankenstein Angle
+Stitches together: LLM text generation + TTS prosody rules + content-psychology hook frameworks + cross-platform dedupe logic — technologies not normally combined in one tool.
