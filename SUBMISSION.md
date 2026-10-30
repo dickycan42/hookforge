@@ -3,7 +3,7 @@
 **Category:** Frankenstein
 **Live app:** https://hookforge-hlve.vercel.app
 **Repo:** https://github.com/dickycan42/hookforge
-**Demo video:** <YOUTUBE_URL> (< 3 min)
+**Demo video:** https://youtube.com/shorts/bOWbA0elQPA (2:09)
 
 ---
 
