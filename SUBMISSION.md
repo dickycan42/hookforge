@@ -1,7 +1,7 @@
 # HookForge — Devpost Submission (Kiroween 2026)
 
 **Category:** Frankenstein
-**Live app:** <DEPLOY_URL>
+**Live app:** https://hookforge-hlve.vercel.app
 **Repo:** https://github.com/dickycan42/hookforge
 **Demo video:** <YOUTUBE_URL> (< 3 min)
 
