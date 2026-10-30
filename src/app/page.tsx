@@ -24,6 +24,13 @@ interface HistoryEntry {
 
 const HISTORY_KEY = "hookforge-history";
 const MAX_HISTORY = 20;
+const ACCESS_CODE_KEY = "hookforge-access-code";
+const DEMO_COUNT_KEY = "hookforge-demo-count";
+const DEMO_LIMIT = 3;
+const GUMROAD_URL = "https://theviralvaultshop.gumroad.com/l/kvvznn";
+const KOFI_URL = "https://ko-fi.com/s/5d2ec6240c";
+
+type AccessState = "checking" | "locked" | "unlocked";
 
 const TABS: { id: GenType; label: string; blurb: string }[] = [
   { id: "hooks", label: "Hooks", blurb: "5 scroll-stopping hooks, quality-gated" },
@@ -79,13 +86,85 @@ export default function Home() {
   const [checkingFreshness, setCheckingFreshness] = useState(false);
   const [history, setHistory] = useState<HistoryEntry[]>([]);
   const [copiedId, setCopiedId] = useState<string | null>(null);
+  const [access, setAccess] = useState<AccessState>("checking");
+  const [codeInput, setCodeInput] = useState("");
+  const [codeError, setCodeError] = useState<string | null>(null);
+  const [verifying, setVerifying] = useState(false);
+  const [demoMode, setDemoMode] = useState(false);
+  const [demoCount, setDemoCount] = useState(0);
   const outputRef = useRef<HTMLDivElement>(null);
   const abortRef = useRef<AbortController | null>(null);
 
-  // Load history once.
+  // Load history + access state once.
   useEffect(() => {
     setHistory(loadHistory());
+    try {
+      const stored = localStorage.getItem(ACCESS_CODE_KEY);
+      const demos = parseInt(localStorage.getItem(DEMO_COUNT_KEY) ?? "0", 10);
+      setDemoCount(Number.isFinite(demos) ? Math.max(0, demos) : 0);
+      if (stored) {
+        // Re-verify the stored code against the server.
+        fetch("/api/verify-code", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ code: stored }),
+        })
+          .then((r) => r.json())
+          .then((d: { valid?: boolean }) => {
+            setAccess(d.valid === true ? "unlocked" : "locked");
+          })
+          .catch(() => {
+            // API unreachable (same-origin, should be rare) — the code was
+            // verified when first entered, so trust it rather than lock
+            // out a paying user.
+            setAccess("unlocked");
+          });
+      } else {
+        setAccess("locked");
+      }
+    } catch {
+      setAccess("locked");
+    }
   }, []);
+
+  const verifyCode = useCallback(async () => {
+    const code = codeInput.trim();
+    if (!code || verifying) return;
+    setVerifying(true);
+    setCodeError(null);
+    try {
+      const res = await fetch("/api/verify-code", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ code }),
+      });
+      const data = (await res.json()) as { valid?: boolean; error?: string };
+      if (data.valid === true) {
+        try {
+          localStorage.setItem(ACCESS_CODE_KEY, code.toUpperCase());
+        } catch {
+          /* ignore */
+        }
+        setDemoMode(false);
+        setAccess("unlocked");
+      } else {
+        setCodeError(
+          "That code didn't work. Check it and try again — or grab yours below.",
+        );
+      }
+    } catch {
+      setCodeError("Couldn't reach the server. Check your connection and retry.");
+    } finally {
+      setVerifying(false);
+    }
+  }, [codeInput, verifying]);
+
+  const startDemo = useCallback(() => {
+    setDemoMode(true);
+    setCodeError(null);
+  }, []);
+
+  const demosLeft = Math.max(0, DEMO_LIMIT - demoCount);
 
   const saveHistory = useCallback((entry: HistoryEntry) => {
     setHistory((prev) => {
@@ -136,6 +215,24 @@ export default function Home() {
   const generate = useCallback(async () => {
     const t = topic.trim();
     if (!t || loading) return;
+    // Demo mode: enforce the free-generation limit.
+    if (demoMode && access !== "unlocked") {
+      if (demoCount >= DEMO_LIMIT) {
+        setAccess("locked");
+        setDemoMode(false);
+        setError(
+          `Demo limit reached (${DEMO_LIMIT} free generations). Enter your access code or grab one below.`,
+        );
+        return;
+      }
+      const next = demoCount + 1;
+      setDemoCount(next);
+      try {
+        localStorage.setItem(DEMO_COUNT_KEY, String(next));
+      } catch {
+        /* ignore */
+      }
+    }
     stop();
     setError(null);
     setOutput("");
@@ -200,7 +297,7 @@ export default function Home() {
       setLoading(false);
       abortRef.current = null;
     }
-  }, [topic, tab, platform, scriptHook, durationSec, lang, loading, stop, saveHistory]);
+  }, [topic, tab, platform, scriptHook, durationSec, lang, loading, stop, saveHistory, demoMode, access, demoCount]);
 
   const copyText = useCallback(async (text: string, id: string) => {
     try {
@@ -250,6 +347,101 @@ export default function Home() {
 
   const hookLines = tab === "hooks" ? parseHookLines(output) : [];
 
+  // ---- Access gate -------------------------------------------------------
+  if (access === "checking") {
+    return (
+      <main className="mx-auto max-w-4xl px-5 py-10 sm:py-14">
+        <header className="mb-8">
+          <h1 className="text-4xl font-extrabold tracking-tight">
+            <span aria-hidden>🔥</span> HookForge
+          </h1>
+        </header>
+        <p className="text-sm text-zinc-500">Checking access…</p>
+      </main>
+    );
+  }
+
+  if (access === "locked" && !demoMode) {
+    return (
+      <main className="mx-auto max-w-md px-5 py-10 sm:py-14">
+        <header className="mb-8 text-center">
+          <h1 className="text-4xl font-extrabold tracking-tight">
+            <span aria-hidden>🔥</span> HookForge
+          </h1>
+          <p className="mt-2 text-zinc-400">
+            AI hooks, scripts &amp; captions for faceless creators.
+          </p>
+        </header>
+
+        <section className="rounded-2xl border border-zinc-800 bg-zinc-900/60 p-6">
+          <h2 className="text-lg font-semibold text-zinc-100">Enter your access code</h2>
+          <p className="mt-1 text-sm text-zinc-500">
+            You got this code with your purchase. Format: HF-XXXX-XXXX
+          </p>
+          <input
+            value={codeInput}
+            onChange={(e) => setCodeInput(e.target.value.toUpperCase())}
+            onKeyDown={(e) => {
+              if (e.key === "Enter") verifyCode();
+            }}
+            placeholder="HF-XXXX-XXXX"
+            maxLength={12}
+            autoCapitalize="characters"
+            autoComplete="off"
+            spellCheck={false}
+            className="mt-4 w-full rounded-xl border border-zinc-700 bg-zinc-950 px-4 py-3 font-mono text-lg tracking-widest text-zinc-100 placeholder:text-zinc-600 focus:border-orange-500 focus:outline-none"
+          />
+          {codeError && (
+            <div role="alert" className="mt-3 rounded-xl border border-red-500/40 bg-red-500/10 px-4 py-3 text-sm text-red-300">
+              {codeError}
+            </div>
+          )}
+          <button
+            type="button"
+            onClick={verifyCode}
+            disabled={!codeInput.trim() || verifying}
+            className="mt-4 w-full rounded-xl bg-orange-500 px-6 py-3 font-semibold text-zinc-950 transition hover:bg-orange-400 disabled:cursor-not-allowed disabled:opacity-40"
+          >
+            {verifying ? "Checking…" : "Unlock HookForge"}
+          </button>
+
+          <div className="mt-5 border-t border-zinc-800 pt-5 text-center">
+            <p className="text-sm text-zinc-500">Don&apos;t have a code yet?</p>
+            <div className="mt-2 flex gap-2">
+              <a
+                href={GUMROAD_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex-1 rounded-xl border border-zinc-700 px-4 py-2.5 text-sm font-medium text-zinc-200 transition hover:border-orange-500 hover:text-orange-400"
+              >
+                Buy on Gumroad — $19
+              </a>
+              <a
+                href={KOFI_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex-1 rounded-xl border border-zinc-700 px-4 py-2.5 text-sm font-medium text-zinc-200 transition hover:border-orange-500 hover:text-orange-400"
+              >
+                Buy on Ko-fi — $19
+              </a>
+            </div>
+            <button
+              type="button"
+              onClick={startDemo}
+              className="mt-3 text-sm text-zinc-500 underline-offset-2 hover:text-zinc-300 hover:underline"
+            >
+              or try Demo mode — {DEMO_LIMIT} free generations, no code needed
+            </button>
+          </div>
+        </section>
+
+        <footer className="mt-10 text-center text-xs text-zinc-600">
+          HookForge — built for Kiroween 2026 · Frankenstein category
+        </footer>
+      </main>
+    );
+  }
+
   return (
     <main className="mx-auto max-w-4xl px-5 py-10 sm:py-14">
       {/* Header */}
@@ -261,6 +453,14 @@ export default function Home() {
           AI hooks, scripts &amp; captions for faceless creators — one topic in,
           scroll-stopping content out.
         </p>
+        {demoMode && access !== "unlocked" && (
+          <p className="mt-2 inline-block rounded-full border border-amber-500/40 bg-amber-500/10 px-3 py-1 text-xs font-medium text-amber-300">
+            Demo mode — {demosLeft} of {DEMO_LIMIT} free generations left ·{" "}
+            <a href={GUMROAD_URL} target="_blank" rel="noopener noreferrer" className="underline underline-offset-2">
+              get unlimited access ($19)
+            </a>
+          </p>
+        )}
       </header>
 
       {/* Topic input */}
