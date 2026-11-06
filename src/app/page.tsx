@@ -78,6 +78,7 @@ export default function Home() {
   const [durationSec, setDurationSec] = useState<15 | 30 | 60>(30);
   const [lang, setLang] = useState<"en" | "id">("en");
   const [output, setOutput] = useState("");
+  const [outputType, setOutputType] = useState<GenType>("hooks");
   const [gate, setGate] = useState<string | null>(null);
   const [mockMode, setMockMode] = useState(false);
   const [loading, setLoading] = useState(false);
@@ -214,7 +215,7 @@ export default function Home() {
 
   const generate = useCallback(async () => {
     const t = topic.trim();
-    if (!t || loading) return;
+    if (!t || abortRef.current) return;
     // Demo mode: enforce the free-generation limit.
     if (demoMode && access !== "unlocked") {
       if (demoCount >= DEMO_LIMIT) {
@@ -225,17 +226,11 @@ export default function Home() {
         );
         return;
       }
-      const next = demoCount + 1;
-      setDemoCount(next);
-      try {
-        localStorage.setItem(DEMO_COUNT_KEY, String(next));
-      } catch {
-        /* ignore */
-      }
     }
     stop();
     setError(null);
     setOutput("");
+    setOutputType(tab);
     setGate(null);
     setMockMode(false);
     setLoading(true);
@@ -259,6 +254,7 @@ export default function Home() {
         body: JSON.stringify(body),
         signal: controller.signal,
       });
+      if (controller.signal.aborted) return;
       if (!res.ok) {
         const data = (await res.json().catch(() => null)) as { error?: string } | null;
         throw new Error(data?.error ?? `Request failed (${res.status}).`);
@@ -271,6 +267,7 @@ export default function Home() {
       const decoder = new TextDecoder();
       for (;;) {
         const { done, value } = await reader.read();
+        if (controller.signal.aborted) return;
         if (done) break;
         streamed += decoder.decode(value, { stream: true });
         setOutput(streamed);
@@ -278,26 +275,37 @@ export default function Home() {
       streamed += decoder.decode();
       setOutput(streamed);
 
-      if (streamed.trim()) {
-        saveHistory({
-          id: `${Date.now()}`,
-          topic: t,
-          type: tab,
-          platform,
-          output: streamed,
-          gate: res.headers.get("X-HookForge-Gate") ?? undefined,
-          createdAt: Date.now(),
-        });
+      if (!streamed.trim()) throw new Error("No content was returned. Please try again.");
+
+      if (demoMode && access !== "unlocked") {
+        const next = demoCount + 1;
+        setDemoCount(next);
+        try {
+          localStorage.setItem(DEMO_COUNT_KEY, String(next));
+        } catch {
+          /* ignore */
+        }
       }
+      saveHistory({
+        id: `${Date.now()}`,
+        topic: t,
+        type: tab,
+        platform,
+        output: streamed,
+        gate: res.headers.get("X-HookForge-Gate") ?? undefined,
+        createdAt: Date.now(),
+      });
     } catch (err) {
-      if ((err as Error).name !== "AbortError") {
+      if (!controller.signal.aborted && (err as Error).name !== "AbortError") {
         setError(err instanceof Error ? err.message : "Generation failed.");
       }
     } finally {
-      setLoading(false);
-      abortRef.current = null;
+      if (abortRef.current === controller) {
+        setLoading(false);
+        abortRef.current = null;
+      }
     }
-  }, [topic, tab, platform, scriptHook, durationSec, lang, loading, stop, saveHistory, demoMode, access, demoCount]);
+  }, [topic, tab, platform, scriptHook, durationSec, lang, stop, saveHistory, demoMode, access, demoCount]);
 
   const copyText = useCallback(async (text: string, id: string) => {
     try {
@@ -310,14 +318,17 @@ export default function Home() {
   }, []);
 
   const loadEntry = useCallback((entry: HistoryEntry) => {
+    stop();
     setTopic(entry.topic);
     setTab(entry.type);
+    setOutputType(entry.type);
+    setMockMode(false);
     setPlatform(entry.platform);
     setOutput(entry.output);
     setGate(entry.gate ?? null);
     setError(null);
     window.scrollTo({ top: 0, behavior: "smooth" });
-  }, []);
+  }, [stop]);
 
   const deleteEntry = useCallback((id: string) => {
     setHistory((prev) => {
@@ -345,7 +356,7 @@ export default function Home() {
     setTab("script");
   }, []);
 
-  const hookLines = tab === "hooks" ? parseHookLines(output) : [];
+  const hookLines = outputType === "hooks" ? parseHookLines(output) : [];
 
   // ---- Access gate -------------------------------------------------------
   if (access === "checking") {
@@ -663,7 +674,7 @@ export default function Home() {
         <section className="mt-6 rounded-2xl border border-zinc-800 bg-zinc-900/60 p-5">
           <div className="mb-3 flex flex-wrap items-center justify-between gap-2">
             <h2 className="text-sm font-semibold uppercase tracking-wide text-zinc-400">
-              Output
+              {TABS.find((t) => t.id === outputType)?.label} output
               {gate && <span className="ml-2 text-emerald-400">gate {gate}</span>}
               {mockMode && (
                 <span className="ml-2 rounded bg-zinc-700 px-1.5 py-0.5 text-xs text-zinc-300">
@@ -682,7 +693,7 @@ export default function Home() {
             )}
           </div>
 
-          {tab === "hooks" ? (
+          {outputType === "hooks" ? (
             <ul className="space-y-2.5">
               {hookLines.map((h, i) => (
                 <li
