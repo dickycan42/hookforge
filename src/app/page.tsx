@@ -20,6 +20,9 @@ interface HistoryEntry {
   output: string;
   gate?: string;
   createdAt: number;
+  scriptHook?: string;
+  durationSec?: 15 | 30 | 60;
+  lang?: "en" | "id";
 }
 
 const HISTORY_KEY = "hookforge-history";
@@ -87,6 +90,7 @@ export default function Home() {
   const [checkingFreshness, setCheckingFreshness] = useState(false);
   const [history, setHistory] = useState<HistoryEntry[]>([]);
   const [copiedId, setCopiedId] = useState<string | null>(null);
+  const [copyFailedId, setCopyFailedId] = useState<string | null>(null);
   const [access, setAccess] = useState<AccessState>("checking");
   const [codeInput, setCodeInput] = useState("");
   const [codeError, setCodeError] = useState<string | null>(null);
@@ -294,6 +298,9 @@ export default function Home() {
         output: streamed,
         gate: res.headers.get("X-HookForge-Gate") ?? undefined,
         createdAt: Date.now(),
+        scriptHook: scriptHook.trim() || undefined,
+        durationSec,
+        lang,
       });
     } catch (err) {
       if (!controller.signal.aborted && (err as Error).name !== "AbortError") {
@@ -308,13 +315,31 @@ export default function Home() {
   }, [topic, tab, platform, scriptHook, durationSec, lang, stop, saveHistory, demoMode, access, demoCount]);
 
   const copyText = useCallback(async (text: string, id: string) => {
+    setCopyFailedId((c) => (c === id ? null : c));
     try {
       await navigator.clipboard.writeText(text);
-      setCopiedId(id);
-      setTimeout(() => setCopiedId((c) => (c === id ? null : c)), 1500);
     } catch {
-      /* clipboard unavailable */
+      // Clipboard API denied or unavailable (permission denied, insecure
+      // context): fall back to the legacy execCommand path before giving up.
+      try {
+        const ta = document.createElement("textarea");
+        ta.value = text;
+        ta.setAttribute("readonly", "");
+        ta.style.position = "fixed";
+        ta.style.opacity = "0";
+        document.body.appendChild(ta);
+        ta.select();
+        const ok = document.execCommand("copy");
+        document.body.removeChild(ta);
+        if (!ok) throw new Error("copy failed");
+      } catch {
+        setCopyFailedId(id);
+        setTimeout(() => setCopyFailedId((c) => (c === id ? null : c)), 3000);
+        return;
+      }
     }
+    setCopiedId(id);
+    setTimeout(() => setCopiedId((c) => (c === id ? null : c)), 1500);
   }, []);
 
   const loadEntry = useCallback((entry: HistoryEntry) => {
@@ -324,6 +349,9 @@ export default function Home() {
     setOutputType(entry.type);
     setMockMode(false);
     setPlatform(entry.platform);
+    setScriptHook(entry.scriptHook ?? "");
+    setDurationSec(entry.durationSec ?? 30);
+    setLang(entry.lang ?? "en");
     setOutput(entry.output);
     setGate(entry.gate ?? null);
     setError(null);
@@ -688,10 +716,16 @@ export default function Home() {
                 onClick={() => copyText(output, "all")}
                 className="rounded-lg border border-zinc-700 px-3 py-1.5 text-xs font-medium text-zinc-300 hover:border-zinc-500"
               >
-                {copiedId === "all" ? "✓ Copied" : "Copy all"}
+                {copiedId === "all" ? "✓ Copied" : copyFailedId === "all" ? "Copy failed" : "Copy all"}
               </button>
             )}
           </div>
+
+          {copyFailedId && (
+            <p role="alert" className="mb-3 text-xs text-red-300">
+              Copy failed — clipboard access was denied. Select the text manually to copy it.
+            </p>
+          )}
 
           {outputType === "hooks" ? (
             <ul className="space-y-2.5">
@@ -718,7 +752,7 @@ export default function Home() {
                       title="Copy hook"
                       className="rounded-lg border border-zinc-700 px-2.5 py-1 text-xs text-zinc-300 hover:border-zinc-500"
                     >
-                      {copiedId === `hook-${i}` ? "✓" : "Copy"}
+                      {copiedId === `hook-${i}` ? "✓" : copyFailedId === `hook-${i}` ? "✕" : "Copy"}
                     </button>
                     <button
                       type="button"
